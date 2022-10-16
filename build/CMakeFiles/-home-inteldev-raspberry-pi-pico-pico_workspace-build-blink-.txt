@@ -1,0 +1,1 @@
+/home/inteldev/raspberry-pi-pico/pico_workspace/build/blink-led.uf2
