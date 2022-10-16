@@ -8,7 +8,7 @@ cmake_minimum_required(VERSION 3.12)
 # note: this must happen before project()
 include(pico_sdk_import.cmake)
 
-project(pico_inference_app)
+project(deaf_helper_pico)
 
 # initialize the Pico SDK
 pico_sdk_init()
@@ -35,7 +35,7 @@ add_executable(pico_inference_app
     ${CMAKE_CURRENT_LIST_DIR}/src/ml_model.cpp
 )
 
-target_link_libraries(pico_inference_app
+target_link_libraries(deaf_helper_pico
     pico_stdlib
     hardware_pwm
     pico-tflmicro
@@ -48,7 +48,7 @@ pico_enable_stdio_usb(pico_inference_app 1)
 pico_enable_stdio_uart(pico_inference_app 0)
 
 # create map/bin/hex/uf2 file in addition to ELF.
-pico_add_extra_outputs(pico_inference_app)
+pico_add_extra_outputs(deaf_helper_pico)
 
 add_subdirectory("lib/microphone-library-for-pico" EXCLUDE_FROM_ALL)
 add_subdirectory("lib/pico-tflmicro" EXCLUDE_FROM_ALL)
