@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "lib/microphone-library-for-pico/examples/hello_analog_microphone",
+		"source" : "lib/microphone-library-for-pico/examples/hello_analog_microphone"
+	}
+}

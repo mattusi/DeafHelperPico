@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "lib/pico-tflmicro/examples/keyword_benchmark",
+		"source" : "lib/pico-tflmicro/examples/keyword_benchmark"
+	}
+}

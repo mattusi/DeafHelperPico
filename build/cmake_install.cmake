@@ -1,4 +1,4 @@
-# Install script for directory: /home/inteldev/raspberry-pi-pico/pico_workspace/blink-led
+# Install script for directory: /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

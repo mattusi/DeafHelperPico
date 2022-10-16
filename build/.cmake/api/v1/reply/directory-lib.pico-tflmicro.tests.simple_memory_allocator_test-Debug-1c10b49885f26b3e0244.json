@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "lib/pico-tflmicro/tests/simple_memory_allocator_test",
+		"source" : "lib/pico-tflmicro/tests/simple_memory_allocator_test"
+	}
+}

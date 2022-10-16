@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/inteldev/raspberry-pi-pico/pico_workspace/blink-led
+CMAKE_SOURCE_DIR = /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/inteldev/raspberry-pi-pico/pico_workspace/build
@@ -143,6 +143,6 @@ CMakeFiles/ELF2UF2Build.dir/clean:
 .PHONY : CMakeFiles/ELF2UF2Build.dir/clean
 
 CMakeFiles/ELF2UF2Build.dir/depend:
-	cd /home/inteldev/raspberry-pi-pico/pico_workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/inteldev/raspberry-pi-pico/pico_workspace/blink-led /home/inteldev/raspberry-pi-pico/pico_workspace/blink-led /home/inteldev/raspberry-pi-pico/pico_workspace/build /home/inteldev/raspberry-pi-pico/pico_workspace/build /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles/ELF2UF2Build.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/inteldev/raspberry-pi-pico/pico_workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper /home/inteldev/raspberry-pi-pico/pico_workspace/build /home/inteldev/raspberry-pi-pico/pico_workspace/build /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles/ELF2UF2Build.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ELF2UF2Build.dir/depend
 

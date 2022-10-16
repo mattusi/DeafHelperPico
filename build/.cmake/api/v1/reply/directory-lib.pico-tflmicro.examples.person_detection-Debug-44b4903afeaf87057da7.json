@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "lib/pico-tflmicro/examples/person_detection",
+		"source" : "lib/pico-tflmicro/examples/person_detection"
+	}
+}

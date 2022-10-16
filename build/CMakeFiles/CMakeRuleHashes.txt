@@ -8,6 +8,8 @@ b5b47a300534b43936929a05d474fa9a elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-ins
 0a926325d0160b959337b14ff701b8f6 elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-mkdir
 cfaaaf0092a91e35d63b680b6b1f4fb5 elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-patch
 c3beffbc7ecc510c441d26d904fb9131 elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-update
+d0c7e47ebfff9e0d7b66180dd50d4397 lib/microphone-library-for-pico/CMakeFiles/pico_pdm_microphone_pdm_microphone_pio_h
+a5aa4d948cdfb9bab78153313fac2b91 lib/microphone-library-for-pico/pdm_microphone.pio.h
 0de08b7a7fc8ba70b0c01db99e5e57d7 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin
 0de08b7a7fc8ba70b0c01db99e5e57d7 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm
 6e9577ff9633353aa07eda980d15fe78 pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
