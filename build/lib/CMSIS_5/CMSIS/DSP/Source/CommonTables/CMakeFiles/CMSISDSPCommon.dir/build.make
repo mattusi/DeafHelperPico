@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper
+CMAKE_SOURCE_DIR = /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/inteldev/raspberry-pi-pico/pico_workspace/build
@@ -70,60 +70,60 @@ include lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/
 include lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/flags.make
 
 lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/arm_common_tables.c.obj: lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/flags.make
-lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/arm_common_tables.c.obj: /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/arm_common_tables.c
+lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/arm_common_tables.c.obj: /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/arm_common_tables.c
 lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/arm_common_tables.c.obj: lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/arm_common_tables.c.obj"
-	cd /home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/arm_common_tables.c.obj -MF CMakeFiles/CMSISDSPCommon.dir/arm_common_tables.c.obj.d -o CMakeFiles/CMSISDSPCommon.dir/arm_common_tables.c.obj -c /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/arm_common_tables.c
+	cd /home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/arm_common_tables.c.obj -MF CMakeFiles/CMSISDSPCommon.dir/arm_common_tables.c.obj.d -o CMakeFiles/CMSISDSPCommon.dir/arm_common_tables.c.obj -c /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/arm_common_tables.c
 
 lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/arm_common_tables.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/CMSISDSPCommon.dir/arm_common_tables.c.i"
-	cd /home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/arm_common_tables.c > CMakeFiles/CMSISDSPCommon.dir/arm_common_tables.c.i
+	cd /home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/arm_common_tables.c > CMakeFiles/CMSISDSPCommon.dir/arm_common_tables.c.i
 
 lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/arm_common_tables.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CMSISDSPCommon.dir/arm_common_tables.c.s"
-	cd /home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/arm_common_tables.c -o CMakeFiles/CMSISDSPCommon.dir/arm_common_tables.c.s
+	cd /home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/arm_common_tables.c -o CMakeFiles/CMSISDSPCommon.dir/arm_common_tables.c.s
 
 lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/arm_common_tables_f16.c.obj: lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/flags.make
-lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/arm_common_tables_f16.c.obj: /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/arm_common_tables_f16.c
+lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/arm_common_tables_f16.c.obj: /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/arm_common_tables_f16.c
 lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/arm_common_tables_f16.c.obj: lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/arm_common_tables_f16.c.obj"
-	cd /home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/arm_common_tables_f16.c.obj -MF CMakeFiles/CMSISDSPCommon.dir/arm_common_tables_f16.c.obj.d -o CMakeFiles/CMSISDSPCommon.dir/arm_common_tables_f16.c.obj -c /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/arm_common_tables_f16.c
+	cd /home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/arm_common_tables_f16.c.obj -MF CMakeFiles/CMSISDSPCommon.dir/arm_common_tables_f16.c.obj.d -o CMakeFiles/CMSISDSPCommon.dir/arm_common_tables_f16.c.obj -c /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/arm_common_tables_f16.c
 
 lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/arm_common_tables_f16.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/CMSISDSPCommon.dir/arm_common_tables_f16.c.i"
-	cd /home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/arm_common_tables_f16.c > CMakeFiles/CMSISDSPCommon.dir/arm_common_tables_f16.c.i
+	cd /home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/arm_common_tables_f16.c > CMakeFiles/CMSISDSPCommon.dir/arm_common_tables_f16.c.i
 
 lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/arm_common_tables_f16.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CMSISDSPCommon.dir/arm_common_tables_f16.c.s"
-	cd /home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/arm_common_tables_f16.c -o CMakeFiles/CMSISDSPCommon.dir/arm_common_tables_f16.c.s
+	cd /home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/arm_common_tables_f16.c -o CMakeFiles/CMSISDSPCommon.dir/arm_common_tables_f16.c.s
 
 lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/arm_const_structs.c.obj: lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/flags.make
-lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/arm_const_structs.c.obj: /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/arm_const_structs.c
+lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/arm_const_structs.c.obj: /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/arm_const_structs.c
 lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/arm_const_structs.c.obj: lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/arm_const_structs.c.obj"
-	cd /home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/arm_const_structs.c.obj -MF CMakeFiles/CMSISDSPCommon.dir/arm_const_structs.c.obj.d -o CMakeFiles/CMSISDSPCommon.dir/arm_const_structs.c.obj -c /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/arm_const_structs.c
+	cd /home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/arm_const_structs.c.obj -MF CMakeFiles/CMSISDSPCommon.dir/arm_const_structs.c.obj.d -o CMakeFiles/CMSISDSPCommon.dir/arm_const_structs.c.obj -c /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/arm_const_structs.c
 
 lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/arm_const_structs.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/CMSISDSPCommon.dir/arm_const_structs.c.i"
-	cd /home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/arm_const_structs.c > CMakeFiles/CMSISDSPCommon.dir/arm_const_structs.c.i
+	cd /home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/arm_const_structs.c > CMakeFiles/CMSISDSPCommon.dir/arm_const_structs.c.i
 
 lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/arm_const_structs.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CMSISDSPCommon.dir/arm_const_structs.c.s"
-	cd /home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/arm_const_structs.c -o CMakeFiles/CMSISDSPCommon.dir/arm_const_structs.c.s
+	cd /home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/arm_const_structs.c -o CMakeFiles/CMSISDSPCommon.dir/arm_const_structs.c.s
 
 lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/arm_const_structs_f16.c.obj: lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/flags.make
-lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/arm_const_structs_f16.c.obj: /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/arm_const_structs_f16.c
+lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/arm_const_structs_f16.c.obj: /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/arm_const_structs_f16.c
 lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/arm_const_structs_f16.c.obj: lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/arm_const_structs_f16.c.obj"
-	cd /home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/arm_const_structs_f16.c.obj -MF CMakeFiles/CMSISDSPCommon.dir/arm_const_structs_f16.c.obj.d -o CMakeFiles/CMSISDSPCommon.dir/arm_const_structs_f16.c.obj -c /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/arm_const_structs_f16.c
+	cd /home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/arm_const_structs_f16.c.obj -MF CMakeFiles/CMSISDSPCommon.dir/arm_const_structs_f16.c.obj.d -o CMakeFiles/CMSISDSPCommon.dir/arm_const_structs_f16.c.obj -c /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/arm_const_structs_f16.c
 
 lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/arm_const_structs_f16.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/CMSISDSPCommon.dir/arm_const_structs_f16.c.i"
-	cd /home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/arm_const_structs_f16.c > CMakeFiles/CMSISDSPCommon.dir/arm_const_structs_f16.c.i
+	cd /home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/arm_const_structs_f16.c > CMakeFiles/CMSISDSPCommon.dir/arm_const_structs_f16.c.i
 
 lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/arm_const_structs_f16.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CMSISDSPCommon.dir/arm_const_structs_f16.c.s"
-	cd /home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/arm_const_structs_f16.c -o CMakeFiles/CMSISDSPCommon.dir/arm_const_structs_f16.c.s
+	cd /home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/arm_const_structs_f16.c -o CMakeFiles/CMSISDSPCommon.dir/arm_const_structs_f16.c.s
 
 # Object files for target CMSISDSPCommon
 CMSISDSPCommon_OBJECTS = \
@@ -154,6 +154,6 @@ lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/clean:
 .PHONY : lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/clean
 
 lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/depend:
-	cd /home/inteldev/raspberry-pi-pico/pico_workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables /home/inteldev/raspberry-pi-pico/pico_workspace/build /home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables /home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/inteldev/raspberry-pi-pico/pico_workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables /home/inteldev/raspberry-pi-pico/pico_workspace/build /home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables /home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/depend
 

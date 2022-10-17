@@ -1,6 +1,6 @@
 lib/pico-tflmicro/CMakeFiles/pico-tflmicro.dir/src/tensorflow/lite/micro/micro_utils.cpp.obj: \
- /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/tensorflow/lite/micro/micro_utils.cpp \
- /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/tensorflow/lite/micro/micro_utils.h \
+ /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/src/tensorflow/lite/micro/micro_utils.cpp \
+ /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/src/tensorflow/lite/micro/micro_utils.h \
  /usr/include/newlib/c++/10.3.1/algorithm \
  /usr/include/newlib/c++/10.3.1/utility \
  /usr/include/newlib/c++/10.3.1/arm-none-eabi/thumb/v6-m/nofp/bits/c++config.h \
@@ -56,9 +56,9 @@ lib/pico-tflmicro/CMakeFiles/pico-tflmicro.dir/src/tensorflow/lite/micro/micro_u
  /usr/include/newlib/c++/10.3.1/math.h /usr/include/newlib/math.h \
  /usr/include/newlib/c++/10.3.1/cstdint \
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
- /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/tensorflow/lite/c/common.h \
+ /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/src/tensorflow/lite/c/common.h \
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h \
- /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/tensorflow/lite/kernels/op_macros.h \
+ /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/src/tensorflow/lite/kernels/op_macros.h \
  /usr/include/newlib/c++/10.3.1/cstdio /usr/include/newlib/stdio.h \
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
  /usr/include/newlib/sys/types.h /usr/include/newlib/sys/_stdint.h \

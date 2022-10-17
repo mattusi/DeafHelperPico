@@ -1,6 +1,6 @@
 lib/pico-tflmicro/CMakeFiles/pico-tflmicro.dir/src/tensorflow/lite/micro/memory_helpers.cpp.obj: \
- /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/tensorflow/lite/micro/memory_helpers.cpp \
- /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/tensorflow/lite/micro/memory_helpers.h \
+ /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/src/tensorflow/lite/micro/memory_helpers.cpp \
+ /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/src/tensorflow/lite/micro/memory_helpers.h \
  /usr/include/newlib/c++/10.3.1/cstddef \
  /usr/include/newlib/c++/10.3.1/arm-none-eabi/thumb/v6-m/nofp/bits/c++config.h \
  /usr/include/newlib/c++/10.3.1/arm-none-eabi/thumb/v6-m/nofp/bits/os_defines.h \
@@ -8,14 +8,14 @@ lib/pico-tflmicro/CMakeFiles/pico-tflmicro.dir/src/tensorflow/lite/micro/memory_
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
  /usr/include/newlib/c++/10.3.1/cstdint \
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
- /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/tensorflow/lite/c/common.h \
+ /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/src/tensorflow/lite/c/common.h \
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h \
- /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/tensorflow/lite/core/api/error_reporter.h \
+ /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/src/tensorflow/lite/core/api/error_reporter.h \
  /usr/include/newlib/c++/10.3.1/cstdarg \
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
- /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/tensorflow/lite/schema/schema_generated.h \
- /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/third_party/flatbuffers/include/flatbuffers/flatbuffers.h \
- /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/third_party/flatbuffers/include/flatbuffers/base.h \
+ /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/src/tensorflow/lite/schema/schema_generated.h \
+ /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/src/third_party/flatbuffers/include/flatbuffers/flatbuffers.h \
+ /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/src/third_party/flatbuffers/include/flatbuffers/base.h \
  /usr/include/newlib/assert.h /usr/include/newlib/_ansi.h \
  /usr/include/newlib/newlib.h /usr/include/newlib/_newlib_version.h \
  /usr/include/newlib/sys/config.h /usr/include/newlib/machine/ieeefp.h \
@@ -148,11 +148,11 @@ lib/pico-tflmicro/CMakeFiles/pico-tflmicro.dir/src/tensorflow/lite/micro/memory_
  /usr/include/newlib/c++/10.3.1/bits/atomic_base.h \
  /usr/include/newlib/c++/10.3.1/bits/atomic_lockfree_defines.h \
  /usr/include/newlib/c++/10.3.1/backward/auto_ptr.h \
- /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/third_party/flatbuffers/include/flatbuffers/stl_emulation.h \
+ /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/src/third_party/flatbuffers/include/flatbuffers/stl_emulation.h \
  /usr/include/newlib/c++/10.3.1/functional \
  /usr/include/newlib/c++/10.3.1/bits/std_function.h \
- /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/tensorflow/lite/core/api/flatbuffer_conversions.h \
- /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/tensorflow/lite/kernels/internal/tensor_ctypes.h \
- /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/tensorflow/lite/kernels/internal/types.h \
- /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/tensorflow/lite/kernels/internal/compatibility.h \
- /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/tensorflow/lite/kernels/op_macros.h
+ /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/src/tensorflow/lite/core/api/flatbuffer_conversions.h \
+ /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/src/tensorflow/lite/kernels/internal/tensor_ctypes.h \
+ /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/src/tensorflow/lite/kernels/internal/types.h \
+ /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/src/tensorflow/lite/kernels/internal/compatibility.h \
+ /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/src/tensorflow/lite/kernels/op_macros.h

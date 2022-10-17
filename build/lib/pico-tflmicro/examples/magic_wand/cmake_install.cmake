@@ -1,4 +1,4 @@
-# Install script for directory: /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/examples/magic_wand
+# Install script for directory: /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/examples/magic_wand
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -1,10 +1,10 @@
 lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/arm_common_tables_f16.c.obj: \
- /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/arm_common_tables_f16.c \
- /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/CMSIS_5/CMSIS/DSP/Include/arm_math_types_f16.h \
- /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/CMSIS_5/CMSIS/DSP/Include/arm_math_types.h \
- /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/CMSIS_5/CMSIS/Core/Include/cmsis_compiler.h \
+ /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/arm_common_tables_f16.c \
+ /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/CMSIS_5/CMSIS/DSP/Include/arm_math_types_f16.h \
+ /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/CMSIS_5/CMSIS/DSP/Include/arm_math_types.h \
+ /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/CMSIS_5/CMSIS/Core/Include/cmsis_compiler.h \
  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
- /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/CMSIS_5/CMSIS/Core/Include/cmsis_gcc.h \
+ /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/CMSIS_5/CMSIS/Core/Include/cmsis_gcc.h \
  /usr/include/newlib/string.h /usr/include/newlib/_ansi.h \
  /usr/include/newlib/newlib.h /usr/include/newlib/_newlib_version.h \
  /usr/include/newlib/sys/config.h /usr/include/newlib/machine/ieeefp.h \

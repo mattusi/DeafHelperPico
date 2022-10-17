@@ -1,4 +1,4 @@
-# Install script for directory: /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/CMSIS_5/CMSIS/DSP/Source/InterpolationFunctions
+# Install script for directory: /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/CMSIS_5/CMSIS/DSP/Source/InterpolationFunctions
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

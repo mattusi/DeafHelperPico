@@ -1,4 +1,4 @@
-/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles/pico_inference_app.dir
+/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles/deaf_helper_pico.dir
 /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles/ELF2UF2Build.dir
 /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles/edit_cache.dir
 /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles/rebuild_cache.dir

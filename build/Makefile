@@ -57,7 +57,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper
+CMAKE_SOURCE_DIR = /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/inteldev/raspberry-pi-pico/pico_workspace/build
@@ -117,17 +117,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named pico_inference_app
+# Target rules for targets named deaf_helper_pico
 
 # Build rule for target.
-pico_inference_app: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico_inference_app
-.PHONY : pico_inference_app
+deaf_helper_pico: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deaf_helper_pico
+.PHONY : deaf_helper_pico
 
 # fast build rule for target.
-pico_inference_app/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/build
-.PHONY : pico_inference_app/fast
+deaf_helper_pico/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/build
+.PHONY : deaf_helper_pico/fast
 
 #=============================================================================
 # Target rules for targets named ELF2UF2Build
@@ -1538,7 +1538,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
@@ -1546,7 +1546,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
@@ -1554,7 +1554,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
@@ -1562,7 +1562,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_devi
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
@@ -1570,7 +1570,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_devi
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
@@ -1578,7 +1578,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_devi
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
@@ -1586,7 +1586,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_devi
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
@@ -1594,7 +1594,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_devi
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
@@ -1602,7 +1602,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_devi
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
@@ -1610,7 +1610,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_d
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
@@ -1618,7 +1618,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_d
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
@@ -1626,7 +1626,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_d
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
@@ -1634,7 +1634,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_devi
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
@@ -1642,7 +1642,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_devi
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
@@ -1650,7 +1650,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_devi
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
@@ -1658,7 +1658,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_de
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
@@ -1666,7 +1666,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_de
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
@@ -1674,7 +1674,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_de
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
@@ -1682,7 +1682,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_devi
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
@@ -1690,7 +1690,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_devi
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
@@ -1698,7 +1698,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_devi
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
@@ -1706,7 +1706,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndi
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
@@ -1714,7 +1714,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndi
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
@@ -1722,7 +1722,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndi
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
@@ -1730,7 +1730,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_devi
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
@@ -1738,7 +1738,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_devi
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
@@ -1746,7 +1746,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_devi
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
@@ -1754,7 +1754,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtm
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
@@ -1762,7 +1762,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtm
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
@@ -1770,7 +1770,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtm
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
@@ -1778,7 +1778,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendo
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
@@ -1786,7 +1786,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendo
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
@@ -1794,7 +1794,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendo
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
@@ -1802,7 +1802,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/video/video_
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
@@ -1810,7 +1810,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/video/video_
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
@@ -1818,7 +1818,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/video/video_
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
@@ -1826,7 +1826,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.o
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
@@ -1834,7 +1834,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
@@ -1842,7 +1842,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/device/usbd.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
@@ -1850,7 +1850,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/device/usbd.obj: h
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/device/usbd.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
@@ -1858,7 +1858,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/device/usbd.i: hom
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/device/usbd.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
@@ -1866,7 +1866,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/device/usbd.s: hom
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
@@ -1874,7 +1874,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/device/usbd_contro
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
@@ -1882,7 +1882,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/device/usbd_contro
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
@@ -1890,7 +1890,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/device/usbd_contro
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
@@ -1898,7 +1898,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/portable/raspberry
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
@@ -1906,7 +1906,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/portable/raspberry
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
@@ -1914,7 +1914,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/portable/raspberry
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
@@ -1922,7 +1922,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/portable/raspberry
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
@@ -1930,7 +1930,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/portable/raspberry
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
@@ -1938,7 +1938,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/portable/raspberry
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/tusb.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
@@ -1946,7 +1946,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/tusb.obj: home/int
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/tusb.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/tusb.c.i
@@ -1954,7 +1954,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/tusb.i: home/intel
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/tusb.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/tusb.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/tusb.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/tusb.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/tusb.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/tusb.c.s
@@ -1962,7 +1962,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/tusb.s: home/intel
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/tusb.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/tusb.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/tusb.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/tusb.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/critical_section.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
@@ -1970,7 +1970,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/critical_sect
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/critical_section.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
@@ -1978,7 +1978,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/critical_sect
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/critical_section.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/critical_section.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
@@ -1986,7 +1986,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/critical_sect
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/critical_section.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/lock_core.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
@@ -1994,7 +1994,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/lock_core.obj
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/lock_core.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
@@ -2002,7 +2002,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/lock_core.i: 
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/lock_core.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/lock_core.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
@@ -2010,7 +2010,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/lock_core.s: 
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/lock_core.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/mutex.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
@@ -2018,7 +2018,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/mutex.obj: ho
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/mutex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/mutex.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/mutex.c.i
@@ -2026,7 +2026,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/mutex.i: home
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/mutex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/mutex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/mutex.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/mutex.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/mutex.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/mutex.c.s
@@ -2034,7 +2034,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/mutex.s: home
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/mutex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/mutex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/mutex.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/mutex.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/sem.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/sem.c.obj
@@ -2042,7 +2042,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/sem.obj: home
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/sem.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/sem.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/sem.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/sem.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/sem.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/sem.c.i
@@ -2050,7 +2050,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/sem.i: home/i
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/sem.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/sem.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/sem.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/sem.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/sem.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/sem.c.s
@@ -2058,7 +2058,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/sem.s: home/i
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/sem.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/sem.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/sem.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/sem.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_time/time.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_time/time.c.obj
@@ -2066,7 +2066,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_time/time.obj: hom
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_time/time.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_time/time.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_time/time.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_time/time.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_time/time.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_time/time.c.i
@@ -2074,7 +2074,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_time/time.i: home/
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_time/time.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_time/time.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_time/time.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_time/time.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_time/time.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_time/time.c.s
@@ -2082,7 +2082,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_time/time.s: home/
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_time/time.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_time/time.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_time/time.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_time/time.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_time/timeout_helper.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
@@ -2090,7 +2090,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_time/timeout_helpe
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_time/timeout_helper.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
@@ -2098,7 +2098,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_time/timeout_helpe
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_time/timeout_helper.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
@@ -2106,7 +2106,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_time/timeout_helpe
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/datetime.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/datetime.c.obj
@@ -2114,7 +2114,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/datetime.obj:
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/datetime.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/datetime.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/datetime.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/datetime.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/datetime.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/datetime.c.i
@@ -2122,7 +2122,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/datetime.i: h
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/datetime.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/datetime.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/datetime.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/datetime.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/datetime.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/datetime.c.s
@@ -2130,7 +2130,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/datetime.s: h
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/datetime.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/datetime.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/datetime.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/datetime.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/pheap.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/pheap.c.obj
@@ -2138,7 +2138,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/pheap.obj: ho
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/pheap.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/pheap.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/pheap.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/pheap.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/pheap.c.i
@@ -2146,7 +2146,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/pheap.i: home
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/pheap.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/pheap.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/pheap.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/pheap.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/pheap.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/pheap.c.s
@@ -2154,7 +2154,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/pheap.s: home
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/pheap.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/pheap.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/pheap.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/pheap.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/queue.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/queue.c.obj
@@ -2162,7 +2162,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/queue.obj: ho
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/queue.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/queue.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/queue.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/queue.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/queue.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/queue.c.i
@@ -2170,7 +2170,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/queue.i: home
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/queue.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/queue.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/queue.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/queue.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/queue.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/queue.c.s
@@ -2178,7 +2178,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/queue.s: home
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/queue.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/queue.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/queue.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/queue.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_claim/claim.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
@@ -2186,7 +2186,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_claim/clai
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_claim/claim.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
@@ -2194,7 +2194,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_claim/clai
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_claim/claim.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
@@ -2202,7 +2202,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_claim/clai
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
@@ -2210,7 +2210,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_clocks/clo
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
@@ -2218,7 +2218,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_clocks/clo
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
@@ -2226,7 +2226,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_clocks/clo
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_divider/divider.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
@@ -2234,7 +2234,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_divider/di
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_dma/dma.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
@@ -2242,7 +2242,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_dma/dma.ob
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_dma/dma.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
@@ -2250,7 +2250,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_dma/dma.i:
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_dma/dma.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
@@ -2258,7 +2258,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_dma/dma.s:
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_flash/flash.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
@@ -2266,7 +2266,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_flash/flas
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_flash/flash.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
@@ -2274,7 +2274,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_flash/flas
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_flash/flash.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
@@ -2282,7 +2282,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_flash/flas
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
@@ -2290,7 +2290,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
@@ -2298,7 +2298,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
@@ -2306,7 +2306,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
@@ -2314,7 +2314,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.ob
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
@@ -2322,7 +2322,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.i:
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
@@ -2330,7 +2330,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.s:
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
@@ -2338,7 +2338,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq.ob
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
@@ -2346,7 +2346,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq.i:
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
@@ -2354,7 +2354,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq.s:
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
@@ -2362,7 +2362,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq_ha
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_pio/pio.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
@@ -2370,7 +2370,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_pio/pio.ob
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_pio/pio.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
@@ -2378,7 +2378,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_pio/pio.i:
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_pio/pio.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
@@ -2386,7 +2386,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_pio/pio.s:
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_pll/pll.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
@@ -2394,7 +2394,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_pll/pll.ob
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_pll/pll.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
@@ -2402,7 +2402,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_pll/pll.i:
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_pll/pll.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
@@ -2410,7 +2410,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_pll/pll.s:
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_sync/sync.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
@@ -2418,7 +2418,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_sync/sync.
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_sync/sync.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
@@ -2426,7 +2426,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_sync/sync.
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_sync/sync.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
@@ -2434,7 +2434,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_sync/sync.
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_timer/timer.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
@@ -2442,7 +2442,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_timer/time
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_timer/timer.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
@@ -2450,7 +2450,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_timer/time
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_timer/timer.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
@@ -2458,7 +2458,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_timer/time
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_uart/uart.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
@@ -2466,7 +2466,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_uart/uart.
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_uart/uart.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
@@ -2474,7 +2474,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_uart/uart.
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_uart/uart.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
@@ -2482,7 +2482,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_uart/uart.
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
@@ -2490,7 +2490,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
@@ -2498,7 +2498,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
@@ -2506,7 +2506,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
@@ -2514,7 +2514,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_watchdog/w
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
@@ -2522,7 +2522,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_watchdog/w
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
@@ -2530,7 +2530,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_watchdog/w
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
@@ -2538,7 +2538,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
@@ -2546,7 +2546,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
@@ -2554,7 +2554,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
@@ -2562,7 +2562,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_op
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
@@ -2570,7 +2570,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_bootrom/bootro
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
@@ -2578,7 +2578,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_bootrom/bootro
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
@@ -2586,7 +2586,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_bootrom/bootro
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_divider/divider.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
@@ -2594,7 +2594,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_divider/divide
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
@@ -2602,7 +2602,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
@@ -2610,7 +2610,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
@@ -2618,7 +2618,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
@@ -2626,7 +2626,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_math.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
@@ -2634,7 +2634,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_math.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
@@ -2642,7 +2642,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_math.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
@@ -2650,7 +2650,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
@@ -2658,7 +2658,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
@@ -2666,7 +2666,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
@@ -2674,7 +2674,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
@@ -2682,7 +2682,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
@@ -2690,7 +2690,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_ae
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
@@ -2698,7 +2698,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_in
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
@@ -2706,7 +2706,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_in
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
@@ -2714,7 +2714,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_in
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_math.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
@@ -2722,7 +2722,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_ma
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_math.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
@@ -2730,7 +2730,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_ma
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_math.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
@@ -2738,7 +2738,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_ma
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
@@ -2746,7 +2746,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_v1
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
@@ -2754,7 +2754,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
@@ -2762,7 +2762,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_malloc/pico_ma
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
@@ -2770,7 +2770,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_malloc/pico_ma
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
@@ -2778,7 +2778,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_malloc/pico_ma
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
@@ -2786,7 +2786,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_op
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_platform/platform.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
@@ -2794,7 +2794,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_platform/platf
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_platform/platform.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
@@ -2802,7 +2802,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_platform/platf
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_platform/platform.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
@@ -2810,7 +2810,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_platform/platf
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_printf/printf.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
@@ -2818,7 +2818,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_printf/printf.
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_printf/printf.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
@@ -2826,7 +2826,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_printf/printf.
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_printf/printf.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
@@ -2834,7 +2834,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_printf/printf.
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
@@ -2842,7 +2842,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_runtime/runtim
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
@@ -2850,7 +2850,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_runtime/runtim
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
@@ -2858,7 +2858,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_runtime/runtim
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
@@ -2866,7 +2866,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
@@ -2874,7 +2874,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
@@ -2882,7 +2882,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
@@ -2890,7 +2890,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
@@ -2898,7 +2898,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
@@ -2906,7 +2906,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
@@ -2914,7 +2914,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
@@ -2922,7 +2922,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.ob
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
@@ -2930,7 +2930,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.i:
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
@@ -2938,7 +2938,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.s:
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
@@ -2946,7 +2946,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/rese
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
@@ -2954,7 +2954,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/rese
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
@@ -2962,7 +2962,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/rese
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
@@ -2970,7 +2970,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdi
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
@@ -2978,7 +2978,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdi
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
@@ -2986,7 +2986,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdi
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
@@ -2994,7 +2994,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdi
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
@@ -3002,7 +3002,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdi
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
@@ -3010,7 +3010,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdi
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
@@ -3018,7 +3018,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
@@ -3026,7 +3026,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
@@ -3034,7 +3034,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
@@ -3042,7 +3042,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_unique_id/uniq
 
 # target to build an object file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
@@ -3050,7 +3050,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_unique_id/uniq
 
 # target to preprocess a source file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
 
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
@@ -3058,7 +3058,7 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_unique_id/uniq
 
 # target to generate assembly for a file
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 
 lib/microphone-library-for-pico/src/OpenPDM2PCM/OpenPDMFilter.obj: lib/microphone-library-for-pico/src/OpenPDM2PCM/OpenPDMFilter.c.obj
@@ -3066,7 +3066,7 @@ lib/microphone-library-for-pico/src/OpenPDM2PCM/OpenPDMFilter.obj: lib/microphon
 
 # target to build an object file
 lib/microphone-library-for-pico/src/OpenPDM2PCM/OpenPDMFilter.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/microphone-library-for-pico/src/OpenPDM2PCM/OpenPDMFilter.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/microphone-library-for-pico/src/OpenPDM2PCM/OpenPDMFilter.c.obj
 .PHONY : lib/microphone-library-for-pico/src/OpenPDM2PCM/OpenPDMFilter.c.obj
 
 lib/microphone-library-for-pico/src/OpenPDM2PCM/OpenPDMFilter.i: lib/microphone-library-for-pico/src/OpenPDM2PCM/OpenPDMFilter.c.i
@@ -3074,7 +3074,7 @@ lib/microphone-library-for-pico/src/OpenPDM2PCM/OpenPDMFilter.i: lib/microphone-
 
 # target to preprocess a source file
 lib/microphone-library-for-pico/src/OpenPDM2PCM/OpenPDMFilter.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/microphone-library-for-pico/src/OpenPDM2PCM/OpenPDMFilter.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/microphone-library-for-pico/src/OpenPDM2PCM/OpenPDMFilter.c.i
 .PHONY : lib/microphone-library-for-pico/src/OpenPDM2PCM/OpenPDMFilter.c.i
 
 lib/microphone-library-for-pico/src/OpenPDM2PCM/OpenPDMFilter.s: lib/microphone-library-for-pico/src/OpenPDM2PCM/OpenPDMFilter.c.s
@@ -3082,7 +3082,7 @@ lib/microphone-library-for-pico/src/OpenPDM2PCM/OpenPDMFilter.s: lib/microphone-
 
 # target to generate assembly for a file
 lib/microphone-library-for-pico/src/OpenPDM2PCM/OpenPDMFilter.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/microphone-library-for-pico/src/OpenPDM2PCM/OpenPDMFilter.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/microphone-library-for-pico/src/OpenPDM2PCM/OpenPDMFilter.c.s
 .PHONY : lib/microphone-library-for-pico/src/OpenPDM2PCM/OpenPDMFilter.c.s
 
 lib/microphone-library-for-pico/src/pdm_microphone.obj: lib/microphone-library-for-pico/src/pdm_microphone.c.obj
@@ -3090,7 +3090,7 @@ lib/microphone-library-for-pico/src/pdm_microphone.obj: lib/microphone-library-f
 
 # target to build an object file
 lib/microphone-library-for-pico/src/pdm_microphone.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/microphone-library-for-pico/src/pdm_microphone.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/microphone-library-for-pico/src/pdm_microphone.c.obj
 .PHONY : lib/microphone-library-for-pico/src/pdm_microphone.c.obj
 
 lib/microphone-library-for-pico/src/pdm_microphone.i: lib/microphone-library-for-pico/src/pdm_microphone.c.i
@@ -3098,7 +3098,7 @@ lib/microphone-library-for-pico/src/pdm_microphone.i: lib/microphone-library-for
 
 # target to preprocess a source file
 lib/microphone-library-for-pico/src/pdm_microphone.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/microphone-library-for-pico/src/pdm_microphone.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/microphone-library-for-pico/src/pdm_microphone.c.i
 .PHONY : lib/microphone-library-for-pico/src/pdm_microphone.c.i
 
 lib/microphone-library-for-pico/src/pdm_microphone.s: lib/microphone-library-for-pico/src/pdm_microphone.c.s
@@ -3106,7 +3106,7 @@ lib/microphone-library-for-pico/src/pdm_microphone.s: lib/microphone-library-for
 
 # target to generate assembly for a file
 lib/microphone-library-for-pico/src/pdm_microphone.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/microphone-library-for-pico/src/pdm_microphone.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/microphone-library-for-pico/src/pdm_microphone.c.s
 .PHONY : lib/microphone-library-for-pico/src/pdm_microphone.c.s
 
 lib/pico-tflmicro/src/tensorflow/lite/c/common.obj: lib/pico-tflmicro/src/tensorflow/lite/c/common.c.obj
@@ -3114,7 +3114,7 @@ lib/pico-tflmicro/src/tensorflow/lite/c/common.obj: lib/pico-tflmicro/src/tensor
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/c/common.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/c/common.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/c/common.c.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/c/common.c.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/c/common.i: lib/pico-tflmicro/src/tensorflow/lite/c/common.c.i
@@ -3122,7 +3122,7 @@ lib/pico-tflmicro/src/tensorflow/lite/c/common.i: lib/pico-tflmicro/src/tensorfl
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/c/common.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/c/common.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/c/common.c.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/c/common.c.i
 
 lib/pico-tflmicro/src/tensorflow/lite/c/common.s: lib/pico-tflmicro/src/tensorflow/lite/c/common.c.s
@@ -3130,7 +3130,7 @@ lib/pico-tflmicro/src/tensorflow/lite/c/common.s: lib/pico-tflmicro/src/tensorfl
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/c/common.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/c/common.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/c/common.c.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/c/common.c.s
 
 lib/pico-tflmicro/src/tensorflow/lite/core/api/error_reporter.obj: lib/pico-tflmicro/src/tensorflow/lite/core/api/error_reporter.cpp.obj
@@ -3138,7 +3138,7 @@ lib/pico-tflmicro/src/tensorflow/lite/core/api/error_reporter.obj: lib/pico-tflm
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/core/api/error_reporter.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/core/api/error_reporter.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/core/api/error_reporter.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/core/api/error_reporter.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/core/api/error_reporter.i: lib/pico-tflmicro/src/tensorflow/lite/core/api/error_reporter.cpp.i
@@ -3146,7 +3146,7 @@ lib/pico-tflmicro/src/tensorflow/lite/core/api/error_reporter.i: lib/pico-tflmic
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/core/api/error_reporter.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/core/api/error_reporter.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/core/api/error_reporter.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/core/api/error_reporter.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/core/api/error_reporter.s: lib/pico-tflmicro/src/tensorflow/lite/core/api/error_reporter.cpp.s
@@ -3154,7 +3154,7 @@ lib/pico-tflmicro/src/tensorflow/lite/core/api/error_reporter.s: lib/pico-tflmic
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/core/api/error_reporter.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/core/api/error_reporter.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/core/api/error_reporter.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/core/api/error_reporter.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/core/api/flatbuffer_conversions.obj: lib/pico-tflmicro/src/tensorflow/lite/core/api/flatbuffer_conversions.cpp.obj
@@ -3162,7 +3162,7 @@ lib/pico-tflmicro/src/tensorflow/lite/core/api/flatbuffer_conversions.obj: lib/p
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/core/api/flatbuffer_conversions.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/core/api/flatbuffer_conversions.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/core/api/flatbuffer_conversions.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/core/api/flatbuffer_conversions.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/core/api/flatbuffer_conversions.i: lib/pico-tflmicro/src/tensorflow/lite/core/api/flatbuffer_conversions.cpp.i
@@ -3170,7 +3170,7 @@ lib/pico-tflmicro/src/tensorflow/lite/core/api/flatbuffer_conversions.i: lib/pic
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/core/api/flatbuffer_conversions.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/core/api/flatbuffer_conversions.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/core/api/flatbuffer_conversions.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/core/api/flatbuffer_conversions.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/core/api/flatbuffer_conversions.s: lib/pico-tflmicro/src/tensorflow/lite/core/api/flatbuffer_conversions.cpp.s
@@ -3178,7 +3178,7 @@ lib/pico-tflmicro/src/tensorflow/lite/core/api/flatbuffer_conversions.s: lib/pic
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/core/api/flatbuffer_conversions.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/core/api/flatbuffer_conversions.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/core/api/flatbuffer_conversions.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/core/api/flatbuffer_conversions.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/core/api/op_resolver.obj: lib/pico-tflmicro/src/tensorflow/lite/core/api/op_resolver.cpp.obj
@@ -3186,7 +3186,7 @@ lib/pico-tflmicro/src/tensorflow/lite/core/api/op_resolver.obj: lib/pico-tflmicr
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/core/api/op_resolver.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/core/api/op_resolver.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/core/api/op_resolver.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/core/api/op_resolver.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/core/api/op_resolver.i: lib/pico-tflmicro/src/tensorflow/lite/core/api/op_resolver.cpp.i
@@ -3194,7 +3194,7 @@ lib/pico-tflmicro/src/tensorflow/lite/core/api/op_resolver.i: lib/pico-tflmicro/
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/core/api/op_resolver.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/core/api/op_resolver.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/core/api/op_resolver.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/core/api/op_resolver.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/core/api/op_resolver.s: lib/pico-tflmicro/src/tensorflow/lite/core/api/op_resolver.cpp.s
@@ -3202,7 +3202,7 @@ lib/pico-tflmicro/src/tensorflow/lite/core/api/op_resolver.s: lib/pico-tflmicro/
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/core/api/op_resolver.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/core/api/op_resolver.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/core/api/op_resolver.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/core/api/op_resolver.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/core/api/tensor_utils.obj: lib/pico-tflmicro/src/tensorflow/lite/core/api/tensor_utils.cpp.obj
@@ -3210,7 +3210,7 @@ lib/pico-tflmicro/src/tensorflow/lite/core/api/tensor_utils.obj: lib/pico-tflmic
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/core/api/tensor_utils.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/core/api/tensor_utils.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/core/api/tensor_utils.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/core/api/tensor_utils.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/core/api/tensor_utils.i: lib/pico-tflmicro/src/tensorflow/lite/core/api/tensor_utils.cpp.i
@@ -3218,7 +3218,7 @@ lib/pico-tflmicro/src/tensorflow/lite/core/api/tensor_utils.i: lib/pico-tflmicro
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/core/api/tensor_utils.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/core/api/tensor_utils.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/core/api/tensor_utils.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/core/api/tensor_utils.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/core/api/tensor_utils.s: lib/pico-tflmicro/src/tensorflow/lite/core/api/tensor_utils.cpp.s
@@ -3226,7 +3226,7 @@ lib/pico-tflmicro/src/tensorflow/lite/core/api/tensor_utils.s: lib/pico-tflmicro
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/core/api/tensor_utils.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/core/api/tensor_utils.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/core/api/tensor_utils.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/core/api/tensor_utils.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/kernels/internal/quantization_util.obj: lib/pico-tflmicro/src/tensorflow/lite/kernels/internal/quantization_util.cpp.obj
@@ -3234,7 +3234,7 @@ lib/pico-tflmicro/src/tensorflow/lite/kernels/internal/quantization_util.obj: li
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/kernels/internal/quantization_util.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/kernels/internal/quantization_util.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/kernels/internal/quantization_util.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/kernels/internal/quantization_util.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/kernels/internal/quantization_util.i: lib/pico-tflmicro/src/tensorflow/lite/kernels/internal/quantization_util.cpp.i
@@ -3242,7 +3242,7 @@ lib/pico-tflmicro/src/tensorflow/lite/kernels/internal/quantization_util.i: lib/
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/kernels/internal/quantization_util.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/kernels/internal/quantization_util.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/kernels/internal/quantization_util.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/kernels/internal/quantization_util.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/kernels/internal/quantization_util.s: lib/pico-tflmicro/src/tensorflow/lite/kernels/internal/quantization_util.cpp.s
@@ -3250,7 +3250,7 @@ lib/pico-tflmicro/src/tensorflow/lite/kernels/internal/quantization_util.s: lib/
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/kernels/internal/quantization_util.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/kernels/internal/quantization_util.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/kernels/internal/quantization_util.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/kernels/internal/quantization_util.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/kernels/kernel_util.obj: lib/pico-tflmicro/src/tensorflow/lite/kernels/kernel_util.cpp.obj
@@ -3258,7 +3258,7 @@ lib/pico-tflmicro/src/tensorflow/lite/kernels/kernel_util.obj: lib/pico-tflmicro
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/kernels/kernel_util.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/kernels/kernel_util.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/kernels/kernel_util.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/kernels/kernel_util.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/kernels/kernel_util.i: lib/pico-tflmicro/src/tensorflow/lite/kernels/kernel_util.cpp.i
@@ -3266,7 +3266,7 @@ lib/pico-tflmicro/src/tensorflow/lite/kernels/kernel_util.i: lib/pico-tflmicro/s
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/kernels/kernel_util.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/kernels/kernel_util.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/kernels/kernel_util.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/kernels/kernel_util.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/kernels/kernel_util.s: lib/pico-tflmicro/src/tensorflow/lite/kernels/kernel_util.cpp.s
@@ -3274,7 +3274,7 @@ lib/pico-tflmicro/src/tensorflow/lite/kernels/kernel_util.s: lib/pico-tflmicro/s
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/kernels/kernel_util.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/kernels/kernel_util.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/kernels/kernel_util.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/kernels/kernel_util.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/all_ops_resolver.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/all_ops_resolver.cpp.obj
@@ -3282,7 +3282,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/all_ops_resolver.obj: lib/pico-tflmi
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/all_ops_resolver.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/all_ops_resolver.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/all_ops_resolver.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/all_ops_resolver.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/all_ops_resolver.i: lib/pico-tflmicro/src/tensorflow/lite/micro/all_ops_resolver.cpp.i
@@ -3290,7 +3290,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/all_ops_resolver.i: lib/pico-tflmicr
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/all_ops_resolver.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/all_ops_resolver.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/all_ops_resolver.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/all_ops_resolver.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/all_ops_resolver.s: lib/pico-tflmicro/src/tensorflow/lite/micro/all_ops_resolver.cpp.s
@@ -3298,7 +3298,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/all_ops_resolver.s: lib/pico-tflmicr
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/all_ops_resolver.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/all_ops_resolver.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/all_ops_resolver.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/all_ops_resolver.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/activations.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/activations.cpp.obj
@@ -3306,7 +3306,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/activations.obj: lib/pico-tf
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/activations.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/activations.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/activations.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/activations.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/activations.i: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/activations.cpp.i
@@ -3314,7 +3314,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/activations.i: lib/pico-tflm
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/activations.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/activations.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/activations.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/activations.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/activations.s: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/activations.cpp.s
@@ -3322,7 +3322,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/activations.s: lib/pico-tflm
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/activations.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/activations.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/activations.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/activations.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/arg_min_max.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/arg_min_max.cpp.obj
@@ -3330,7 +3330,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/arg_min_max.obj: lib/pico-tf
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/arg_min_max.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/arg_min_max.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/arg_min_max.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/arg_min_max.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/arg_min_max.i: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/arg_min_max.cpp.i
@@ -3338,7 +3338,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/arg_min_max.i: lib/pico-tflm
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/arg_min_max.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/arg_min_max.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/arg_min_max.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/arg_min_max.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/arg_min_max.s: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/arg_min_max.cpp.s
@@ -3346,7 +3346,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/arg_min_max.s: lib/pico-tflm
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/arg_min_max.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/arg_min_max.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/arg_min_max.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/arg_min_max.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/ceil.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/ceil.cpp.obj
@@ -3354,7 +3354,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/ceil.obj: lib/pico-tflmicro/
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/ceil.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/ceil.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/ceil.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/ceil.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/ceil.i: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/ceil.cpp.i
@@ -3362,7 +3362,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/ceil.i: lib/pico-tflmicro/sr
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/ceil.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/ceil.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/ceil.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/ceil.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/ceil.s: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/ceil.cpp.s
@@ -3370,7 +3370,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/ceil.s: lib/pico-tflmicro/sr
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/ceil.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/ceil.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/ceil.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/ceil.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/circular_buffer.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/circular_buffer.cpp.obj
@@ -3378,7 +3378,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/circular_buffer.obj: lib/pic
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/circular_buffer.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/circular_buffer.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/circular_buffer.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/circular_buffer.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/circular_buffer.i: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/circular_buffer.cpp.i
@@ -3386,7 +3386,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/circular_buffer.i: lib/pico-
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/circular_buffer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/circular_buffer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/circular_buffer.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/circular_buffer.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/circular_buffer.s: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/circular_buffer.cpp.s
@@ -3394,7 +3394,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/circular_buffer.s: lib/pico-
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/circular_buffer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/circular_buffer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/circular_buffer.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/circular_buffer.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/add.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/add.cpp.obj
@@ -3402,7 +3402,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/add.obj: lib/pico-t
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/add.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/add.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/add.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/add.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/add.i: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/add.cpp.i
@@ -3410,7 +3410,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/add.i: lib/pico-tfl
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/add.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/add.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/add.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/add.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/add.s: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/add.cpp.s
@@ -3418,7 +3418,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/add.s: lib/pico-tfl
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/add.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/add.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/add.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/add.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/conv.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/conv.cpp.obj
@@ -3426,7 +3426,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/conv.obj: lib/pico-
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/conv.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/conv.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/conv.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/conv.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/conv.i: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/conv.cpp.i
@@ -3434,7 +3434,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/conv.i: lib/pico-tf
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/conv.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/conv.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/conv.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/conv.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/conv.s: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/conv.cpp.s
@@ -3442,7 +3442,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/conv.s: lib/pico-tf
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/conv.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/conv.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/conv.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/conv.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/depthwise_conv.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/depthwise_conv.cpp.obj
@@ -3450,7 +3450,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/depthwise_conv.obj:
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/depthwise_conv.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/depthwise_conv.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/depthwise_conv.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/depthwise_conv.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/depthwise_conv.i: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/depthwise_conv.cpp.i
@@ -3458,7 +3458,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/depthwise_conv.i: l
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/depthwise_conv.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/depthwise_conv.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/depthwise_conv.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/depthwise_conv.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/depthwise_conv.s: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/depthwise_conv.cpp.s
@@ -3466,7 +3466,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/depthwise_conv.s: l
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/depthwise_conv.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/depthwise_conv.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/depthwise_conv.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/depthwise_conv.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/fully_connected.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/fully_connected.cpp.obj
@@ -3474,7 +3474,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/fully_connected.obj
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/fully_connected.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/fully_connected.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/fully_connected.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/fully_connected.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/fully_connected.i: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/fully_connected.cpp.i
@@ -3482,7 +3482,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/fully_connected.i: 
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/fully_connected.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/fully_connected.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/fully_connected.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/fully_connected.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/fully_connected.s: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/fully_connected.cpp.s
@@ -3490,7 +3490,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/fully_connected.s: 
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/fully_connected.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/fully_connected.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/fully_connected.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/fully_connected.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/mul.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/mul.cpp.obj
@@ -3498,7 +3498,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/mul.obj: lib/pico-t
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/mul.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/mul.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/mul.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/mul.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/mul.i: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/mul.cpp.i
@@ -3506,7 +3506,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/mul.i: lib/pico-tfl
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/mul.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/mul.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/mul.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/mul.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/mul.s: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/mul.cpp.s
@@ -3514,7 +3514,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/mul.s: lib/pico-tfl
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/mul.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/mul.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/mul.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/mul.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/pooling.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/pooling.cpp.obj
@@ -3522,7 +3522,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/pooling.obj: lib/pi
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/pooling.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/pooling.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/pooling.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/pooling.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/pooling.i: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/pooling.cpp.i
@@ -3530,7 +3530,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/pooling.i: lib/pico
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/pooling.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/pooling.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/pooling.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/pooling.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/pooling.s: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/pooling.cpp.s
@@ -3538,7 +3538,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/pooling.s: lib/pico
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/pooling.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/pooling.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/pooling.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/pooling.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/softmax.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/softmax.cpp.obj
@@ -3546,7 +3546,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/softmax.obj: lib/pi
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/softmax.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/softmax.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/softmax.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/softmax.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/softmax.i: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/softmax.cpp.i
@@ -3554,7 +3554,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/softmax.i: lib/pico
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/softmax.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/softmax.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/softmax.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/softmax.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/softmax.s: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/softmax.cpp.s
@@ -3562,7 +3562,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/softmax.s: lib/pico
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/softmax.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/softmax.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/softmax.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/softmax.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/svdf.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/svdf.cpp.obj
@@ -3570,7 +3570,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/svdf.obj: lib/pico-
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/svdf.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/svdf.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/svdf.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/svdf.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/svdf.i: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/svdf.cpp.i
@@ -3578,7 +3578,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/svdf.i: lib/pico-tf
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/svdf.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/svdf.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/svdf.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/svdf.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/svdf.s: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/svdf.cpp.s
@@ -3586,7 +3586,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/svdf.s: lib/pico-tf
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/svdf.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/svdf.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/svdf.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/cmsis-nn/svdf.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/comparisons.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/comparisons.cpp.obj
@@ -3594,7 +3594,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/comparisons.obj: lib/pico-tf
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/comparisons.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/comparisons.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/comparisons.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/comparisons.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/comparisons.i: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/comparisons.cpp.i
@@ -3602,7 +3602,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/comparisons.i: lib/pico-tflm
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/comparisons.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/comparisons.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/comparisons.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/comparisons.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/comparisons.s: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/comparisons.cpp.s
@@ -3610,7 +3610,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/comparisons.s: lib/pico-tflm
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/comparisons.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/comparisons.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/comparisons.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/comparisons.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/concatenation.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/concatenation.cpp.obj
@@ -3618,7 +3618,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/concatenation.obj: lib/pico-
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/concatenation.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/concatenation.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/concatenation.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/concatenation.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/concatenation.i: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/concatenation.cpp.i
@@ -3626,7 +3626,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/concatenation.i: lib/pico-tf
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/concatenation.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/concatenation.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/concatenation.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/concatenation.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/concatenation.s: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/concatenation.cpp.s
@@ -3634,7 +3634,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/concatenation.s: lib/pico-tf
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/concatenation.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/concatenation.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/concatenation.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/concatenation.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/dequantize.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/dequantize.cpp.obj
@@ -3642,7 +3642,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/dequantize.obj: lib/pico-tfl
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/dequantize.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/dequantize.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/dequantize.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/dequantize.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/dequantize.i: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/dequantize.cpp.i
@@ -3650,7 +3650,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/dequantize.i: lib/pico-tflmi
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/dequantize.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/dequantize.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/dequantize.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/dequantize.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/dequantize.s: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/dequantize.cpp.s
@@ -3658,7 +3658,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/dequantize.s: lib/pico-tflmi
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/dequantize.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/dequantize.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/dequantize.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/dequantize.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/detection_postprocess.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/detection_postprocess.cpp.obj
@@ -3666,7 +3666,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/detection_postprocess.obj: l
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/detection_postprocess.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/detection_postprocess.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/detection_postprocess.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/detection_postprocess.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/detection_postprocess.i: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/detection_postprocess.cpp.i
@@ -3674,7 +3674,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/detection_postprocess.i: lib
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/detection_postprocess.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/detection_postprocess.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/detection_postprocess.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/detection_postprocess.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/detection_postprocess.s: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/detection_postprocess.cpp.s
@@ -3682,7 +3682,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/detection_postprocess.s: lib
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/detection_postprocess.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/detection_postprocess.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/detection_postprocess.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/detection_postprocess.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/elementwise.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/elementwise.cpp.obj
@@ -3690,7 +3690,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/elementwise.obj: lib/pico-tf
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/elementwise.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/elementwise.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/elementwise.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/elementwise.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/elementwise.i: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/elementwise.cpp.i
@@ -3698,7 +3698,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/elementwise.i: lib/pico-tflm
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/elementwise.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/elementwise.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/elementwise.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/elementwise.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/elementwise.s: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/elementwise.cpp.s
@@ -3706,7 +3706,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/elementwise.s: lib/pico-tflm
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/elementwise.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/elementwise.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/elementwise.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/elementwise.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/ethosu.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/ethosu.cpp.obj
@@ -3714,7 +3714,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/ethosu.obj: lib/pico-tflmicr
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/ethosu.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/ethosu.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/ethosu.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/ethosu.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/ethosu.i: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/ethosu.cpp.i
@@ -3722,7 +3722,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/ethosu.i: lib/pico-tflmicro/
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/ethosu.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/ethosu.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/ethosu.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/ethosu.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/ethosu.s: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/ethosu.cpp.s
@@ -3730,7 +3730,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/ethosu.s: lib/pico-tflmicro/
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/ethosu.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/ethosu.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/ethosu.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/ethosu.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/flexbuffers_generated_data.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/flexbuffers_generated_data.cpp.obj
@@ -3738,7 +3738,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/flexbuffers_generated_data.o
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/flexbuffers_generated_data.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/flexbuffers_generated_data.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/flexbuffers_generated_data.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/flexbuffers_generated_data.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/flexbuffers_generated_data.i: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/flexbuffers_generated_data.cpp.i
@@ -3746,7 +3746,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/flexbuffers_generated_data.i
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/flexbuffers_generated_data.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/flexbuffers_generated_data.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/flexbuffers_generated_data.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/flexbuffers_generated_data.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/flexbuffers_generated_data.s: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/flexbuffers_generated_data.cpp.s
@@ -3754,7 +3754,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/flexbuffers_generated_data.s
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/flexbuffers_generated_data.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/flexbuffers_generated_data.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/flexbuffers_generated_data.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/flexbuffers_generated_data.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/floor.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/floor.cpp.obj
@@ -3762,7 +3762,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/floor.obj: lib/pico-tflmicro
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/floor.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/floor.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/floor.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/floor.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/floor.i: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/floor.cpp.i
@@ -3770,7 +3770,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/floor.i: lib/pico-tflmicro/s
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/floor.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/floor.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/floor.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/floor.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/floor.s: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/floor.cpp.s
@@ -3778,7 +3778,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/floor.s: lib/pico-tflmicro/s
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/floor.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/floor.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/floor.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/floor.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/hard_swish.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/hard_swish.cpp.obj
@@ -3786,7 +3786,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/hard_swish.obj: lib/pico-tfl
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/hard_swish.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/hard_swish.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/hard_swish.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/hard_swish.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/hard_swish.i: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/hard_swish.cpp.i
@@ -3794,7 +3794,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/hard_swish.i: lib/pico-tflmi
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/hard_swish.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/hard_swish.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/hard_swish.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/hard_swish.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/hard_swish.s: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/hard_swish.cpp.s
@@ -3802,7 +3802,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/hard_swish.s: lib/pico-tflmi
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/hard_swish.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/hard_swish.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/hard_swish.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/hard_swish.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/kernel_runner.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/kernel_runner.cpp.obj
@@ -3810,7 +3810,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/kernel_runner.obj: lib/pico-
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/kernel_runner.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/kernel_runner.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/kernel_runner.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/kernel_runner.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/kernel_runner.i: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/kernel_runner.cpp.i
@@ -3818,7 +3818,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/kernel_runner.i: lib/pico-tf
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/kernel_runner.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/kernel_runner.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/kernel_runner.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/kernel_runner.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/kernel_runner.s: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/kernel_runner.cpp.s
@@ -3826,7 +3826,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/kernel_runner.s: lib/pico-tf
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/kernel_runner.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/kernel_runner.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/kernel_runner.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/kernel_runner.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/kernel_util.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/kernel_util.cpp.obj
@@ -3834,7 +3834,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/kernel_util.obj: lib/pico-tf
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/kernel_util.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/kernel_util.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/kernel_util.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/kernel_util.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/kernel_util.i: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/kernel_util.cpp.i
@@ -3842,7 +3842,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/kernel_util.i: lib/pico-tflm
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/kernel_util.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/kernel_util.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/kernel_util.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/kernel_util.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/kernel_util.s: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/kernel_util.cpp.s
@@ -3850,7 +3850,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/kernel_util.s: lib/pico-tflm
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/kernel_util.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/kernel_util.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/kernel_util.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/kernel_util.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/l2norm.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/l2norm.cpp.obj
@@ -3858,7 +3858,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/l2norm.obj: lib/pico-tflmicr
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/l2norm.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/l2norm.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/l2norm.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/l2norm.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/l2norm.i: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/l2norm.cpp.i
@@ -3866,7 +3866,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/l2norm.i: lib/pico-tflmicro/
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/l2norm.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/l2norm.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/l2norm.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/l2norm.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/l2norm.s: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/l2norm.cpp.s
@@ -3874,7 +3874,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/l2norm.s: lib/pico-tflmicro/
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/l2norm.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/l2norm.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/l2norm.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/l2norm.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/logical.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/logical.cpp.obj
@@ -3882,7 +3882,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/logical.obj: lib/pico-tflmic
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/logical.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/logical.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/logical.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/logical.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/logical.i: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/logical.cpp.i
@@ -3890,7 +3890,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/logical.i: lib/pico-tflmicro
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/logical.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/logical.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/logical.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/logical.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/logical.s: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/logical.cpp.s
@@ -3898,7 +3898,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/logical.s: lib/pico-tflmicro
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/logical.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/logical.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/logical.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/logical.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/logistic.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/logistic.cpp.obj
@@ -3906,7 +3906,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/logistic.obj: lib/pico-tflmi
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/logistic.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/logistic.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/logistic.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/logistic.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/logistic.i: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/logistic.cpp.i
@@ -3914,7 +3914,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/logistic.i: lib/pico-tflmicr
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/logistic.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/logistic.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/logistic.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/logistic.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/logistic.s: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/logistic.cpp.s
@@ -3922,7 +3922,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/logistic.s: lib/pico-tflmicr
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/logistic.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/logistic.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/logistic.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/logistic.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/maximum_minimum.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/maximum_minimum.cpp.obj
@@ -3930,7 +3930,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/maximum_minimum.obj: lib/pic
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/maximum_minimum.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/maximum_minimum.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/maximum_minimum.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/maximum_minimum.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/maximum_minimum.i: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/maximum_minimum.cpp.i
@@ -3938,7 +3938,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/maximum_minimum.i: lib/pico-
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/maximum_minimum.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/maximum_minimum.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/maximum_minimum.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/maximum_minimum.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/maximum_minimum.s: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/maximum_minimum.cpp.s
@@ -3946,7 +3946,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/maximum_minimum.s: lib/pico-
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/maximum_minimum.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/maximum_minimum.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/maximum_minimum.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/maximum_minimum.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/neg.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/neg.cpp.obj
@@ -3954,7 +3954,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/neg.obj: lib/pico-tflmicro/s
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/neg.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/neg.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/neg.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/neg.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/neg.i: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/neg.cpp.i
@@ -3962,7 +3962,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/neg.i: lib/pico-tflmicro/src
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/neg.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/neg.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/neg.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/neg.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/neg.s: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/neg.cpp.s
@@ -3970,7 +3970,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/neg.s: lib/pico-tflmicro/src
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/neg.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/neg.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/neg.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/neg.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/pack.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/pack.cpp.obj
@@ -3978,7 +3978,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/pack.obj: lib/pico-tflmicro/
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/pack.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/pack.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/pack.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/pack.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/pack.i: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/pack.cpp.i
@@ -3986,7 +3986,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/pack.i: lib/pico-tflmicro/sr
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/pack.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/pack.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/pack.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/pack.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/pack.s: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/pack.cpp.s
@@ -3994,7 +3994,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/pack.s: lib/pico-tflmicro/sr
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/pack.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/pack.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/pack.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/pack.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/pad.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/pad.cpp.obj
@@ -4002,7 +4002,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/pad.obj: lib/pico-tflmicro/s
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/pad.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/pad.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/pad.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/pad.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/pad.i: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/pad.cpp.i
@@ -4010,7 +4010,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/pad.i: lib/pico-tflmicro/src
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/pad.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/pad.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/pad.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/pad.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/pad.s: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/pad.cpp.s
@@ -4018,7 +4018,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/pad.s: lib/pico-tflmicro/src
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/pad.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/pad.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/pad.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/pad.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/prelu.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/prelu.cpp.obj
@@ -4026,7 +4026,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/prelu.obj: lib/pico-tflmicro
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/prelu.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/prelu.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/prelu.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/prelu.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/prelu.i: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/prelu.cpp.i
@@ -4034,7 +4034,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/prelu.i: lib/pico-tflmicro/s
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/prelu.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/prelu.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/prelu.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/prelu.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/prelu.s: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/prelu.cpp.s
@@ -4042,7 +4042,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/prelu.s: lib/pico-tflmicro/s
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/prelu.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/prelu.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/prelu.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/prelu.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/quantize.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/quantize.cpp.obj
@@ -4050,7 +4050,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/quantize.obj: lib/pico-tflmi
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/quantize.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/quantize.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/quantize.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/quantize.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/quantize.i: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/quantize.cpp.i
@@ -4058,7 +4058,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/quantize.i: lib/pico-tflmicr
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/quantize.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/quantize.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/quantize.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/quantize.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/quantize.s: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/quantize.cpp.s
@@ -4066,7 +4066,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/quantize.s: lib/pico-tflmicr
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/quantize.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/quantize.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/quantize.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/quantize.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/reduce.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/reduce.cpp.obj
@@ -4074,7 +4074,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/reduce.obj: lib/pico-tflmicr
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/reduce.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/reduce.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/reduce.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/reduce.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/reduce.i: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/reduce.cpp.i
@@ -4082,7 +4082,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/reduce.i: lib/pico-tflmicro/
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/reduce.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/reduce.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/reduce.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/reduce.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/reduce.s: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/reduce.cpp.s
@@ -4090,7 +4090,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/reduce.s: lib/pico-tflmicro/
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/reduce.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/reduce.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/reduce.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/reduce.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/reshape.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/reshape.cpp.obj
@@ -4098,7 +4098,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/reshape.obj: lib/pico-tflmic
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/reshape.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/reshape.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/reshape.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/reshape.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/reshape.i: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/reshape.cpp.i
@@ -4106,7 +4106,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/reshape.i: lib/pico-tflmicro
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/reshape.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/reshape.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/reshape.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/reshape.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/reshape.s: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/reshape.cpp.s
@@ -4114,7 +4114,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/reshape.s: lib/pico-tflmicro
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/reshape.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/reshape.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/reshape.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/reshape.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/resize_nearest_neighbor.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/resize_nearest_neighbor.cpp.obj
@@ -4122,7 +4122,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/resize_nearest_neighbor.obj:
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/resize_nearest_neighbor.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/resize_nearest_neighbor.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/resize_nearest_neighbor.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/resize_nearest_neighbor.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/resize_nearest_neighbor.i: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/resize_nearest_neighbor.cpp.i
@@ -4130,7 +4130,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/resize_nearest_neighbor.i: l
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/resize_nearest_neighbor.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/resize_nearest_neighbor.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/resize_nearest_neighbor.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/resize_nearest_neighbor.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/resize_nearest_neighbor.s: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/resize_nearest_neighbor.cpp.s
@@ -4138,7 +4138,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/resize_nearest_neighbor.s: l
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/resize_nearest_neighbor.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/resize_nearest_neighbor.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/resize_nearest_neighbor.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/resize_nearest_neighbor.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/round.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/round.cpp.obj
@@ -4146,7 +4146,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/round.obj: lib/pico-tflmicro
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/round.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/round.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/round.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/round.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/round.i: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/round.cpp.i
@@ -4154,7 +4154,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/round.i: lib/pico-tflmicro/s
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/round.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/round.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/round.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/round.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/round.s: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/round.cpp.s
@@ -4162,7 +4162,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/round.s: lib/pico-tflmicro/s
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/round.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/round.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/round.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/round.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/shape.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/shape.cpp.obj
@@ -4170,7 +4170,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/shape.obj: lib/pico-tflmicro
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/shape.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/shape.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/shape.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/shape.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/shape.i: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/shape.cpp.i
@@ -4178,7 +4178,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/shape.i: lib/pico-tflmicro/s
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/shape.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/shape.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/shape.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/shape.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/shape.s: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/shape.cpp.s
@@ -4186,7 +4186,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/shape.s: lib/pico-tflmicro/s
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/shape.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/shape.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/shape.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/shape.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/split.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/split.cpp.obj
@@ -4194,7 +4194,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/split.obj: lib/pico-tflmicro
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/split.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/split.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/split.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/split.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/split.i: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/split.cpp.i
@@ -4202,7 +4202,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/split.i: lib/pico-tflmicro/s
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/split.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/split.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/split.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/split.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/split.s: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/split.cpp.s
@@ -4210,7 +4210,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/split.s: lib/pico-tflmicro/s
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/split.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/split.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/split.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/split.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/split_v.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/split_v.cpp.obj
@@ -4218,7 +4218,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/split_v.obj: lib/pico-tflmic
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/split_v.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/split_v.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/split_v.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/split_v.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/split_v.i: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/split_v.cpp.i
@@ -4226,7 +4226,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/split_v.i: lib/pico-tflmicro
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/split_v.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/split_v.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/split_v.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/split_v.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/split_v.s: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/split_v.cpp.s
@@ -4234,7 +4234,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/split_v.s: lib/pico-tflmicro
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/split_v.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/split_v.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/split_v.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/split_v.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/strided_slice.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/strided_slice.cpp.obj
@@ -4242,7 +4242,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/strided_slice.obj: lib/pico-
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/strided_slice.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/strided_slice.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/strided_slice.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/strided_slice.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/strided_slice.i: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/strided_slice.cpp.i
@@ -4250,7 +4250,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/strided_slice.i: lib/pico-tf
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/strided_slice.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/strided_slice.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/strided_slice.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/strided_slice.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/strided_slice.s: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/strided_slice.cpp.s
@@ -4258,7 +4258,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/strided_slice.s: lib/pico-tf
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/strided_slice.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/strided_slice.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/strided_slice.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/strided_slice.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/sub.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/sub.cpp.obj
@@ -4266,7 +4266,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/sub.obj: lib/pico-tflmicro/s
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/sub.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/sub.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/sub.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/sub.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/sub.i: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/sub.cpp.i
@@ -4274,7 +4274,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/sub.i: lib/pico-tflmicro/src
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/sub.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/sub.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/sub.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/sub.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/sub.s: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/sub.cpp.s
@@ -4282,7 +4282,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/sub.s: lib/pico-tflmicro/src
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/sub.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/sub.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/sub.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/sub.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/tanh.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/tanh.cpp.obj
@@ -4290,7 +4290,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/tanh.obj: lib/pico-tflmicro/
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/tanh.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/tanh.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/tanh.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/tanh.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/tanh.i: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/tanh.cpp.i
@@ -4298,7 +4298,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/tanh.i: lib/pico-tflmicro/sr
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/tanh.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/tanh.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/tanh.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/tanh.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/tanh.s: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/tanh.cpp.s
@@ -4306,7 +4306,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/tanh.s: lib/pico-tflmicro/sr
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/tanh.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/tanh.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/tanh.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/tanh.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/unpack.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/unpack.cpp.obj
@@ -4314,7 +4314,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/unpack.obj: lib/pico-tflmicr
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/unpack.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/unpack.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/unpack.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/unpack.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/unpack.i: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/unpack.cpp.i
@@ -4322,7 +4322,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/unpack.i: lib/pico-tflmicro/
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/unpack.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/unpack.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/unpack.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/unpack.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/unpack.s: lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/unpack.cpp.s
@@ -4330,7 +4330,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/unpack.s: lib/pico-tflmicro/
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/unpack.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/unpack.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/unpack.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/unpack.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/memory_helpers.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/memory_helpers.cpp.obj
@@ -4338,7 +4338,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/memory_helpers.obj: lib/pico-tflmicr
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/memory_helpers.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/memory_helpers.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/memory_helpers.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/memory_helpers.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/memory_helpers.i: lib/pico-tflmicro/src/tensorflow/lite/micro/memory_helpers.cpp.i
@@ -4346,7 +4346,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/memory_helpers.i: lib/pico-tflmicro/
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/memory_helpers.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/memory_helpers.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/memory_helpers.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/memory_helpers.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/memory_helpers.s: lib/pico-tflmicro/src/tensorflow/lite/micro/memory_helpers.cpp.s
@@ -4354,7 +4354,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/memory_helpers.s: lib/pico-tflmicro/
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/memory_helpers.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/memory_helpers.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/memory_helpers.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/memory_helpers.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/memory_planner/greedy_memory_planner.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/memory_planner/greedy_memory_planner.cpp.obj
@@ -4362,7 +4362,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/memory_planner/greedy_memory_planner
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/memory_planner/greedy_memory_planner.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/memory_planner/greedy_memory_planner.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/memory_planner/greedy_memory_planner.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/memory_planner/greedy_memory_planner.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/memory_planner/greedy_memory_planner.i: lib/pico-tflmicro/src/tensorflow/lite/micro/memory_planner/greedy_memory_planner.cpp.i
@@ -4370,7 +4370,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/memory_planner/greedy_memory_planner
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/memory_planner/greedy_memory_planner.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/memory_planner/greedy_memory_planner.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/memory_planner/greedy_memory_planner.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/memory_planner/greedy_memory_planner.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/memory_planner/greedy_memory_planner.s: lib/pico-tflmicro/src/tensorflow/lite/micro/memory_planner/greedy_memory_planner.cpp.s
@@ -4378,7 +4378,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/memory_planner/greedy_memory_planner
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/memory_planner/greedy_memory_planner.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/memory_planner/greedy_memory_planner.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/memory_planner/greedy_memory_planner.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/memory_planner/greedy_memory_planner.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/memory_planner/linear_memory_planner.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/memory_planner/linear_memory_planner.cpp.obj
@@ -4386,7 +4386,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/memory_planner/linear_memory_planner
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/memory_planner/linear_memory_planner.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/memory_planner/linear_memory_planner.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/memory_planner/linear_memory_planner.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/memory_planner/linear_memory_planner.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/memory_planner/linear_memory_planner.i: lib/pico-tflmicro/src/tensorflow/lite/micro/memory_planner/linear_memory_planner.cpp.i
@@ -4394,7 +4394,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/memory_planner/linear_memory_planner
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/memory_planner/linear_memory_planner.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/memory_planner/linear_memory_planner.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/memory_planner/linear_memory_planner.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/memory_planner/linear_memory_planner.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/memory_planner/linear_memory_planner.s: lib/pico-tflmicro/src/tensorflow/lite/micro/memory_planner/linear_memory_planner.cpp.s
@@ -4402,7 +4402,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/memory_planner/linear_memory_planner
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/memory_planner/linear_memory_planner.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/memory_planner/linear_memory_planner.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/memory_planner/linear_memory_planner.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/memory_planner/linear_memory_planner.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/micro_allocator.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/micro_allocator.cpp.obj
@@ -4410,7 +4410,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/micro_allocator.obj: lib/pico-tflmic
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/micro_allocator.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/micro_allocator.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/micro_allocator.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/micro_allocator.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/micro_allocator.i: lib/pico-tflmicro/src/tensorflow/lite/micro/micro_allocator.cpp.i
@@ -4418,7 +4418,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/micro_allocator.i: lib/pico-tflmicro
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/micro_allocator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/micro_allocator.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/micro_allocator.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/micro_allocator.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/micro_allocator.s: lib/pico-tflmicro/src/tensorflow/lite/micro/micro_allocator.cpp.s
@@ -4426,7 +4426,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/micro_allocator.s: lib/pico-tflmicro
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/micro_allocator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/micro_allocator.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/micro_allocator.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/micro_allocator.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/micro_error_reporter.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/micro_error_reporter.cpp.obj
@@ -4434,7 +4434,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/micro_error_reporter.obj: lib/pico-t
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/micro_error_reporter.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/micro_error_reporter.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/micro_error_reporter.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/micro_error_reporter.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/micro_error_reporter.i: lib/pico-tflmicro/src/tensorflow/lite/micro/micro_error_reporter.cpp.i
@@ -4442,7 +4442,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/micro_error_reporter.i: lib/pico-tfl
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/micro_error_reporter.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/micro_error_reporter.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/micro_error_reporter.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/micro_error_reporter.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/micro_error_reporter.s: lib/pico-tflmicro/src/tensorflow/lite/micro/micro_error_reporter.cpp.s
@@ -4450,7 +4450,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/micro_error_reporter.s: lib/pico-tfl
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/micro_error_reporter.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/micro_error_reporter.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/micro_error_reporter.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/micro_error_reporter.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/micro_interpreter.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/micro_interpreter.cpp.obj
@@ -4458,7 +4458,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/micro_interpreter.obj: lib/pico-tflm
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/micro_interpreter.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/micro_interpreter.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/micro_interpreter.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/micro_interpreter.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/micro_interpreter.i: lib/pico-tflmicro/src/tensorflow/lite/micro/micro_interpreter.cpp.i
@@ -4466,7 +4466,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/micro_interpreter.i: lib/pico-tflmic
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/micro_interpreter.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/micro_interpreter.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/micro_interpreter.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/micro_interpreter.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/micro_interpreter.s: lib/pico-tflmicro/src/tensorflow/lite/micro/micro_interpreter.cpp.s
@@ -4474,7 +4474,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/micro_interpreter.s: lib/pico-tflmic
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/micro_interpreter.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/micro_interpreter.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/micro_interpreter.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/micro_interpreter.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/micro_profiler.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/micro_profiler.cpp.obj
@@ -4482,7 +4482,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/micro_profiler.obj: lib/pico-tflmicr
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/micro_profiler.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/micro_profiler.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/micro_profiler.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/micro_profiler.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/micro_profiler.i: lib/pico-tflmicro/src/tensorflow/lite/micro/micro_profiler.cpp.i
@@ -4490,7 +4490,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/micro_profiler.i: lib/pico-tflmicro/
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/micro_profiler.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/micro_profiler.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/micro_profiler.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/micro_profiler.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/micro_profiler.s: lib/pico-tflmicro/src/tensorflow/lite/micro/micro_profiler.cpp.s
@@ -4498,7 +4498,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/micro_profiler.s: lib/pico-tflmicro/
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/micro_profiler.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/micro_profiler.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/micro_profiler.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/micro_profiler.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/micro_string.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/micro_string.cpp.obj
@@ -4506,7 +4506,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/micro_string.obj: lib/pico-tflmicro/
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/micro_string.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/micro_string.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/micro_string.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/micro_string.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/micro_string.i: lib/pico-tflmicro/src/tensorflow/lite/micro/micro_string.cpp.i
@@ -4514,7 +4514,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/micro_string.i: lib/pico-tflmicro/sr
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/micro_string.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/micro_string.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/micro_string.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/micro_string.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/micro_string.s: lib/pico-tflmicro/src/tensorflow/lite/micro/micro_string.cpp.s
@@ -4522,7 +4522,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/micro_string.s: lib/pico-tflmicro/sr
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/micro_string.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/micro_string.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/micro_string.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/micro_string.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/micro_utils.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/micro_utils.cpp.obj
@@ -4530,7 +4530,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/micro_utils.obj: lib/pico-tflmicro/s
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/micro_utils.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/micro_utils.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/micro_utils.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/micro_utils.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/micro_utils.i: lib/pico-tflmicro/src/tensorflow/lite/micro/micro_utils.cpp.i
@@ -4538,7 +4538,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/micro_utils.i: lib/pico-tflmicro/src
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/micro_utils.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/micro_utils.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/micro_utils.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/micro_utils.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/micro_utils.s: lib/pico-tflmicro/src/tensorflow/lite/micro/micro_utils.cpp.s
@@ -4546,7 +4546,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/micro_utils.s: lib/pico-tflmicro/src
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/micro_utils.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/micro_utils.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/micro_utils.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/micro_utils.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/recording_micro_allocator.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/recording_micro_allocator.cpp.obj
@@ -4554,7 +4554,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/recording_micro_allocator.obj: lib/p
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/recording_micro_allocator.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/recording_micro_allocator.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/recording_micro_allocator.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/recording_micro_allocator.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/recording_micro_allocator.i: lib/pico-tflmicro/src/tensorflow/lite/micro/recording_micro_allocator.cpp.i
@@ -4562,7 +4562,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/recording_micro_allocator.i: lib/pic
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/recording_micro_allocator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/recording_micro_allocator.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/recording_micro_allocator.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/recording_micro_allocator.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/recording_micro_allocator.s: lib/pico-tflmicro/src/tensorflow/lite/micro/recording_micro_allocator.cpp.s
@@ -4570,7 +4570,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/recording_micro_allocator.s: lib/pic
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/recording_micro_allocator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/recording_micro_allocator.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/recording_micro_allocator.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/recording_micro_allocator.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/recording_simple_memory_allocator.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/recording_simple_memory_allocator.cpp.obj
@@ -4578,7 +4578,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/recording_simple_memory_allocator.ob
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/recording_simple_memory_allocator.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/recording_simple_memory_allocator.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/recording_simple_memory_allocator.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/recording_simple_memory_allocator.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/recording_simple_memory_allocator.i: lib/pico-tflmicro/src/tensorflow/lite/micro/recording_simple_memory_allocator.cpp.i
@@ -4586,7 +4586,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/recording_simple_memory_allocator.i:
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/recording_simple_memory_allocator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/recording_simple_memory_allocator.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/recording_simple_memory_allocator.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/recording_simple_memory_allocator.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/recording_simple_memory_allocator.s: lib/pico-tflmicro/src/tensorflow/lite/micro/recording_simple_memory_allocator.cpp.s
@@ -4594,7 +4594,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/recording_simple_memory_allocator.s:
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/recording_simple_memory_allocator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/recording_simple_memory_allocator.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/recording_simple_memory_allocator.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/recording_simple_memory_allocator.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/rp2/debug_log.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/rp2/debug_log.cpp.obj
@@ -4602,7 +4602,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/rp2/debug_log.obj: lib/pico-tflmicro
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/rp2/debug_log.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/rp2/debug_log.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/rp2/debug_log.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/rp2/debug_log.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/rp2/debug_log.i: lib/pico-tflmicro/src/tensorflow/lite/micro/rp2/debug_log.cpp.i
@@ -4610,7 +4610,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/rp2/debug_log.i: lib/pico-tflmicro/s
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/rp2/debug_log.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/rp2/debug_log.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/rp2/debug_log.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/rp2/debug_log.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/rp2/debug_log.s: lib/pico-tflmicro/src/tensorflow/lite/micro/rp2/debug_log.cpp.s
@@ -4618,7 +4618,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/rp2/debug_log.s: lib/pico-tflmicro/s
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/rp2/debug_log.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/rp2/debug_log.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/rp2/debug_log.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/rp2/debug_log.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/rp2/micro_time.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/rp2/micro_time.cpp.obj
@@ -4626,7 +4626,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/rp2/micro_time.obj: lib/pico-tflmicr
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/rp2/micro_time.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/rp2/micro_time.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/rp2/micro_time.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/rp2/micro_time.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/rp2/micro_time.i: lib/pico-tflmicro/src/tensorflow/lite/micro/rp2/micro_time.cpp.i
@@ -4634,7 +4634,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/rp2/micro_time.i: lib/pico-tflmicro/
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/rp2/micro_time.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/rp2/micro_time.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/rp2/micro_time.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/rp2/micro_time.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/rp2/micro_time.s: lib/pico-tflmicro/src/tensorflow/lite/micro/rp2/micro_time.cpp.s
@@ -4642,7 +4642,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/rp2/micro_time.s: lib/pico-tflmicro/
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/rp2/micro_time.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/rp2/micro_time.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/rp2/micro_time.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/rp2/micro_time.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/simple_memory_allocator.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/simple_memory_allocator.cpp.obj
@@ -4650,7 +4650,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/simple_memory_allocator.obj: lib/pic
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/simple_memory_allocator.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/simple_memory_allocator.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/simple_memory_allocator.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/simple_memory_allocator.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/simple_memory_allocator.i: lib/pico-tflmicro/src/tensorflow/lite/micro/simple_memory_allocator.cpp.i
@@ -4658,7 +4658,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/simple_memory_allocator.i: lib/pico-
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/simple_memory_allocator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/simple_memory_allocator.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/simple_memory_allocator.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/simple_memory_allocator.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/simple_memory_allocator.s: lib/pico-tflmicro/src/tensorflow/lite/micro/simple_memory_allocator.cpp.s
@@ -4666,7 +4666,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/simple_memory_allocator.s: lib/pico-
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/simple_memory_allocator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/simple_memory_allocator.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/simple_memory_allocator.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/simple_memory_allocator.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/test_helpers.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/test_helpers.cpp.obj
@@ -4674,7 +4674,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/test_helpers.obj: lib/pico-tflmicro/
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/test_helpers.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/test_helpers.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/test_helpers.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/test_helpers.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/test_helpers.i: lib/pico-tflmicro/src/tensorflow/lite/micro/test_helpers.cpp.i
@@ -4682,7 +4682,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/test_helpers.i: lib/pico-tflmicro/sr
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/test_helpers.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/test_helpers.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/test_helpers.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/test_helpers.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/test_helpers.s: lib/pico-tflmicro/src/tensorflow/lite/micro/test_helpers.cpp.s
@@ -4690,7 +4690,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/test_helpers.s: lib/pico-tflmicro/sr
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/test_helpers.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/test_helpers.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/test_helpers.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/test_helpers.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/testing/test_conv_model.obj: lib/pico-tflmicro/src/tensorflow/lite/micro/testing/test_conv_model.cpp.obj
@@ -4698,7 +4698,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/testing/test_conv_model.obj: lib/pic
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/micro/testing/test_conv_model.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/testing/test_conv_model.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/testing/test_conv_model.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/testing/test_conv_model.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/testing/test_conv_model.i: lib/pico-tflmicro/src/tensorflow/lite/micro/testing/test_conv_model.cpp.i
@@ -4706,7 +4706,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/testing/test_conv_model.i: lib/pico-
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/micro/testing/test_conv_model.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/testing/test_conv_model.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/testing/test_conv_model.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/testing/test_conv_model.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/micro/testing/test_conv_model.s: lib/pico-tflmicro/src/tensorflow/lite/micro/testing/test_conv_model.cpp.s
@@ -4714,7 +4714,7 @@ lib/pico-tflmicro/src/tensorflow/lite/micro/testing/test_conv_model.s: lib/pico-
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/micro/testing/test_conv_model.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/testing/test_conv_model.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/micro/testing/test_conv_model.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/micro/testing/test_conv_model.cpp.s
 
 lib/pico-tflmicro/src/tensorflow/lite/schema/schema_utils.obj: lib/pico-tflmicro/src/tensorflow/lite/schema/schema_utils.cpp.obj
@@ -4722,7 +4722,7 @@ lib/pico-tflmicro/src/tensorflow/lite/schema/schema_utils.obj: lib/pico-tflmicro
 
 # target to build an object file
 lib/pico-tflmicro/src/tensorflow/lite/schema/schema_utils.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/schema/schema_utils.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/schema/schema_utils.cpp.obj
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/schema/schema_utils.cpp.obj
 
 lib/pico-tflmicro/src/tensorflow/lite/schema/schema_utils.i: lib/pico-tflmicro/src/tensorflow/lite/schema/schema_utils.cpp.i
@@ -4730,7 +4730,7 @@ lib/pico-tflmicro/src/tensorflow/lite/schema/schema_utils.i: lib/pico-tflmicro/s
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/tensorflow/lite/schema/schema_utils.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/schema/schema_utils.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/schema/schema_utils.cpp.i
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/schema/schema_utils.cpp.i
 
 lib/pico-tflmicro/src/tensorflow/lite/schema/schema_utils.s: lib/pico-tflmicro/src/tensorflow/lite/schema/schema_utils.cpp.s
@@ -4738,7 +4738,7 @@ lib/pico-tflmicro/src/tensorflow/lite/schema/schema_utils.s: lib/pico-tflmicro/s
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/tensorflow/lite/schema/schema_utils.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/tensorflow/lite/schema/schema_utils.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/tensorflow/lite/schema/schema_utils.cpp.s
 .PHONY : lib/pico-tflmicro/src/tensorflow/lite/schema/schema_utils.cpp.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_nn_activations_q15.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_nn_activations_q15.c.obj
@@ -4746,7 +4746,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_nn_activations_q15.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_nn_activations_q15.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_nn_activations_q15.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_nn_activations_q15.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_nn_activations_q15.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_nn_activations_q15.c.i
@@ -4754,7 +4754,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_nn_activations_q15.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_nn_activations_q15.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_nn_activations_q15.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_nn_activations_q15.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_nn_activations_q15.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_nn_activations_q15.c.s
@@ -4762,7 +4762,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_nn_activations_q15.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_nn_activations_q15.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_nn_activations_q15.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_nn_activations_q15.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_nn_activations_q7.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_nn_activations_q7.c.obj
@@ -4770,7 +4770,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_nn_activations_q7.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_nn_activations_q7.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_nn_activations_q7.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_nn_activations_q7.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_nn_activations_q7.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_nn_activations_q7.c.i
@@ -4778,7 +4778,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_nn_activations_q7.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_nn_activations_q7.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_nn_activations_q7.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_nn_activations_q7.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_nn_activations_q7.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_nn_activations_q7.c.s
@@ -4786,7 +4786,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_nn_activations_q7.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_nn_activations_q7.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_nn_activations_q7.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_nn_activations_q7.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_relu6_s8.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_relu6_s8.c.obj
@@ -4794,7 +4794,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_relu6_s8.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_relu6_s8.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_relu6_s8.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_relu6_s8.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_relu6_s8.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_relu6_s8.c.i
@@ -4802,7 +4802,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_relu6_s8.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_relu6_s8.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_relu6_s8.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_relu6_s8.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_relu6_s8.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_relu6_s8.c.s
@@ -4810,7 +4810,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_relu6_s8.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_relu6_s8.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_relu6_s8.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_relu6_s8.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_relu_q15.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_relu_q15.c.obj
@@ -4818,7 +4818,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_relu_q15.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_relu_q15.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_relu_q15.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_relu_q15.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_relu_q15.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_relu_q15.c.i
@@ -4826,7 +4826,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_relu_q15.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_relu_q15.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_relu_q15.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_relu_q15.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_relu_q15.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_relu_q15.c.s
@@ -4834,7 +4834,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_relu_q15.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_relu_q15.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_relu_q15.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_relu_q15.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_relu_q7.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_relu_q7.c.obj
@@ -4842,7 +4842,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_relu_q7.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_relu_q7.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_relu_q7.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_relu_q7.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_relu_q7.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_relu_q7.c.i
@@ -4850,7 +4850,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_relu_q7.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_relu_q7.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_relu_q7.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_relu_q7.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_relu_q7.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_relu_q7.c.s
@@ -4858,7 +4858,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_relu_q7.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_relu_q7.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_relu_q7.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ActivationFunctions/arm_relu_q7.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/BasicMathFunctions/arm_elementwise_add_s8.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/BasicMathFunctions/arm_elementwise_add_s8.c.obj
@@ -4866,7 +4866,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/BasicMathFunctions/arm_e
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/BasicMathFunctions/arm_elementwise_add_s8.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/BasicMathFunctions/arm_elementwise_add_s8.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/BasicMathFunctions/arm_elementwise_add_s8.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/BasicMathFunctions/arm_elementwise_add_s8.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/BasicMathFunctions/arm_elementwise_add_s8.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/BasicMathFunctions/arm_elementwise_add_s8.c.i
@@ -4874,7 +4874,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/BasicMathFunctions/arm_e
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/BasicMathFunctions/arm_elementwise_add_s8.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/BasicMathFunctions/arm_elementwise_add_s8.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/BasicMathFunctions/arm_elementwise_add_s8.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/BasicMathFunctions/arm_elementwise_add_s8.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/BasicMathFunctions/arm_elementwise_add_s8.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/BasicMathFunctions/arm_elementwise_add_s8.c.s
@@ -4882,7 +4882,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/BasicMathFunctions/arm_e
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/BasicMathFunctions/arm_elementwise_add_s8.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/BasicMathFunctions/arm_elementwise_add_s8.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/BasicMathFunctions/arm_elementwise_add_s8.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/BasicMathFunctions/arm_elementwise_add_s8.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/BasicMathFunctions/arm_elementwise_mul_s8.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/BasicMathFunctions/arm_elementwise_mul_s8.c.obj
@@ -4890,7 +4890,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/BasicMathFunctions/arm_e
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/BasicMathFunctions/arm_elementwise_mul_s8.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/BasicMathFunctions/arm_elementwise_mul_s8.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/BasicMathFunctions/arm_elementwise_mul_s8.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/BasicMathFunctions/arm_elementwise_mul_s8.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/BasicMathFunctions/arm_elementwise_mul_s8.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/BasicMathFunctions/arm_elementwise_mul_s8.c.i
@@ -4898,7 +4898,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/BasicMathFunctions/arm_e
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/BasicMathFunctions/arm_elementwise_mul_s8.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/BasicMathFunctions/arm_elementwise_mul_s8.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/BasicMathFunctions/arm_elementwise_mul_s8.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/BasicMathFunctions/arm_elementwise_mul_s8.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/BasicMathFunctions/arm_elementwise_mul_s8.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/BasicMathFunctions/arm_elementwise_mul_s8.c.s
@@ -4906,7 +4906,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/BasicMathFunctions/arm_e
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/BasicMathFunctions/arm_elementwise_mul_s8.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/BasicMathFunctions/arm_elementwise_mul_s8.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/BasicMathFunctions/arm_elementwise_mul_s8.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/BasicMathFunctions/arm_elementwise_mul_s8.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_w.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_w.c.obj
@@ -4914,7 +4914,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/a
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_w.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_w.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_w.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_w.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_w.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_w.c.i
@@ -4922,7 +4922,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/a
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_w.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_w.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_w.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_w.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_w.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_w.c.s
@@ -4930,7 +4930,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/a
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_w.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_w.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_w.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_w.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_x.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_x.c.obj
@@ -4938,7 +4938,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/a
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_x.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_x.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_x.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_x.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_x.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_x.c.i
@@ -4946,7 +4946,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/a
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_x.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_x.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_x.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_x.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_x.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_x.c.s
@@ -4954,7 +4954,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/a
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_x.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_x.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_x.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_x.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_y.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_y.c.obj
@@ -4962,7 +4962,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/a
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_y.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_y.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_y.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_y.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_y.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_y.c.i
@@ -4970,7 +4970,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/a
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_y.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_y.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_y.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_y.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_y.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_y.c.s
@@ -4978,7 +4978,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/a
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_y.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_y.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_y.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_y.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_z.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_z.c.obj
@@ -4986,7 +4986,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/a
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_z.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_z.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_z.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_z.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_z.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_z.c.i
@@ -4994,7 +4994,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/a
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_z.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_z.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_z.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_z.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_z.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_z.c.s
@@ -5002,7 +5002,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/a
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_z.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_z.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_z.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_z.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1_x_n_s8.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1_x_n_s8.c.obj
@@ -5010,7 +5010,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1_x_n_s8.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1_x_n_s8.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1_x_n_s8.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1_x_n_s8.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1_x_n_s8.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1_x_n_s8.c.i
@@ -5018,7 +5018,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1_x_n_s8.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1_x_n_s8.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1_x_n_s8.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1_x_n_s8.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1_x_n_s8.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1_x_n_s8.c.s
@@ -5026,7 +5026,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1_x_n_s8.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1_x_n_s8.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1_x_n_s8.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1_x_n_s8.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1x1_HWC_q7_fast_nonsquare.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1x1_HWC_q7_fast_nonsquare.c.obj
@@ -5034,7 +5034,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1x1_HWC_q7_fast_nonsquare.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1x1_HWC_q7_fast_nonsquare.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1x1_HWC_q7_fast_nonsquare.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1x1_HWC_q7_fast_nonsquare.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1x1_HWC_q7_fast_nonsquare.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1x1_HWC_q7_fast_nonsquare.c.i
@@ -5042,7 +5042,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1x1_HWC_q7_fast_nonsquare.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1x1_HWC_q7_fast_nonsquare.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1x1_HWC_q7_fast_nonsquare.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1x1_HWC_q7_fast_nonsquare.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1x1_HWC_q7_fast_nonsquare.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1x1_HWC_q7_fast_nonsquare.c.s
@@ -5050,7 +5050,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1x1_HWC_q7_fast_nonsquare.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1x1_HWC_q7_fast_nonsquare.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1x1_HWC_q7_fast_nonsquare.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1x1_HWC_q7_fast_nonsquare.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1x1_s8_fast.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1x1_s8_fast.c.obj
@@ -5058,7 +5058,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1x1_s8_fast.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1x1_s8_fast.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1x1_s8_fast.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1x1_s8_fast.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1x1_s8_fast.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1x1_s8_fast.c.i
@@ -5066,7 +5066,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1x1_s8_fast.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1x1_s8_fast.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1x1_s8_fast.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1x1_s8_fast.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1x1_s8_fast.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1x1_s8_fast.c.s
@@ -5074,7 +5074,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1x1_s8_fast.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1x1_s8_fast.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1x1_s8_fast.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1x1_s8_fast.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_basic.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_basic.c.obj
@@ -5082,7 +5082,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_basic.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_basic.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_basic.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_basic.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_basic.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_basic.c.i
@@ -5090,7 +5090,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_basic.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_basic.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_basic.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_basic.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_basic.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_basic.c.s
@@ -5098,7 +5098,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_basic.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_basic.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_basic.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_basic.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_fast.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_fast.c.obj
@@ -5106,7 +5106,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_fast.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_fast.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_fast.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_fast.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_fast.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_fast.c.i
@@ -5114,7 +5114,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_fast.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_fast.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_fast.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_fast.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_fast.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_fast.c.s
@@ -5122,7 +5122,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_fast.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_fast.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_fast.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_fast.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_fast_nonsquare.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_fast_nonsquare.c.obj
@@ -5130,7 +5130,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_fast_nonsquare.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_fast_nonsquare.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_fast_nonsquare.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_fast_nonsquare.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_fast_nonsquare.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_fast_nonsquare.c.i
@@ -5138,7 +5138,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_fast_nonsquare.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_fast_nonsquare.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_fast_nonsquare.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_fast_nonsquare.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_fast_nonsquare.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_fast_nonsquare.c.s
@@ -5146,7 +5146,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_fast_nonsquare.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_fast_nonsquare.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_fast_nonsquare.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_fast_nonsquare.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_RGB.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_RGB.c.obj
@@ -5154,7 +5154,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_RGB.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_RGB.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_RGB.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_RGB.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_RGB.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_RGB.c.i
@@ -5162,7 +5162,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_RGB.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_RGB.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_RGB.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_RGB.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_RGB.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_RGB.c.s
@@ -5170,7 +5170,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_RGB.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_RGB.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_RGB.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_RGB.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_basic.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_basic.c.obj
@@ -5178,7 +5178,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_basic.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_basic.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_basic.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_basic.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_basic.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_basic.c.i
@@ -5186,7 +5186,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_basic.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_basic.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_basic.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_basic.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_basic.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_basic.c.s
@@ -5194,7 +5194,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_basic.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_basic.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_basic.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_basic.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_basic_nonsquare.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_basic_nonsquare.c.obj
@@ -5202,7 +5202,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_basic_nonsquare.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_basic_nonsquare.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_basic_nonsquare.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_basic_nonsquare.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_basic_nonsquare.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_basic_nonsquare.c.i
@@ -5210,7 +5210,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_basic_nonsquare.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_basic_nonsquare.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_basic_nonsquare.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_basic_nonsquare.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_basic_nonsquare.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_basic_nonsquare.c.s
@@ -5218,7 +5218,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_basic_nonsquare.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_basic_nonsquare.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_basic_nonsquare.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_basic_nonsquare.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_fast.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_fast.c.obj
@@ -5226,7 +5226,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_fast.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_fast.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_fast.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_fast.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_fast.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_fast.c.i
@@ -5234,7 +5234,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_fast.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_fast.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_fast.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_fast.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_fast.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_fast.c.s
@@ -5242,7 +5242,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_fast.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_fast.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_fast.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_fast.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_fast_nonsquare.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_fast_nonsquare.c.obj
@@ -5250,7 +5250,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_fast_nonsquare.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_fast_nonsquare.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_fast_nonsquare.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_fast_nonsquare.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_fast_nonsquare.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_fast_nonsquare.c.i
@@ -5258,7 +5258,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_fast_nonsquare.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_fast_nonsquare.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_fast_nonsquare.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_fast_nonsquare.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_fast_nonsquare.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_fast_nonsquare.c.s
@@ -5266,7 +5266,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_fast_nonsquare.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_fast_nonsquare.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_fast_nonsquare.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_fast_nonsquare.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_s8.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_s8.c.obj
@@ -5274,7 +5274,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_s8.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_s8.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_s8.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_s8.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_s8.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_s8.c.i
@@ -5282,7 +5282,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_s8.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_s8.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_s8.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_s8.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_s8.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_s8.c.s
@@ -5290,7 +5290,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_s8.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_s8.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_s8.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_s8.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_wrapper_s8.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_wrapper_s8.c.obj
@@ -5298,7 +5298,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_wrapper_s8.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_wrapper_s8.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_wrapper_s8.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_wrapper_s8.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_wrapper_s8.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_wrapper_s8.c.i
@@ -5306,7 +5306,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_wrapper_s8.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_wrapper_s8.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_wrapper_s8.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_wrapper_s8.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_wrapper_s8.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_wrapper_s8.c.s
@@ -5314,7 +5314,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_wrapper_s8.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_wrapper_s8.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_wrapper_s8.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_wrapper_s8.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_3x3_s8.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_3x3_s8.c.obj
@@ -5322,7 +5322,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_3x3_s8.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_3x3_s8.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_3x3_s8.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_3x3_s8.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_3x3_s8.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_3x3_s8.c.i
@@ -5330,7 +5330,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_3x3_s8.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_3x3_s8.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_3x3_s8.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_3x3_s8.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_3x3_s8.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_3x3_s8.c.s
@@ -5338,7 +5338,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_3x3_s8.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_3x3_s8.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_3x3_s8.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_3x3_s8.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c.obj
@@ -5346,7 +5346,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c.i
@@ -5354,7 +5354,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c.s
@@ -5362,7 +5362,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8_opt.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8_opt.c.obj
@@ -5370,7 +5370,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8_opt.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8_opt.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8_opt.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8_opt.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8_opt.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8_opt.c.i
@@ -5378,7 +5378,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8_opt.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8_opt.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8_opt.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8_opt.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8_opt.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8_opt.c.s
@@ -5386,7 +5386,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8_opt.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8_opt.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8_opt.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8_opt.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_u8_basic_ver1.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_u8_basic_ver1.c.obj
@@ -5394,7 +5394,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_u8_basic_ver1.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_u8_basic_ver1.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_u8_basic_ver1.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_u8_basic_ver1.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_u8_basic_ver1.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_u8_basic_ver1.c.i
@@ -5402,7 +5402,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_u8_basic_ver1.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_u8_basic_ver1.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_u8_basic_ver1.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_u8_basic_ver1.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_u8_basic_ver1.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_u8_basic_ver1.c.s
@@ -5410,7 +5410,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_u8_basic_ver1.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_u8_basic_ver1.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_u8_basic_ver1.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_u8_basic_ver1.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_wrapper_s8.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_wrapper_s8.c.obj
@@ -5418,7 +5418,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_wrapper_s8.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_wrapper_s8.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_wrapper_s8.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_wrapper_s8.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_wrapper_s8.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_wrapper_s8.c.i
@@ -5426,7 +5426,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_wrapper_s8.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_wrapper_s8.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_wrapper_s8.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_wrapper_s8.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_wrapper_s8.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_wrapper_s8.c.s
@@ -5434,7 +5434,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_wrapper_s8.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_wrapper_s8.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_wrapper_s8.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_wrapper_s8.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_separable_conv_HWC_q7.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_separable_conv_HWC_q7.c.obj
@@ -5442,7 +5442,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_separable_conv_HWC_q7.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_separable_conv_HWC_q7.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_separable_conv_HWC_q7.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_separable_conv_HWC_q7.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_separable_conv_HWC_q7.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_separable_conv_HWC_q7.c.i
@@ -5450,7 +5450,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_separable_conv_HWC_q7.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_separable_conv_HWC_q7.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_separable_conv_HWC_q7.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_separable_conv_HWC_q7.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_separable_conv_HWC_q7.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_separable_conv_HWC_q7.c.s
@@ -5458,7 +5458,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_separable_conv_HWC_q7.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_separable_conv_HWC_q7.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_separable_conv_HWC_q7.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_separable_conv_HWC_q7.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_separable_conv_HWC_q7_nonsquare.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_separable_conv_HWC_q7_nonsquare.c.obj
@@ -5466,7 +5466,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_separable_conv_HWC_q7_nonsquare.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_separable_conv_HWC_q7_nonsquare.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_separable_conv_HWC_q7_nonsquare.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_separable_conv_HWC_q7_nonsquare.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_separable_conv_HWC_q7_nonsquare.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_separable_conv_HWC_q7_nonsquare.c.i
@@ -5474,7 +5474,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_separable_conv_HWC_q7_nonsquare.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_separable_conv_HWC_q7_nonsquare.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_separable_conv_HWC_q7_nonsquare.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_separable_conv_HWC_q7_nonsquare.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_separable_conv_HWC_q7_nonsquare.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_separable_conv_HWC_q7_nonsquare.c.s
@@ -5482,7 +5482,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_separable_conv_HWC_q7_nonsquare.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_separable_conv_HWC_q7_nonsquare.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_separable_conv_HWC_q7_nonsquare.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_separable_conv_HWC_q7_nonsquare.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_depthwise_conv_s8_core.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_depthwise_conv_s8_core.c.obj
@@ -5490,7 +5490,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_depthwise_conv_s8_core.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_depthwise_conv_s8_core.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_depthwise_conv_s8_core.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_depthwise_conv_s8_core.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_depthwise_conv_s8_core.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_depthwise_conv_s8_core.c.i
@@ -5498,7 +5498,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_depthwise_conv_s8_core.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_depthwise_conv_s8_core.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_depthwise_conv_s8_core.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_depthwise_conv_s8_core.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_depthwise_conv_s8_core.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_depthwise_conv_s8_core.c.s
@@ -5506,7 +5506,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_depthwise_conv_s8_core.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_depthwise_conv_s8_core.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_depthwise_conv_s8_core.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_depthwise_conv_s8_core.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_q7_q15.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_q7_q15.c.obj
@@ -5514,7 +5514,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_q7_q15.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_q7_q15.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_q7_q15.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_q7_q15.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_q7_q15.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_q7_q15.c.i
@@ -5522,7 +5522,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_q7_q15.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_q7_q15.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_q7_q15.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_q7_q15.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_q7_q15.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_q7_q15.c.s
@@ -5530,7 +5530,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_q7_q15.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_q7_q15.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_q7_q15.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_q7_q15.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_q7_q15_reordered.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_q7_q15_reordered.c.obj
@@ -5538,7 +5538,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_q7_q15_reordered.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_q7_q15_reordered.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_q7_q15_reordered.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_q7_q15_reordered.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_q7_q15_reordered.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_q7_q15_reordered.c.i
@@ -5546,7 +5546,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_q7_q15_reordered.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_q7_q15_reordered.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_q7_q15_reordered.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_q7_q15_reordered.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_q7_q15_reordered.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_q7_q15_reordered.c.s
@@ -5554,7 +5554,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_q7_q15_reordered.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_q7_q15_reordered.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_q7_q15_reordered.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_q7_q15_reordered.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_s8_s16.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_s8_s16.c.obj
@@ -5562,7 +5562,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_s8_s16.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_s8_s16.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_s8_s16.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_s8_s16.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_s8_s16.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_s8_s16.c.i
@@ -5570,7 +5570,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_s8_s16.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_s8_s16.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_s8_s16.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_s8_s16.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_s8_s16.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_s8_s16.c.s
@@ -5578,7 +5578,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_s8_s16.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_s8_s16.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_s8_s16.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_s8_s16.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_s8_s16_reordered.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_s8_s16_reordered.c.obj
@@ -5586,7 +5586,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_s8_s16_reordered.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_s8_s16_reordered.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_s8_s16_reordered.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_s8_s16_reordered.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_s8_s16_reordered.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_s8_s16_reordered.c.i
@@ -5594,7 +5594,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_s8_s16_reordered.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_s8_s16_reordered.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_s8_s16_reordered.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_s8_s16_reordered.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_s8_s16_reordered.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_s8_s16_reordered.c.s
@@ -5602,7 +5602,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_s8_s16_reordered.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_s8_s16_reordered.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_s8_s16_reordered.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_s8_s16_reordered.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_s8.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_s8.c.obj
@@ -5610,7 +5610,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_s8.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_s8.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_s8.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_s8.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_s8.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_s8.c.i
@@ -5618,7 +5618,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_s8.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_s8.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_s8.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_s8.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_s8.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_s8.c.s
@@ -5626,7 +5626,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_s8.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_s8.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_s8.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_s8.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_mat_q7_vec_q15.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_mat_q7_vec_q15.c.obj
@@ -5634,7 +5634,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_mat_q7_vec_q15.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_mat_q7_vec_q15.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_mat_q7_vec_q15.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_mat_q7_vec_q15.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_mat_q7_vec_q15.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_mat_q7_vec_q15.c.i
@@ -5642,7 +5642,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_mat_q7_vec_q15.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_mat_q7_vec_q15.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_mat_q7_vec_q15.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_mat_q7_vec_q15.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_mat_q7_vec_q15.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_mat_q7_vec_q15.c.s
@@ -5650,7 +5650,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_mat_q7_vec_q15.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_mat_q7_vec_q15.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_mat_q7_vec_q15.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_mat_q7_vec_q15.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_mat_q7_vec_q15_opt.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_mat_q7_vec_q15_opt.c.obj
@@ -5658,7 +5658,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_mat_q7_vec_q15_opt.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_mat_q7_vec_q15_opt.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_mat_q7_vec_q15_opt.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_mat_q7_vec_q15_opt.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_mat_q7_vec_q15_opt.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_mat_q7_vec_q15_opt.c.i
@@ -5666,7 +5666,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_mat_q7_vec_q15_opt.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_mat_q7_vec_q15_opt.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_mat_q7_vec_q15_opt.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_mat_q7_vec_q15_opt.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_mat_q7_vec_q15_opt.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_mat_q7_vec_q15_opt.c.s
@@ -5674,7 +5674,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_mat_q7_vec_q15_opt.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_mat_q7_vec_q15_opt.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_mat_q7_vec_q15_opt.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_mat_q7_vec_q15_opt.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q15.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q15.c.obj
@@ -5682,7 +5682,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q15.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q15.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q15.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q15.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q15.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q15.c.i
@@ -5690,7 +5690,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q15.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q15.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q15.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q15.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q15.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q15.c.s
@@ -5698,7 +5698,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q15.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q15.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q15.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q15.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q15_opt.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q15_opt.c.obj
@@ -5706,7 +5706,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q15_opt.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q15_opt.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q15_opt.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q15_opt.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q15_opt.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q15_opt.c.i
@@ -5714,7 +5714,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q15_opt.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q15_opt.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q15_opt.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q15_opt.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q15_opt.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q15_opt.c.s
@@ -5722,7 +5722,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q15_opt.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q15_opt.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q15_opt.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q15_opt.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q7.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q7.c.obj
@@ -5730,7 +5730,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q7.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q7.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q7.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q7.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q7.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q7.c.i
@@ -5738,7 +5738,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q7.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q7.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q7.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q7.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q7.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q7.c.s
@@ -5746,7 +5746,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q7.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q7.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q7.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q7.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q7_opt.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q7_opt.c.obj
@@ -5754,7 +5754,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q7_opt.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q7_opt.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q7_opt.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q7_opt.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q7_opt.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q7_opt.c.i
@@ -5762,7 +5762,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q7_opt.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q7_opt.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q7_opt.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q7_opt.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q7_opt.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q7_opt.c.s
@@ -5770,7 +5770,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q7_opt.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q7_opt.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q7_opt.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q7_opt.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_s8.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_s8.c.obj
@@ -5778,7 +5778,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_s8.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_s8.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_s8.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_s8.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_s8.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_s8.c.i
@@ -5786,7 +5786,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_s8.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_s8.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_s8.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_s8.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_s8.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_s8.c.s
@@ -5794,7 +5794,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_s8.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_s8.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_s8.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_s8.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_accumulate_q7_to_q15.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_accumulate_q7_to_q15.c.obj
@@ -5802,7 +5802,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_n
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_accumulate_q7_to_q15.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_accumulate_q7_to_q15.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_accumulate_q7_to_q15.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_accumulate_q7_to_q15.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_accumulate_q7_to_q15.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_accumulate_q7_to_q15.c.i
@@ -5810,7 +5810,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_n
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_accumulate_q7_to_q15.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_accumulate_q7_to_q15.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_accumulate_q7_to_q15.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_accumulate_q7_to_q15.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_accumulate_q7_to_q15.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_accumulate_q7_to_q15.c.s
@@ -5818,7 +5818,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_n
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_accumulate_q7_to_q15.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_accumulate_q7_to_q15.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_accumulate_q7_to_q15.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_accumulate_q7_to_q15.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_add_q7.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_add_q7.c.obj
@@ -5826,7 +5826,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_n
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_add_q7.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_add_q7.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_add_q7.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_add_q7.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_add_q7.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_add_q7.c.i
@@ -5834,7 +5834,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_n
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_add_q7.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_add_q7.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_add_q7.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_add_q7.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_add_q7.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_add_q7.c.s
@@ -5842,7 +5842,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_n
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_add_q7.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_add_q7.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_add_q7.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_add_q7.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_padded_s8.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_padded_s8.c.obj
@@ -5850,7 +5850,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_n
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_padded_s8.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_padded_s8.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_padded_s8.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_padded_s8.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_padded_s8.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_padded_s8.c.i
@@ -5858,7 +5858,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_n
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_padded_s8.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_padded_s8.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_padded_s8.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_padded_s8.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_padded_s8.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_padded_s8.c.s
@@ -5866,7 +5866,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_n
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_padded_s8.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_padded_s8.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_padded_s8.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_padded_s8.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_s8.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_s8.c.obj
@@ -5874,7 +5874,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_n
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_s8.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_s8.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_s8.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_s8.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_s8.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_s8.c.i
@@ -5882,7 +5882,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_n
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_s8.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_s8.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_s8.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_s8.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_s8.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_s8.c.s
@@ -5890,7 +5890,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_n
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_s8.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_s8.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_s8.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_s8.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mul_core_1x_s8.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mul_core_1x_s8.c.obj
@@ -5898,7 +5898,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_n
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mul_core_1x_s8.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mul_core_1x_s8.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mul_core_1x_s8.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mul_core_1x_s8.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mul_core_1x_s8.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mul_core_1x_s8.c.i
@@ -5906,7 +5906,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_n
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mul_core_1x_s8.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mul_core_1x_s8.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mul_core_1x_s8.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mul_core_1x_s8.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mul_core_1x_s8.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mul_core_1x_s8.c.s
@@ -5914,7 +5914,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_n
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mul_core_1x_s8.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mul_core_1x_s8.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mul_core_1x_s8.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mul_core_1x_s8.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mul_core_4x_s8.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mul_core_4x_s8.c.obj
@@ -5922,7 +5922,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_n
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mul_core_4x_s8.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mul_core_4x_s8.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mul_core_4x_s8.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mul_core_4x_s8.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mul_core_4x_s8.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mul_core_4x_s8.c.i
@@ -5930,7 +5930,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_n
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mul_core_4x_s8.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mul_core_4x_s8.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mul_core_4x_s8.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mul_core_4x_s8.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mul_core_4x_s8.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mul_core_4x_s8.c.s
@@ -5938,7 +5938,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_n
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mul_core_4x_s8.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mul_core_4x_s8.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mul_core_4x_s8.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mul_core_4x_s8.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mult_nt_t_s8.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mult_nt_t_s8.c.obj
@@ -5946,7 +5946,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_n
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mult_nt_t_s8.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mult_nt_t_s8.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mult_nt_t_s8.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mult_nt_t_s8.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mult_nt_t_s8.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mult_nt_t_s8.c.i
@@ -5954,7 +5954,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_n
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mult_nt_t_s8.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mult_nt_t_s8.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mult_nt_t_s8.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mult_nt_t_s8.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mult_nt_t_s8.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mult_nt_t_s8.c.s
@@ -5962,7 +5962,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_n
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mult_nt_t_s8.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mult_nt_t_s8.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mult_nt_t_s8.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mult_nt_t_s8.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mult_q15.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mult_q15.c.obj
@@ -5970,7 +5970,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_n
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mult_q15.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mult_q15.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mult_q15.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mult_q15.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mult_q15.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mult_q15.c.i
@@ -5978,7 +5978,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_n
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mult_q15.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mult_q15.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mult_q15.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mult_q15.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mult_q15.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mult_q15.c.s
@@ -5986,7 +5986,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_n
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mult_q15.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mult_q15.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mult_q15.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mult_q15.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mult_q7.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mult_q7.c.obj
@@ -5994,7 +5994,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_n
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mult_q7.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mult_q7.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mult_q7.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mult_q7.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mult_q7.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mult_q7.c.i
@@ -6002,7 +6002,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_n
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mult_q7.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mult_q7.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mult_q7.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mult_q7.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mult_q7.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mult_q7.c.s
@@ -6010,7 +6010,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_n
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mult_q7.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mult_q7.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mult_q7.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mult_q7.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c.obj
@@ -6018,7 +6018,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_n
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c.i
@@ -6026,7 +6026,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_n
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c.s
@@ -6034,7 +6034,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_n
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nntables.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nntables.c.obj
@@ -6042,7 +6042,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_n
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nntables.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nntables.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nntables.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nntables.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nntables.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nntables.c.i
@@ -6050,7 +6050,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_n
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nntables.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nntables.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nntables.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nntables.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nntables.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nntables.c.s
@@ -6058,7 +6058,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_n
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nntables.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nntables.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nntables.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_nntables.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_no_shift.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_no_shift.c.obj
@@ -6066,7 +6066,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_no_shift.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_no_shift.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_no_shift.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_no_shift.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_no_shift.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_no_shift.c.i
@@ -6074,7 +6074,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_no_shift.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_no_shift.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_no_shift.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_no_shift.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_no_shift.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_no_shift.c.s
@@ -6082,7 +6082,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_no_shift.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_no_shift.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_no_shift.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_no_shift.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_reordered_no_shift.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_reordered_no_shift.c.obj
@@ -6090,7 +6090,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_reordered_no_shift.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_reordered_no_shift.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_reordered_no_shift.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_reordered_no_shift.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_reordered_no_shift.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_reordered_no_shift.c.i
@@ -6098,7 +6098,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_reordered_no_shift.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_reordered_no_shift.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_reordered_no_shift.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_reordered_no_shift.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_reordered_no_shift.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_reordered_no_shift.c.s
@@ -6106,7 +6106,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_reordered_no_shift.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_reordered_no_shift.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_reordered_no_shift.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_reordered_no_shift.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_reordered_with_offset.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_reordered_with_offset.c.obj
@@ -6114,7 +6114,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_reordered_with_offset.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_reordered_with_offset.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_reordered_with_offset.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_reordered_with_offset.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_reordered_with_offset.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_reordered_with_offset.c.i
@@ -6122,7 +6122,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_reordered_with_offset.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_reordered_with_offset.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_reordered_with_offset.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_reordered_with_offset.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_reordered_with_offset.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_reordered_with_offset.c.s
@@ -6130,7 +6130,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_reordered_with_offset.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_reordered_with_offset.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_reordered_with_offset.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_reordered_with_offset.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_with_offset.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_with_offset.c.obj
@@ -6138,7 +6138,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_with_offset.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_with_offset.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_with_offset.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_with_offset.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_with_offset.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_with_offset.c.i
@@ -6146,7 +6146,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_with_offset.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_with_offset.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_with_offset.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_with_offset.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_with_offset.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_with_offset.c.s
@@ -6154,7 +6154,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_with_offset.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_with_offset.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_with_offset.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_with_offset.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_avgpool_s8.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_avgpool_s8.c.obj
@@ -6162,7 +6162,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_avg
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_avgpool_s8.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_avgpool_s8.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_avgpool_s8.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_avgpool_s8.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_avgpool_s8.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_avgpool_s8.c.i
@@ -6170,7 +6170,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_avg
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_avgpool_s8.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_avgpool_s8.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_avgpool_s8.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_avgpool_s8.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_avgpool_s8.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_avgpool_s8.c.s
@@ -6178,7 +6178,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_avg
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_avgpool_s8.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_avgpool_s8.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_avgpool_s8.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_avgpool_s8.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_max_pool_s8.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_max_pool_s8.c.obj
@@ -6186,7 +6186,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_max
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_max_pool_s8.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_max_pool_s8.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_max_pool_s8.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_max_pool_s8.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_max_pool_s8.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_max_pool_s8.c.i
@@ -6194,7 +6194,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_max
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_max_pool_s8.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_max_pool_s8.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_max_pool_s8.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_max_pool_s8.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_max_pool_s8.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_max_pool_s8.c.s
@@ -6202,7 +6202,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_max
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_max_pool_s8.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_max_pool_s8.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_max_pool_s8.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_max_pool_s8.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_pool_q7_HWC.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_pool_q7_HWC.c.obj
@@ -6210,7 +6210,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_poo
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_pool_q7_HWC.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_pool_q7_HWC.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_pool_q7_HWC.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_pool_q7_HWC.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_pool_q7_HWC.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_pool_q7_HWC.c.i
@@ -6218,7 +6218,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_poo
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_pool_q7_HWC.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_pool_q7_HWC.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_pool_q7_HWC.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_pool_q7_HWC.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_pool_q7_HWC.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_pool_q7_HWC.c.s
@@ -6226,7 +6226,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_poo
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_pool_q7_HWC.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_pool_q7_HWC.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_pool_q7_HWC.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_pool_q7_HWC.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ReshapeFunctions/arm_reshape_s8.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ReshapeFunctions/arm_reshape_s8.c.obj
@@ -6234,7 +6234,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ReshapeFunctions/arm_res
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ReshapeFunctions/arm_reshape_s8.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ReshapeFunctions/arm_reshape_s8.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ReshapeFunctions/arm_reshape_s8.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ReshapeFunctions/arm_reshape_s8.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ReshapeFunctions/arm_reshape_s8.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ReshapeFunctions/arm_reshape_s8.c.i
@@ -6242,7 +6242,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ReshapeFunctions/arm_res
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ReshapeFunctions/arm_reshape_s8.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ReshapeFunctions/arm_reshape_s8.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ReshapeFunctions/arm_reshape_s8.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ReshapeFunctions/arm_reshape_s8.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ReshapeFunctions/arm_reshape_s8.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ReshapeFunctions/arm_reshape_s8.c.s
@@ -6250,7 +6250,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ReshapeFunctions/arm_res
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ReshapeFunctions/arm_reshape_s8.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ReshapeFunctions/arm_reshape_s8.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ReshapeFunctions/arm_reshape_s8.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/ReshapeFunctions/arm_reshape_s8.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SVDFunctions/arm_svdf_s8.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SVDFunctions/arm_svdf_s8.c.obj
@@ -6258,7 +6258,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SVDFunctions/arm_svdf_s8
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SVDFunctions/arm_svdf_s8.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SVDFunctions/arm_svdf_s8.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SVDFunctions/arm_svdf_s8.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SVDFunctions/arm_svdf_s8.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SVDFunctions/arm_svdf_s8.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SVDFunctions/arm_svdf_s8.c.i
@@ -6266,7 +6266,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SVDFunctions/arm_svdf_s8
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SVDFunctions/arm_svdf_s8.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SVDFunctions/arm_svdf_s8.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SVDFunctions/arm_svdf_s8.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SVDFunctions/arm_svdf_s8.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SVDFunctions/arm_svdf_s8.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SVDFunctions/arm_svdf_s8.c.s
@@ -6274,7 +6274,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SVDFunctions/arm_svdf_s8
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SVDFunctions/arm_svdf_s8.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SVDFunctions/arm_svdf_s8.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SVDFunctions/arm_svdf_s8.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SVDFunctions/arm_svdf_s8.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_q15.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_q15.c.obj
@@ -6282,7 +6282,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_sof
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_q15.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_q15.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_q15.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_q15.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_q15.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_q15.c.i
@@ -6290,7 +6290,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_sof
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_q15.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_q15.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_q15.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_q15.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_q15.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_q15.c.s
@@ -6298,7 +6298,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_sof
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_q15.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_q15.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_q15.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_q15.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_q7.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_q7.c.obj
@@ -6306,7 +6306,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_sof
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_q7.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_q7.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_q7.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_q7.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_q7.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_q7.c.i
@@ -6314,7 +6314,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_sof
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_q7.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_q7.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_q7.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_q7.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_q7.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_q7.c.s
@@ -6322,7 +6322,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_sof
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_q7.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_q7.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_q7.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_q7.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_s8.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_s8.c.obj
@@ -6330,7 +6330,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_sof
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_s8.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_s8.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_s8.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_s8.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_s8.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_s8.c.i
@@ -6338,7 +6338,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_sof
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_s8.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_s8.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_s8.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_s8.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_s8.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_s8.c.s
@@ -6346,7 +6346,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_sof
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_s8.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_s8.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_s8.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_s8.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_u8.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_u8.c.obj
@@ -6354,7 +6354,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_sof
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_u8.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_u8.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_u8.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_u8.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_u8.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_u8.c.i
@@ -6362,7 +6362,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_sof
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_u8.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_u8.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_u8.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_u8.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_u8.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_u8.c.s
@@ -6370,7 +6370,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_sof
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_u8.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_u8.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_u8.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_u8.c.s
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_with_batch_q7.obj: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_with_batch_q7.c.obj
@@ -6378,7 +6378,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_sof
 
 # target to build an object file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_with_batch_q7.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_with_batch_q7.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_with_batch_q7.c.obj
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_with_batch_q7.c.obj
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_with_batch_q7.i: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_with_batch_q7.c.i
@@ -6386,7 +6386,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_sof
 
 # target to preprocess a source file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_with_batch_q7.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_with_batch_q7.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_with_batch_q7.c.i
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_with_batch_q7.c.i
 
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_with_batch_q7.s: lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_with_batch_q7.c.s
@@ -6394,7 +6394,7 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_sof
 
 # target to generate assembly for a file
 lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_with_batch_q7.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_with_batch_q7.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_with_batch_q7.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_with_batch_q7.c.s
 
 src/drv2605.obj: src/drv2605.c.obj
@@ -6402,7 +6402,7 @@ src/drv2605.obj: src/drv2605.c.obj
 
 # target to build an object file
 src/drv2605.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/src/drv2605.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/src/drv2605.c.obj
 .PHONY : src/drv2605.c.obj
 
 src/drv2605.i: src/drv2605.c.i
@@ -6410,7 +6410,7 @@ src/drv2605.i: src/drv2605.c.i
 
 # target to preprocess a source file
 src/drv2605.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/src/drv2605.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/src/drv2605.c.i
 .PHONY : src/drv2605.c.i
 
 src/drv2605.s: src/drv2605.c.s
@@ -6418,7 +6418,7 @@ src/drv2605.s: src/drv2605.c.s
 
 # target to generate assembly for a file
 src/drv2605.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/src/drv2605.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/src/drv2605.c.s
 .PHONY : src/drv2605.c.s
 
 src/dsp_pipeline.obj: src/dsp_pipeline.cpp.obj
@@ -6426,7 +6426,7 @@ src/dsp_pipeline.obj: src/dsp_pipeline.cpp.obj
 
 # target to build an object file
 src/dsp_pipeline.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/src/dsp_pipeline.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/src/dsp_pipeline.cpp.obj
 .PHONY : src/dsp_pipeline.cpp.obj
 
 src/dsp_pipeline.i: src/dsp_pipeline.cpp.i
@@ -6434,7 +6434,7 @@ src/dsp_pipeline.i: src/dsp_pipeline.cpp.i
 
 # target to preprocess a source file
 src/dsp_pipeline.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/src/dsp_pipeline.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/src/dsp_pipeline.cpp.i
 .PHONY : src/dsp_pipeline.cpp.i
 
 src/dsp_pipeline.s: src/dsp_pipeline.cpp.s
@@ -6442,7 +6442,7 @@ src/dsp_pipeline.s: src/dsp_pipeline.cpp.s
 
 # target to generate assembly for a file
 src/dsp_pipeline.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/src/dsp_pipeline.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/src/dsp_pipeline.cpp.s
 .PHONY : src/dsp_pipeline.cpp.s
 
 src/main.obj: src/main.cpp.obj
@@ -6450,7 +6450,7 @@ src/main.obj: src/main.cpp.obj
 
 # target to build an object file
 src/main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/src/main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/src/main.cpp.obj
 .PHONY : src/main.cpp.obj
 
 src/main.i: src/main.cpp.i
@@ -6458,7 +6458,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -6466,7 +6466,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 src/ml_model.obj: src/ml_model.cpp.obj
@@ -6474,7 +6474,7 @@ src/ml_model.obj: src/ml_model.cpp.obj
 
 # target to build an object file
 src/ml_model.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/src/ml_model.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/src/ml_model.cpp.obj
 .PHONY : src/ml_model.cpp.obj
 
 src/ml_model.i: src/ml_model.cpp.i
@@ -6482,7 +6482,7 @@ src/ml_model.i: src/ml_model.cpp.i
 
 # target to preprocess a source file
 src/ml_model.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/src/ml_model.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/src/ml_model.cpp.i
 .PHONY : src/ml_model.cpp.i
 
 src/ml_model.s: src/ml_model.cpp.s
@@ -6490,7 +6490,7 @@ src/ml_model.s: src/ml_model.cpp.s
 
 # target to generate assembly for a file
 src/ml_model.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/src/ml_model.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/src/ml_model.cpp.s
 .PHONY : src/ml_model.cpp.s
 
 # Help Target
@@ -6527,6 +6527,7 @@ help:
 	@echo "... audio_provider_test"
 	@echo "... bs2_default"
 	@echo "... command_responder_test"
+	@echo "... deaf_helper_pico"
 	@echo "... detection_responder_test_int8"
 	@echo "... feature_provider_mock_test"
 	@echo "... feature_provider_test"
@@ -6602,7 +6603,6 @@ help:
 	@echo "... person_detection_test_int8"
 	@echo "... pico-tflmicro"
 	@echo "... pico-tflmicro_test"
-	@echo "... pico_inference_app"
 	@echo "... recognize_commands_test"
 	@echo "... recording_micro_allocator_test"
 	@echo "... recording_simple_memory_allocator_test"

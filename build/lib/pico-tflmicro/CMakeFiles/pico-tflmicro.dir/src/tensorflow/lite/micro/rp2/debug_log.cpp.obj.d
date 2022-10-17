@@ -1,6 +1,6 @@
 lib/pico-tflmicro/CMakeFiles/pico-tflmicro.dir/src/tensorflow/lite/micro/rp2/debug_log.cpp.obj: \
- /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/tensorflow/lite/micro/rp2/debug_log.cpp \
- /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/tensorflow/lite/micro/debug_log.h \
+ /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/src/tensorflow/lite/micro/rp2/debug_log.cpp \
+ /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/src/tensorflow/lite/micro/debug_log.h \
  /usr/include/newlib/stdio.h /usr/include/newlib/_ansi.h \
  /usr/include/newlib/newlib.h /usr/include/newlib/_newlib_version.h \
  /usr/include/newlib/sys/config.h /usr/include/newlib/machine/ieeefp.h \

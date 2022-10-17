@@ -4,7 +4,7 @@
 # compile C with /usr/bin/arm-none-eabi-gcc
 C_DEFINES = -DARMCM0 -DARMCM0P -DARM_DSP_CONFIG_TABLES -DARM_FFT_ALLOW_TABLES -DARM_MATH_LOOPUNROLL -DARM_TABLE_BITREVIDX_FXT_128 -DARM_TABLE_REALCOEF_Q15 -DARM_TABLE_TWIDDLECOEF_Q15_128 -DCORTEXM
 
-C_INCLUDES = -I/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/CMSIS_5/CMSIS/Core/Include -I/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/CMSIS_5/CMSIS/DSP/PrivateInclude -I/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/CMSIS_5/CMSIS/DSP/Include
+C_INCLUDES = -I/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/CMSIS_5/CMSIS/Core/Include -I/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/CMSIS_5/CMSIS/DSP/PrivateInclude -I/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/CMSIS_5/CMSIS/DSP/Include
 
 C_FLAGS = -mcpu=cortex-m0plus -mthumb -Og -g -mlittle-endian -mthumb
 

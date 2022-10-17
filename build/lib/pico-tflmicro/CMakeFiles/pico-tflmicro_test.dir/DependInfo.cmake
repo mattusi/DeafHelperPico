@@ -69,16 +69,16 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
 
 # The include file search paths:
 set(CMAKE_ASM_TARGET_INCLUDE_PATH
-  "/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src"
-  "/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/DSP/Include"
-  "/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/third_party/ruy"
-  "/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/third_party/gemmlowp"
-  "/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/third_party/kissfft"
-  "/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/third_party/flatbuffers"
-  "/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/Core/Include"
-  "/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/third_party/cmsis"
-  "/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/third_party/flatbuffers/include"
-  "/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Include"
+  "/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/src"
+  "/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/DSP/Include"
+  "/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/src/third_party/ruy"
+  "/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/src/third_party/gemmlowp"
+  "/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/src/third_party/kissfft"
+  "/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/src/third_party/flatbuffers"
+  "/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/Core/Include"
+  "/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/src/third_party/cmsis"
+  "/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/src/third_party/flatbuffers/include"
+  "/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Include"
   "/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_stdlib/include"
   "/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_gpio/include"
   "/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_base/include"
@@ -154,9 +154,9 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c" "lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj" "gcc" "lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj.d"
   "/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c" "lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj" "gcc" "lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj.d"
   "/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp" "lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj" "gcc" "lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj.d"
-  "/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/tensorflow/lite/micro/benchmarks/keyword_scrambled_model_data.cpp" "lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/src/tensorflow/lite/micro/benchmarks/keyword_scrambled_model_data.cpp.obj" "gcc" "lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/src/tensorflow/lite/micro/benchmarks/keyword_scrambled_model_data.cpp.obj.d"
-  "/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/tensorflow/lite/micro/testing/test_conv_model.cpp" "lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/src/tensorflow/lite/micro/testing/test_conv_model.cpp.obj" "gcc" "lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/src/tensorflow/lite/micro/testing/test_conv_model.cpp.obj.d"
-  "/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/tensorflow/lite/micro/testing/util_test.cpp" "lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/src/tensorflow/lite/micro/testing/util_test.cpp.obj" "gcc" "lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/src/tensorflow/lite/micro/testing/util_test.cpp.obj.d"
+  "/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/src/tensorflow/lite/micro/benchmarks/keyword_scrambled_model_data.cpp" "lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/src/tensorflow/lite/micro/benchmarks/keyword_scrambled_model_data.cpp.obj" "gcc" "lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/src/tensorflow/lite/micro/benchmarks/keyword_scrambled_model_data.cpp.obj.d"
+  "/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/src/tensorflow/lite/micro/testing/test_conv_model.cpp" "lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/src/tensorflow/lite/micro/testing/test_conv_model.cpp.obj" "gcc" "lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/src/tensorflow/lite/micro/testing/test_conv_model.cpp.obj.d"
+  "/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/src/tensorflow/lite/micro/testing/util_test.cpp" "lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/src/tensorflow/lite/micro/testing/util_test.cpp.obj" "gcc" "lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/src/tensorflow/lite/micro/testing/util_test.cpp.obj.d"
   )
 
 # Targets to which this target links.

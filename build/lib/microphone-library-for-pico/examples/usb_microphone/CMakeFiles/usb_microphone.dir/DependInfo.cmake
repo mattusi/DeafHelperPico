@@ -71,7 +71,7 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
 
 # The include file search paths:
 set(CMAKE_ASM_TARGET_INCLUDE_PATH
-  "/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/microphone-library-for-pico/examples/usb_microphone"
+  "/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/microphone-library-for-pico/examples/usb_microphone"
   "/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src"
   "/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/common"
   "/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/hw"
@@ -91,7 +91,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_util/include"
   "/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_resets/include"
   "/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/include"
-  "/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/microphone-library-for-pico/src/include"
+  "/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/microphone-library-for-pico/src/include"
   "lib/microphone-library-for-pico"
   "/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_stdlib/include"
   "/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_gpio/include"
@@ -121,8 +121,8 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/microphone-library-for-pico/src/OpenPDM2PCM/OpenPDMFilter.c" "lib/microphone-library-for-pico/examples/usb_microphone/CMakeFiles/usb_microphone.dir/__/__/src/OpenPDM2PCM/OpenPDMFilter.c.obj" "gcc" "lib/microphone-library-for-pico/examples/usb_microphone/CMakeFiles/usb_microphone.dir/__/__/src/OpenPDM2PCM/OpenPDMFilter.c.obj.d"
-  "/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/microphone-library-for-pico/src/pdm_microphone.c" "lib/microphone-library-for-pico/examples/usb_microphone/CMakeFiles/usb_microphone.dir/__/__/src/pdm_microphone.c.obj" "gcc" "lib/microphone-library-for-pico/examples/usb_microphone/CMakeFiles/usb_microphone.dir/__/__/src/pdm_microphone.c.obj.d"
+  "/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/microphone-library-for-pico/src/OpenPDM2PCM/OpenPDMFilter.c" "lib/microphone-library-for-pico/examples/usb_microphone/CMakeFiles/usb_microphone.dir/__/__/src/OpenPDM2PCM/OpenPDMFilter.c.obj" "gcc" "lib/microphone-library-for-pico/examples/usb_microphone/CMakeFiles/usb_microphone.dir/__/__/src/OpenPDM2PCM/OpenPDMFilter.c.obj.d"
+  "/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/microphone-library-for-pico/src/pdm_microphone.c" "lib/microphone-library-for-pico/examples/usb_microphone/CMakeFiles/usb_microphone.dir/__/__/src/pdm_microphone.c.obj" "gcc" "lib/microphone-library-for-pico/examples/usb_microphone/CMakeFiles/usb_microphone.dir/__/__/src/pdm_microphone.c.obj.d"
   "/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c" "lib/microphone-library-for-pico/examples/usb_microphone/CMakeFiles/usb_microphone.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj" "gcc" "lib/microphone-library-for-pico/examples/usb_microphone/CMakeFiles/usb_microphone.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj.d"
   "/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c" "lib/microphone-library-for-pico/examples/usb_microphone/CMakeFiles/usb_microphone.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj" "gcc" "lib/microphone-library-for-pico/examples/usb_microphone/CMakeFiles/usb_microphone.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj.d"
   "/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c" "lib/microphone-library-for-pico/examples/usb_microphone/CMakeFiles/usb_microphone.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj" "gcc" "lib/microphone-library-for-pico/examples/usb_microphone/CMakeFiles/usb_microphone.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj.d"
@@ -178,9 +178,9 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c" "lib/microphone-library-for-pico/examples/usb_microphone/CMakeFiles/usb_microphone.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj" "gcc" "lib/microphone-library-for-pico/examples/usb_microphone/CMakeFiles/usb_microphone.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj.d"
   "/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c" "lib/microphone-library-for-pico/examples/usb_microphone/CMakeFiles/usb_microphone.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj" "gcc" "lib/microphone-library-for-pico/examples/usb_microphone/CMakeFiles/usb_microphone.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj.d"
   "/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c" "lib/microphone-library-for-pico/examples/usb_microphone/CMakeFiles/usb_microphone.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj" "gcc" "lib/microphone-library-for-pico/examples/usb_microphone/CMakeFiles/usb_microphone.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj.d"
-  "/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/microphone-library-for-pico/examples/usb_microphone/main.c" "lib/microphone-library-for-pico/examples/usb_microphone/CMakeFiles/usb_microphone.dir/main.c.obj" "gcc" "lib/microphone-library-for-pico/examples/usb_microphone/CMakeFiles/usb_microphone.dir/main.c.obj.d"
-  "/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/microphone-library-for-pico/examples/usb_microphone/usb_descriptors.c" "lib/microphone-library-for-pico/examples/usb_microphone/CMakeFiles/usb_microphone.dir/usb_descriptors.c.obj" "gcc" "lib/microphone-library-for-pico/examples/usb_microphone/CMakeFiles/usb_microphone.dir/usb_descriptors.c.obj.d"
-  "/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/microphone-library-for-pico/examples/usb_microphone/usb_microphone.c" "lib/microphone-library-for-pico/examples/usb_microphone/CMakeFiles/usb_microphone.dir/usb_microphone.c.obj" "gcc" "lib/microphone-library-for-pico/examples/usb_microphone/CMakeFiles/usb_microphone.dir/usb_microphone.c.obj.d"
+  "/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/microphone-library-for-pico/examples/usb_microphone/main.c" "lib/microphone-library-for-pico/examples/usb_microphone/CMakeFiles/usb_microphone.dir/main.c.obj" "gcc" "lib/microphone-library-for-pico/examples/usb_microphone/CMakeFiles/usb_microphone.dir/main.c.obj.d"
+  "/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/microphone-library-for-pico/examples/usb_microphone/usb_descriptors.c" "lib/microphone-library-for-pico/examples/usb_microphone/CMakeFiles/usb_microphone.dir/usb_descriptors.c.obj" "gcc" "lib/microphone-library-for-pico/examples/usb_microphone/CMakeFiles/usb_microphone.dir/usb_descriptors.c.obj.d"
+  "/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/microphone-library-for-pico/examples/usb_microphone/usb_microphone.c" "lib/microphone-library-for-pico/examples/usb_microphone/CMakeFiles/usb_microphone.dir/usb_microphone.c.obj" "gcc" "lib/microphone-library-for-pico/examples/usb_microphone/CMakeFiles/usb_microphone.dir/usb_microphone.c.obj.d"
   "/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp" "lib/microphone-library-for-pico/examples/usb_microphone/CMakeFiles/usb_microphone.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj" "gcc" "lib/microphone-library-for-pico/examples/usb_microphone/CMakeFiles/usb_microphone.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj.d"
   )
 

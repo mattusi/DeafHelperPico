@@ -1,4 +1,4 @@
-# Install script for directory: /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/microphone-library-for-pico/examples/usb_microphone
+# Install script for directory: /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/microphone-library-for-pico/examples/usb_microphone
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

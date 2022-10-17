@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper
+CMAKE_SOURCE_DIR = /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/inteldev/raspberry-pi-pico/pico_workspace/build
@@ -68,9 +68,9 @@ include lib/microphone-library-for-pico/CMakeFiles/pico_pdm_microphone_pdm_micro
 
 lib/microphone-library-for-pico/CMakeFiles/pico_pdm_microphone_pdm_microphone_pio_h: lib/microphone-library-for-pico/pdm_microphone.pio.h
 
-lib/microphone-library-for-pico/pdm_microphone.pio.h: /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/microphone-library-for-pico/src/pdm_microphone.pio
+lib/microphone-library-for-pico/pdm_microphone.pio.h: /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/microphone-library-for-pico/src/pdm_microphone.pio
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating pdm_microphone.pio.h"
-	cd /home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/microphone-library-for-pico && ../../pioasm/pioasm -o c-sdk /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/microphone-library-for-pico/src/pdm_microphone.pio /home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/microphone-library-for-pico/pdm_microphone.pio.h
+	cd /home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/microphone-library-for-pico && ../../pioasm/pioasm -o c-sdk /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/microphone-library-for-pico/src/pdm_microphone.pio /home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/microphone-library-for-pico/pdm_microphone.pio.h
 
 pico_pdm_microphone_pdm_microphone_pio_h: lib/microphone-library-for-pico/CMakeFiles/pico_pdm_microphone_pdm_microphone_pio_h
 pico_pdm_microphone_pdm_microphone_pio_h: lib/microphone-library-for-pico/pdm_microphone.pio.h
@@ -86,6 +86,6 @@ lib/microphone-library-for-pico/CMakeFiles/pico_pdm_microphone_pdm_microphone_pi
 .PHONY : lib/microphone-library-for-pico/CMakeFiles/pico_pdm_microphone_pdm_microphone_pio_h.dir/clean
 
 lib/microphone-library-for-pico/CMakeFiles/pico_pdm_microphone_pdm_microphone_pio_h.dir/depend:
-	cd /home/inteldev/raspberry-pi-pico/pico_workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/microphone-library-for-pico /home/inteldev/raspberry-pi-pico/pico_workspace/build /home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/microphone-library-for-pico /home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/microphone-library-for-pico/CMakeFiles/pico_pdm_microphone_pdm_microphone_pio_h.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/inteldev/raspberry-pi-pico/pico_workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/microphone-library-for-pico /home/inteldev/raspberry-pi-pico/pico_workspace/build /home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/microphone-library-for-pico /home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/microphone-library-for-pico/CMakeFiles/pico_pdm_microphone_pdm_microphone_pio_h.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : lib/microphone-library-for-pico/CMakeFiles/pico_pdm_microphone_pdm_microphone_pio_h.dir/depend
 

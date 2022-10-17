@@ -29,7 +29,7 @@ include(${DSP}/Toolchain/GCC.cmake)
 add_subdirectory(${DSP}/Source EXCLUDE_FROM_ALL)
 
 # rest of your project
-add_executable(pico_inference_app
+add_executable(deaf_helper_pico
     ${CMAKE_CURRENT_LIST_DIR}/src/main.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/dsp_pipeline.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/ml_model.cpp
@@ -46,8 +46,8 @@ target_link_libraries(deaf_helper_pico
 )
 
 # enable usb output, disable uart output
-pico_enable_stdio_usb(pico_inference_app 1)
-pico_enable_stdio_uart(pico_inference_app 0)
+pico_enable_stdio_usb(deaf_helper_pico 1)
+pico_enable_stdio_uart(deaf_helper_pico 0)
 
 # create map/bin/hex/uf2 file in addition to ELF.
 pico_add_extra_outputs(deaf_helper_pico)

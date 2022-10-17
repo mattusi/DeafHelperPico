@@ -330,7 +330,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=pico_inference_app
+CMAKE_PROJECT_NAME:STATIC=deaf_helper_pico
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/arm-none-eabi-ranlib
@@ -404,7 +404,7 @@ CMSISDSPBasicMath_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_worksp
 CMSISDSPBasicMath_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-CMSISDSPBasicMath_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/CMSIS_5/CMSIS/DSP/Source/BasicMathFunctions
+CMSISDSPBasicMath_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/CMSIS_5/CMSIS/DSP/Source/BasicMathFunctions
 
 //Value Computed by CMake
 CMSISDSPBayes_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/CMSIS_5/CMSIS/DSP/Source/BayesFunctions
@@ -413,7 +413,7 @@ CMSISDSPBayes_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/
 CMSISDSPBayes_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-CMSISDSPBayes_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/CMSIS_5/CMSIS/DSP/Source/BayesFunctions
+CMSISDSPBayes_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/CMSIS_5/CMSIS/DSP/Source/BayesFunctions
 
 //Value Computed by CMake
 CMSISDSPCommon_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables
@@ -422,7 +422,7 @@ CMSISDSPCommon_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace
 CMSISDSPCommon_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-CMSISDSPCommon_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables
+CMSISDSPCommon_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/CMSIS_5/CMSIS/DSP/Source/CommonTables
 
 //Value Computed by CMake
 CMSISDSPComplexMath_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/CMSIS_5/CMSIS/DSP/Source/ComplexMathFunctions
@@ -431,7 +431,7 @@ CMSISDSPComplexMath_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_work
 CMSISDSPComplexMath_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-CMSISDSPComplexMath_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/CMSIS_5/CMSIS/DSP/Source/ComplexMathFunctions
+CMSISDSPComplexMath_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/CMSIS_5/CMSIS/DSP/Source/ComplexMathFunctions
 
 //Value Computed by CMake
 CMSISDSPController_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/CMSIS_5/CMSIS/DSP/Source/ControllerFunctions
@@ -440,7 +440,7 @@ CMSISDSPController_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_works
 CMSISDSPController_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-CMSISDSPController_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/CMSIS_5/CMSIS/DSP/Source/ControllerFunctions
+CMSISDSPController_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/CMSIS_5/CMSIS/DSP/Source/ControllerFunctions
 
 //Value Computed by CMake
 CMSISDSPDistance_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/CMSIS_5/CMSIS/DSP/Source/DistanceFunctions
@@ -449,7 +449,7 @@ CMSISDSPDistance_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspa
 CMSISDSPDistance_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-CMSISDSPDistance_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/CMSIS_5/CMSIS/DSP/Source/DistanceFunctions
+CMSISDSPDistance_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/CMSIS_5/CMSIS/DSP/Source/DistanceFunctions
 
 //Value Computed by CMake
 CMSISDSPFastMath_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/CMSIS_5/CMSIS/DSP/Source/FastMathFunctions
@@ -458,7 +458,7 @@ CMSISDSPFastMath_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspa
 CMSISDSPFastMath_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-CMSISDSPFastMath_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/CMSIS_5/CMSIS/DSP/Source/FastMathFunctions
+CMSISDSPFastMath_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/CMSIS_5/CMSIS/DSP/Source/FastMathFunctions
 
 //Value Computed by CMake
 CMSISDSPFiltering_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/CMSIS_5/CMSIS/DSP/Source/FilteringFunctions
@@ -467,7 +467,7 @@ CMSISDSPFiltering_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_worksp
 CMSISDSPFiltering_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-CMSISDSPFiltering_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/CMSIS_5/CMSIS/DSP/Source/FilteringFunctions
+CMSISDSPFiltering_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/CMSIS_5/CMSIS/DSP/Source/FilteringFunctions
 
 //Value Computed by CMake
 CMSISDSPInterpolation_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/CMSIS_5/CMSIS/DSP/Source/InterpolationFunctions
@@ -476,7 +476,7 @@ CMSISDSPInterpolation_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_wo
 CMSISDSPInterpolation_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-CMSISDSPInterpolation_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/CMSIS_5/CMSIS/DSP/Source/InterpolationFunctions
+CMSISDSPInterpolation_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/CMSIS_5/CMSIS/DSP/Source/InterpolationFunctions
 
 //Value Computed by CMake
 CMSISDSPMatrix_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/CMSIS_5/CMSIS/DSP/Source/MatrixFunctions
@@ -485,7 +485,7 @@ CMSISDSPMatrix_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace
 CMSISDSPMatrix_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-CMSISDSPMatrix_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/CMSIS_5/CMSIS/DSP/Source/MatrixFunctions
+CMSISDSPMatrix_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/CMSIS_5/CMSIS/DSP/Source/MatrixFunctions
 
 //Value Computed by CMake
 CMSISDSPQuaternionMath_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/CMSIS_5/CMSIS/DSP/Source/QuaternionMathFunctions
@@ -494,7 +494,7 @@ CMSISDSPQuaternionMath_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_w
 CMSISDSPQuaternionMath_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-CMSISDSPQuaternionMath_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/CMSIS_5/CMSIS/DSP/Source/QuaternionMathFunctions
+CMSISDSPQuaternionMath_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/CMSIS_5/CMSIS/DSP/Source/QuaternionMathFunctions
 
 //Value Computed by CMake
 CMSISDSPSVM_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/CMSIS_5/CMSIS/DSP/Source/SVMFunctions
@@ -503,7 +503,7 @@ CMSISDSPSVM_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/bu
 CMSISDSPSVM_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-CMSISDSPSVM_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/CMSIS_5/CMSIS/DSP/Source/SVMFunctions
+CMSISDSPSVM_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/CMSIS_5/CMSIS/DSP/Source/SVMFunctions
 
 //Value Computed by CMake
 CMSISDSPStatistics_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/CMSIS_5/CMSIS/DSP/Source/StatisticsFunctions
@@ -512,7 +512,7 @@ CMSISDSPStatistics_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_works
 CMSISDSPStatistics_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-CMSISDSPStatistics_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/CMSIS_5/CMSIS/DSP/Source/StatisticsFunctions
+CMSISDSPStatistics_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/CMSIS_5/CMSIS/DSP/Source/StatisticsFunctions
 
 //Value Computed by CMake
 CMSISDSPSupport_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/CMSIS_5/CMSIS/DSP/Source/SupportFunctions
@@ -521,7 +521,7 @@ CMSISDSPSupport_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspac
 CMSISDSPSupport_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-CMSISDSPSupport_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/CMSIS_5/CMSIS/DSP/Source/SupportFunctions
+CMSISDSPSupport_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/CMSIS_5/CMSIS/DSP/Source/SupportFunctions
 
 //Value Computed by CMake
 CMSISDSPTransform_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/CMSIS_5/CMSIS/DSP/Source/TransformFunctions
@@ -530,7 +530,7 @@ CMSISDSPTransform_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_worksp
 CMSISDSPTransform_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-CMSISDSPTransform_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/CMSIS_5/CMSIS/DSP/Source/TransformFunctions
+CMSISDSPTransform_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/CMSIS_5/CMSIS/DSP/Source/TransformFunctions
 
 //Value Computed by CMake
 CMSISDSP_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/CMSIS_5/CMSIS/DSP/Source
@@ -539,7 +539,7 @@ CMSISDSP_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build
 CMSISDSP_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-CMSISDSP_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/CMSIS_5/CMSIS/DSP/Source
+CMSISDSP_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/CMSIS_5/CMSIS/DSP/Source
 
 //Complex Math Functions
 COMPLEXMATH:BOOL=ON
@@ -872,13 +872,22 @@ SVM:BOOL=ON
 TRANSFORM:BOOL=ON
 
 //Value Computed by CMake
+deaf_helper_pico_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build
+
+//Value Computed by CMake
+deaf_helper_pico_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+deaf_helper_pico_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper
+
+//Value Computed by CMake
 greedy_memory_planner_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/tests/greedy_memory_planner_test
 
 //Value Computed by CMake
 greedy_memory_planner_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-greedy_memory_planner_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/greedy_memory_planner_test
+greedy_memory_planner_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/greedy_memory_planner_test
 
 //Value Computed by CMake
 hello_world_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/examples/hello_world
@@ -887,7 +896,7 @@ hello_world_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/bu
 hello_world_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-hello_world_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/examples/hello_world
+hello_world_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/examples/hello_world
 
 //Value Computed by CMake
 kernel_activations_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/tests/kernel_activations_test
@@ -896,7 +905,7 @@ kernel_activations_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_
 kernel_activations_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-kernel_activations_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/kernel_activations_test
+kernel_activations_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/kernel_activations_test
 
 //Value Computed by CMake
 kernel_add_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/tests/kernel_add_test
@@ -905,7 +914,7 @@ kernel_add_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspac
 kernel_add_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-kernel_add_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/kernel_add_test
+kernel_add_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/kernel_add_test
 
 //Value Computed by CMake
 kernel_arg_min_max_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/tests/kernel_arg_min_max_test
@@ -914,7 +923,7 @@ kernel_arg_min_max_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_
 kernel_arg_min_max_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-kernel_arg_min_max_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/kernel_arg_min_max_test
+kernel_arg_min_max_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/kernel_arg_min_max_test
 
 //Value Computed by CMake
 kernel_ceil_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/tests/kernel_ceil_test
@@ -923,7 +932,7 @@ kernel_ceil_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspa
 kernel_ceil_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-kernel_ceil_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/kernel_ceil_test
+kernel_ceil_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/kernel_ceil_test
 
 //Value Computed by CMake
 kernel_circular_buffer_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/tests/kernel_circular_buffer_test
@@ -932,7 +941,7 @@ kernel_circular_buffer_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/p
 kernel_circular_buffer_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-kernel_circular_buffer_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/kernel_circular_buffer_test
+kernel_circular_buffer_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/kernel_circular_buffer_test
 
 //Value Computed by CMake
 kernel_comparisons_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/tests/kernel_comparisons_test
@@ -941,7 +950,7 @@ kernel_comparisons_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_
 kernel_comparisons_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-kernel_comparisons_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/kernel_comparisons_test
+kernel_comparisons_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/kernel_comparisons_test
 
 //Value Computed by CMake
 kernel_concatenation_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/tests/kernel_concatenation_test
@@ -950,7 +959,7 @@ kernel_concatenation_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pic
 kernel_concatenation_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-kernel_concatenation_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/kernel_concatenation_test
+kernel_concatenation_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/kernel_concatenation_test
 
 //Value Computed by CMake
 kernel_conv_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/tests/kernel_conv_test
@@ -959,7 +968,7 @@ kernel_conv_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspa
 kernel_conv_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-kernel_conv_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/kernel_conv_test
+kernel_conv_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/kernel_conv_test
 
 //Value Computed by CMake
 kernel_depthwise_conv_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/tests/kernel_depthwise_conv_test
@@ -968,7 +977,7 @@ kernel_depthwise_conv_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pi
 kernel_depthwise_conv_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-kernel_depthwise_conv_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/kernel_depthwise_conv_test
+kernel_depthwise_conv_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/kernel_depthwise_conv_test
 
 //Value Computed by CMake
 kernel_dequantize_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/tests/kernel_dequantize_test
@@ -977,7 +986,7 @@ kernel_dequantize_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_w
 kernel_dequantize_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-kernel_dequantize_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/kernel_dequantize_test
+kernel_dequantize_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/kernel_dequantize_test
 
 //Value Computed by CMake
 kernel_detection_postprocess_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/tests/kernel_detection_postprocess_test
@@ -986,7 +995,7 @@ kernel_detection_postprocess_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-
 kernel_detection_postprocess_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-kernel_detection_postprocess_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/kernel_detection_postprocess_test
+kernel_detection_postprocess_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/kernel_detection_postprocess_test
 
 //Value Computed by CMake
 kernel_elementwise_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/tests/kernel_elementwise_test
@@ -995,7 +1004,7 @@ kernel_elementwise_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_
 kernel_elementwise_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-kernel_elementwise_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/kernel_elementwise_test
+kernel_elementwise_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/kernel_elementwise_test
 
 //Value Computed by CMake
 kernel_floor_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/tests/kernel_floor_test
@@ -1004,7 +1013,7 @@ kernel_floor_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_worksp
 kernel_floor_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-kernel_floor_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/kernel_floor_test
+kernel_floor_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/kernel_floor_test
 
 //Value Computed by CMake
 kernel_fully_connected_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/tests/kernel_fully_connected_test
@@ -1013,7 +1022,7 @@ kernel_fully_connected_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/p
 kernel_fully_connected_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-kernel_fully_connected_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/kernel_fully_connected_test
+kernel_fully_connected_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/kernel_fully_connected_test
 
 //Value Computed by CMake
 kernel_hard_swish_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/tests/kernel_hard_swish_test
@@ -1022,7 +1031,7 @@ kernel_hard_swish_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_w
 kernel_hard_swish_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-kernel_hard_swish_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/kernel_hard_swish_test
+kernel_hard_swish_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/kernel_hard_swish_test
 
 //Value Computed by CMake
 kernel_l2norm_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/tests/kernel_l2norm_test
@@ -1031,7 +1040,7 @@ kernel_l2norm_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_works
 kernel_l2norm_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-kernel_l2norm_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/kernel_l2norm_test
+kernel_l2norm_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/kernel_l2norm_test
 
 //Value Computed by CMake
 kernel_logical_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/tests/kernel_logical_test
@@ -1040,7 +1049,7 @@ kernel_logical_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_work
 kernel_logical_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-kernel_logical_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/kernel_logical_test
+kernel_logical_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/kernel_logical_test
 
 //Value Computed by CMake
 kernel_logistic_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/tests/kernel_logistic_test
@@ -1049,7 +1058,7 @@ kernel_logistic_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_wor
 kernel_logistic_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-kernel_logistic_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/kernel_logistic_test
+kernel_logistic_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/kernel_logistic_test
 
 //Value Computed by CMake
 kernel_maximum_minimum_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/tests/kernel_maximum_minimum_test
@@ -1058,7 +1067,7 @@ kernel_maximum_minimum_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/p
 kernel_maximum_minimum_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-kernel_maximum_minimum_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/kernel_maximum_minimum_test
+kernel_maximum_minimum_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/kernel_maximum_minimum_test
 
 //Value Computed by CMake
 kernel_mul_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/tests/kernel_mul_test
@@ -1067,7 +1076,7 @@ kernel_mul_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspac
 kernel_mul_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-kernel_mul_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/kernel_mul_test
+kernel_mul_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/kernel_mul_test
 
 //Value Computed by CMake
 kernel_neg_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/tests/kernel_neg_test
@@ -1076,7 +1085,7 @@ kernel_neg_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspac
 kernel_neg_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-kernel_neg_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/kernel_neg_test
+kernel_neg_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/kernel_neg_test
 
 //Value Computed by CMake
 kernel_pack_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/tests/kernel_pack_test
@@ -1085,7 +1094,7 @@ kernel_pack_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspa
 kernel_pack_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-kernel_pack_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/kernel_pack_test
+kernel_pack_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/kernel_pack_test
 
 //Value Computed by CMake
 kernel_pad_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/tests/kernel_pad_test
@@ -1094,7 +1103,7 @@ kernel_pad_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspac
 kernel_pad_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-kernel_pad_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/kernel_pad_test
+kernel_pad_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/kernel_pad_test
 
 //Value Computed by CMake
 kernel_pooling_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/tests/kernel_pooling_test
@@ -1103,7 +1112,7 @@ kernel_pooling_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_work
 kernel_pooling_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-kernel_pooling_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/kernel_pooling_test
+kernel_pooling_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/kernel_pooling_test
 
 //Value Computed by CMake
 kernel_prelu_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/tests/kernel_prelu_test
@@ -1112,7 +1121,7 @@ kernel_prelu_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_worksp
 kernel_prelu_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-kernel_prelu_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/kernel_prelu_test
+kernel_prelu_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/kernel_prelu_test
 
 //Value Computed by CMake
 kernel_quantization_util_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/tests/kernel_quantization_util_test
@@ -1121,7 +1130,7 @@ kernel_quantization_util_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico
 kernel_quantization_util_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-kernel_quantization_util_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/kernel_quantization_util_test
+kernel_quantization_util_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/kernel_quantization_util_test
 
 //Value Computed by CMake
 kernel_quantize_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/tests/kernel_quantize_test
@@ -1130,7 +1139,7 @@ kernel_quantize_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_wor
 kernel_quantize_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-kernel_quantize_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/kernel_quantize_test
+kernel_quantize_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/kernel_quantize_test
 
 //Value Computed by CMake
 kernel_reduce_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/tests/kernel_reduce_test
@@ -1139,7 +1148,7 @@ kernel_reduce_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_works
 kernel_reduce_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-kernel_reduce_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/kernel_reduce_test
+kernel_reduce_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/kernel_reduce_test
 
 //Value Computed by CMake
 kernel_reshape_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/tests/kernel_reshape_test
@@ -1148,7 +1157,7 @@ kernel_reshape_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_work
 kernel_reshape_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-kernel_reshape_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/kernel_reshape_test
+kernel_reshape_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/kernel_reshape_test
 
 //Value Computed by CMake
 kernel_resize_nearest_neighbor_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/tests/kernel_resize_nearest_neighbor_test
@@ -1157,7 +1166,7 @@ kernel_resize_nearest_neighbor_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-p
 kernel_resize_nearest_neighbor_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-kernel_resize_nearest_neighbor_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/kernel_resize_nearest_neighbor_test
+kernel_resize_nearest_neighbor_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/kernel_resize_nearest_neighbor_test
 
 //Value Computed by CMake
 kernel_round_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/tests/kernel_round_test
@@ -1166,7 +1175,7 @@ kernel_round_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_worksp
 kernel_round_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-kernel_round_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/kernel_round_test
+kernel_round_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/kernel_round_test
 
 //Value Computed by CMake
 kernel_shape_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/tests/kernel_shape_test
@@ -1175,7 +1184,7 @@ kernel_shape_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_worksp
 kernel_shape_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-kernel_shape_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/kernel_shape_test
+kernel_shape_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/kernel_shape_test
 
 //Value Computed by CMake
 kernel_softmax_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/tests/kernel_softmax_test
@@ -1184,7 +1193,7 @@ kernel_softmax_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_work
 kernel_softmax_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-kernel_softmax_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/kernel_softmax_test
+kernel_softmax_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/kernel_softmax_test
 
 //Value Computed by CMake
 kernel_split_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/tests/kernel_split_test
@@ -1193,7 +1202,7 @@ kernel_split_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_worksp
 kernel_split_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-kernel_split_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/kernel_split_test
+kernel_split_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/kernel_split_test
 
 //Value Computed by CMake
 kernel_split_v_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/tests/kernel_split_v_test
@@ -1202,7 +1211,7 @@ kernel_split_v_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_work
 kernel_split_v_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-kernel_split_v_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/kernel_split_v_test
+kernel_split_v_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/kernel_split_v_test
 
 //Value Computed by CMake
 kernel_strided_slice_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/tests/kernel_strided_slice_test
@@ -1211,7 +1220,7 @@ kernel_strided_slice_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pic
 kernel_strided_slice_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-kernel_strided_slice_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/kernel_strided_slice_test
+kernel_strided_slice_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/kernel_strided_slice_test
 
 //Value Computed by CMake
 kernel_sub_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/tests/kernel_sub_test
@@ -1220,7 +1229,7 @@ kernel_sub_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspac
 kernel_sub_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-kernel_sub_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/kernel_sub_test
+kernel_sub_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/kernel_sub_test
 
 //Value Computed by CMake
 kernel_svdf_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/tests/kernel_svdf_test
@@ -1229,7 +1238,7 @@ kernel_svdf_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspa
 kernel_svdf_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-kernel_svdf_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/kernel_svdf_test
+kernel_svdf_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/kernel_svdf_test
 
 //Value Computed by CMake
 kernel_tanh_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/tests/kernel_tanh_test
@@ -1238,7 +1247,7 @@ kernel_tanh_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspa
 kernel_tanh_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-kernel_tanh_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/kernel_tanh_test
+kernel_tanh_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/kernel_tanh_test
 
 //Value Computed by CMake
 kernel_unpack_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/tests/kernel_unpack_test
@@ -1247,7 +1256,7 @@ kernel_unpack_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_works
 kernel_unpack_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-kernel_unpack_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/kernel_unpack_test
+kernel_unpack_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/kernel_unpack_test
 
 //Value Computed by CMake
 keyword_benchmark_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/examples/keyword_benchmark
@@ -1256,7 +1265,7 @@ keyword_benchmark_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_worksp
 keyword_benchmark_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-keyword_benchmark_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/examples/keyword_benchmark
+keyword_benchmark_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/examples/keyword_benchmark
 
 //Value Computed by CMake
 linear_memory_planner_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/tests/linear_memory_planner_test
@@ -1265,7 +1274,7 @@ linear_memory_planner_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pi
 linear_memory_planner_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-linear_memory_planner_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/linear_memory_planner_test
+linear_memory_planner_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/linear_memory_planner_test
 
 //Value Computed by CMake
 magic_wand_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/examples/magic_wand
@@ -1274,7 +1283,7 @@ magic_wand_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/bui
 magic_wand_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-magic_wand_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/examples/magic_wand
+magic_wand_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/examples/magic_wand
 
 //Value Computed by CMake
 memory_arena_threshold_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/tests/memory_arena_threshold_test
@@ -1283,7 +1292,7 @@ memory_arena_threshold_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/p
 memory_arena_threshold_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-memory_arena_threshold_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/memory_arena_threshold_test
+memory_arena_threshold_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/memory_arena_threshold_test
 
 //Value Computed by CMake
 memory_helpers_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/tests/memory_helpers_test
@@ -1292,7 +1301,7 @@ memory_helpers_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_work
 memory_helpers_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-memory_helpers_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/memory_helpers_test
+memory_helpers_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/memory_helpers_test
 
 //Value Computed by CMake
 micro_allocator_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/tests/micro_allocator_test
@@ -1301,7 +1310,7 @@ micro_allocator_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_wor
 micro_allocator_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-micro_allocator_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/micro_allocator_test
+micro_allocator_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/micro_allocator_test
 
 //Value Computed by CMake
 micro_error_reporter_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/tests/micro_error_reporter_test
@@ -1310,7 +1319,7 @@ micro_error_reporter_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pic
 micro_error_reporter_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-micro_error_reporter_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/micro_error_reporter_test
+micro_error_reporter_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/micro_error_reporter_test
 
 //Value Computed by CMake
 micro_interpreter_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/tests/micro_interpreter_test
@@ -1319,7 +1328,7 @@ micro_interpreter_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_w
 micro_interpreter_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-micro_interpreter_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/micro_interpreter_test
+micro_interpreter_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/micro_interpreter_test
 
 //Value Computed by CMake
 micro_mutable_op_resolver_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/tests/micro_mutable_op_resolver_test
@@ -1328,7 +1337,7 @@ micro_mutable_op_resolver_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pic
 micro_mutable_op_resolver_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-micro_mutable_op_resolver_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/micro_mutable_op_resolver_test
+micro_mutable_op_resolver_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/micro_mutable_op_resolver_test
 
 //Value Computed by CMake
 micro_speech_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/examples/micro_speech
@@ -1337,7 +1346,7 @@ micro_speech_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/b
 micro_speech_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-micro_speech_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/examples/micro_speech
+micro_speech_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/examples/micro_speech
 
 //Value Computed by CMake
 micro_string_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/tests/micro_string_test
@@ -1346,7 +1355,7 @@ micro_string_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_worksp
 micro_string_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-micro_string_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/micro_string_test
+micro_string_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/micro_string_test
 
 //Value Computed by CMake
 micro_time_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/tests/micro_time_test
@@ -1355,7 +1364,7 @@ micro_time_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspac
 micro_time_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-micro_time_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/micro_time_test
+micro_time_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/micro_time_test
 
 //Value Computed by CMake
 micro_utils_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/tests/micro_utils_test
@@ -1364,7 +1373,7 @@ micro_utils_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspa
 micro_utils_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-micro_utils_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/micro_utils_test
+micro_utils_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/micro_utils_test
 
 //Value Computed by CMake
 person_detection_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/examples/person_detection
@@ -1373,7 +1382,7 @@ person_detection_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspa
 person_detection_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-person_detection_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/examples/person_detection
+person_detection_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/examples/person_detection
 
 //Value Computed by CMake
 pico-tflmicro_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro
@@ -1382,16 +1391,7 @@ pico-tflmicro_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/
 pico-tflmicro_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-pico-tflmicro_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro
-
-//Value Computed by CMake
-pico_inference_app_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build
-
-//Value Computed by CMake
-pico_inference_app_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-pico_inference_app_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper
+pico-tflmicro_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro
 
 //Value Computed by CMake
 pico_microphone_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/microphone-library-for-pico
@@ -1400,7 +1400,7 @@ pico_microphone_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspac
 pico_microphone_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-pico_microphone_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/microphone-library-for-pico
+pico_microphone_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/microphone-library-for-pico
 
 //Value Computed by CMake
 pico_sdk_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/pico-sdk
@@ -1418,7 +1418,7 @@ recording_micro_allocator_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pic
 recording_micro_allocator_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-recording_micro_allocator_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/recording_micro_allocator_test
+recording_micro_allocator_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/recording_micro_allocator_test
 
 //Value Computed by CMake
 recording_simple_memory_allocator_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/tests/recording_simple_memory_allocator_test
@@ -1427,7 +1427,7 @@ recording_simple_memory_allocator_test_BINARY_DIR:STATIC=/home/inteldev/raspberr
 recording_simple_memory_allocator_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-recording_simple_memory_allocator_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/recording_simple_memory_allocator_test
+recording_simple_memory_allocator_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/recording_simple_memory_allocator_test
 
 //Value Computed by CMake
 simple_memory_allocator_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/tests/simple_memory_allocator_test
@@ -1436,7 +1436,7 @@ simple_memory_allocator_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/
 simple_memory_allocator_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-simple_memory_allocator_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/simple_memory_allocator_test
+simple_memory_allocator_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/simple_memory_allocator_test
 
 //Value Computed by CMake
 testing_helpers_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/pico-tflmicro/tests/testing_helpers_test
@@ -1445,7 +1445,7 @@ testing_helpers_test_BINARY_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_wor
 testing_helpers_test_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-testing_helpers_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/tests/testing_helpers_test
+testing_helpers_test_SOURCE_DIR:STATIC=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/tests/testing_helpers_test
 
 
 ########################
@@ -1547,7 +1547,7 @@ CMAKE_GENERATOR_PLATFORM:INTERNAL=
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper
+CMAKE_HOME_DIRECTORY:INTERNAL=/home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper
 //ADVANCED property for variable: CMAKE_LINKER
 CMAKE_LINKER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MAKE_PROGRAM
@@ -1619,7 +1619,7 @@ PICO_BOOT_STAGE2_DIR:INTERNAL=/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src
 PICO_CMAKE_PRELOAD_PLATFORM_DIR:INTERNAL=/home/inteldev/raspberry-pi-pico/pico/pico-sdk/cmake/preload/platforms
 PICO_CMAKE_PRELOAD_PLATFORM_FILE:INTERNAL=/home/inteldev/raspberry-pi-pico/pico/pico-sdk/cmake/preload/platforms/rp2040.cmake
 PICO_COMPILER_ASM:INTERNAL=/usr/bin/arm-none-eabi-gcc
-PICO_DOXYGEN_EXCLUDE_PATHS:INTERNAL= /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/cmsis /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2040/hardware_regs /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/cmsis /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2040/hardware_regs /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/cmsis /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2040/hardware_regs
+PICO_DOXYGEN_EXCLUDE_PATHS:INTERNAL= /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/cmsis /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2040/hardware_regs /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/cmsis /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2040/hardware_regs
 PICO_DOXYGEN_PATHS:INTERNAL= /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common /home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/cyw43-driver/src /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2040
 PICO_NO_HARDWARE:INTERNAL=0
 PICO_ON_DEVICE:INTERNAL=1

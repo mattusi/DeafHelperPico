@@ -54,7 +54,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper
+CMAKE_SOURCE_DIR = /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/inteldev/raspberry-pi-pico/pico_workspace/build
@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /home/inteldev/raspberry-pi-pico/pico_workspace/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/pico_inference_app.dir/all
+all: CMakeFiles/deaf_helper_pico.dir/all
 all: CMakeFiles/ELF2UF2Build.dir/all
 all: pico-sdk/all
 .PHONY : all
@@ -73,7 +73,7 @@ preinstall: pico-sdk/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/pico_inference_app.dir/clean
+clean: CMakeFiles/deaf_helper_pico.dir/clean
 clean: CMakeFiles/ELF2UF2Build.dir/clean
 clean: pico-sdk/clean
 clean: lib/CMSIS_5/CMSIS/DSP/Source/clean
@@ -2900,39 +2900,39 @@ pico-sdk/tools/clean:
 .PHONY : pico-sdk/tools/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/pico_inference_app.dir
+# Target rules for target CMakeFiles/deaf_helper_pico.dir
 
 # All Build rule for target.
-CMakeFiles/pico_inference_app.dir/all: CMakeFiles/ELF2UF2Build.dir/all
-CMakeFiles/pico_inference_app.dir/all: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/all
-CMakeFiles/pico_inference_app.dir/all: lib/CMSIS_5/CMSIS/DSP/Source/BasicMathFunctions/CMakeFiles/CMSISDSPBasicMath.dir/all
-CMakeFiles/pico_inference_app.dir/all: lib/CMSIS_5/CMSIS/DSP/Source/ComplexMathFunctions/CMakeFiles/CMSISDSPComplexMath.dir/all
-CMakeFiles/pico_inference_app.dir/all: lib/CMSIS_5/CMSIS/DSP/Source/FastMathFunctions/CMakeFiles/CMSISDSPFastMath.dir/all
-CMakeFiles/pico_inference_app.dir/all: lib/CMSIS_5/CMSIS/DSP/Source/SupportFunctions/CMakeFiles/CMSISDSPSupport.dir/all
-CMakeFiles/pico_inference_app.dir/all: lib/CMSIS_5/CMSIS/DSP/Source/TransformFunctions/CMakeFiles/CMSISDSPTransform.dir/all
-CMakeFiles/pico_inference_app.dir/all: lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/all
-CMakeFiles/pico_inference_app.dir/all: lib/microphone-library-for-pico/CMakeFiles/pico_pdm_microphone_pdm_microphone_pio_h.dir/all
-CMakeFiles/pico_inference_app.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=92 "Built target pico_inference_app"
-.PHONY : CMakeFiles/pico_inference_app.dir/all
+CMakeFiles/deaf_helper_pico.dir/all: CMakeFiles/ELF2UF2Build.dir/all
+CMakeFiles/deaf_helper_pico.dir/all: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/all
+CMakeFiles/deaf_helper_pico.dir/all: lib/CMSIS_5/CMSIS/DSP/Source/BasicMathFunctions/CMakeFiles/CMSISDSPBasicMath.dir/all
+CMakeFiles/deaf_helper_pico.dir/all: lib/CMSIS_5/CMSIS/DSP/Source/ComplexMathFunctions/CMakeFiles/CMSISDSPComplexMath.dir/all
+CMakeFiles/deaf_helper_pico.dir/all: lib/CMSIS_5/CMSIS/DSP/Source/FastMathFunctions/CMakeFiles/CMSISDSPFastMath.dir/all
+CMakeFiles/deaf_helper_pico.dir/all: lib/CMSIS_5/CMSIS/DSP/Source/SupportFunctions/CMakeFiles/CMSISDSPSupport.dir/all
+CMakeFiles/deaf_helper_pico.dir/all: lib/CMSIS_5/CMSIS/DSP/Source/TransformFunctions/CMakeFiles/CMSISDSPTransform.dir/all
+CMakeFiles/deaf_helper_pico.dir/all: lib/CMSIS_5/CMSIS/DSP/Source/CommonTables/CMakeFiles/CMSISDSPCommon.dir/all
+CMakeFiles/deaf_helper_pico.dir/all: lib/microphone-library-for-pico/CMakeFiles/pico_pdm_microphone_pdm_microphone_pio_h.dir/all
+CMakeFiles/deaf_helper_pico.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=7 "Built target deaf_helper_pico"
+.PHONY : CMakeFiles/deaf_helper_pico.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/pico_inference_app.dir/rule: cmake_check_build_system
+CMakeFiles/deaf_helper_pico.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/pico_inference_app.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/deaf_helper_pico.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
-.PHONY : CMakeFiles/pico_inference_app.dir/rule
+.PHONY : CMakeFiles/deaf_helper_pico.dir/rule
 
 # Convenience name for target.
-pico_inference_app: CMakeFiles/pico_inference_app.dir/rule
-.PHONY : pico_inference_app
+deaf_helper_pico: CMakeFiles/deaf_helper_pico.dir/rule
+.PHONY : deaf_helper_pico
 
 # clean rule for target.
-CMakeFiles/pico_inference_app.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/clean
-.PHONY : CMakeFiles/pico_inference_app.dir/clean
+CMakeFiles/deaf_helper_pico.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/deaf_helper_pico.dir/build.make CMakeFiles/deaf_helper_pico.dir/clean
+.PHONY : CMakeFiles/deaf_helper_pico.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/ELF2UF2Build.dir
@@ -3540,12 +3540,12 @@ lib/microphone-library-for-pico/examples/hello_analog_microphone/CMakeFiles/hell
 lib/microphone-library-for-pico/examples/hello_analog_microphone/CMakeFiles/hello_analog_microphone.dir/all: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/microphone-library-for-pico/examples/hello_analog_microphone/CMakeFiles/hello_analog_microphone.dir/build.make lib/microphone-library-for-pico/examples/hello_analog_microphone/CMakeFiles/hello_analog_microphone.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/microphone-library-for-pico/examples/hello_analog_microphone/CMakeFiles/hello_analog_microphone.dir/build.make lib/microphone-library-for-pico/examples/hello_analog_microphone/CMakeFiles/hello_analog_microphone.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=15 "Built target hello_analog_microphone"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num= "Built target hello_analog_microphone"
 .PHONY : lib/microphone-library-for-pico/examples/hello_analog_microphone/CMakeFiles/hello_analog_microphone.dir/all
 
 # Build rule for subdir invocation for target.
 lib/microphone-library-for-pico/examples/hello_analog_microphone/CMakeFiles/hello_analog_microphone.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/microphone-library-for-pico/examples/hello_analog_microphone/CMakeFiles/hello_analog_microphone.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/microphone-library-for-pico/examples/hello_analog_microphone/CMakeFiles/hello_analog_microphone.dir/rule
@@ -3568,12 +3568,12 @@ lib/microphone-library-for-pico/examples/hello_pdm_microphone/CMakeFiles/hello_p
 lib/microphone-library-for-pico/examples/hello_pdm_microphone/CMakeFiles/hello_pdm_microphone.dir/all: lib/microphone-library-for-pico/CMakeFiles/pico_pdm_microphone_pdm_microphone_pio_h.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/microphone-library-for-pico/examples/hello_pdm_microphone/CMakeFiles/hello_pdm_microphone.dir/build.make lib/microphone-library-for-pico/examples/hello_pdm_microphone/CMakeFiles/hello_pdm_microphone.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/microphone-library-for-pico/examples/hello_pdm_microphone/CMakeFiles/hello_pdm_microphone.dir/build.make lib/microphone-library-for-pico/examples/hello_pdm_microphone/CMakeFiles/hello_pdm_microphone.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num= "Built target hello_pdm_microphone"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=17 "Built target hello_pdm_microphone"
 .PHONY : lib/microphone-library-for-pico/examples/hello_pdm_microphone/CMakeFiles/hello_pdm_microphone.dir/all
 
 # Build rule for subdir invocation for target.
 lib/microphone-library-for-pico/examples/hello_pdm_microphone/CMakeFiles/hello_pdm_microphone.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/microphone-library-for-pico/examples/hello_pdm_microphone/CMakeFiles/hello_pdm_microphone.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/microphone-library-for-pico/examples/hello_pdm_microphone/CMakeFiles/hello_pdm_microphone.dir/rule
@@ -3622,7 +3622,7 @@ lib/microphone-library-for-pico/examples/usb_microphone/CMakeFiles/usb_microphon
 lib/pico-tflmicro/CMakeFiles/pico-tflmicro.dir/all: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/CMakeFiles/pico-tflmicro.dir/build.make lib/pico-tflmicro/CMakeFiles/pico-tflmicro.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/CMakeFiles/pico-tflmicro.dir/build.make lib/pico-tflmicro/CMakeFiles/pico-tflmicro.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=90 "Built target pico-tflmicro"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=92 "Built target pico-tflmicro"
 .PHONY : lib/pico-tflmicro/CMakeFiles/pico-tflmicro.dir/all
 
 # Build rule for subdir invocation for target.
@@ -3648,12 +3648,12 @@ lib/pico-tflmicro/CMakeFiles/pico-tflmicro.dir/clean:
 lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/build.make lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/build.make lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=91 "Built target pico-tflmicro_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num= "Built target pico-tflmicro_test"
 .PHONY : lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/rule
@@ -3676,7 +3676,7 @@ lib/pico-tflmicro/examples/keyword_benchmark/CMakeFiles/keyword_benchmark.dir/al
 lib/pico-tflmicro/examples/keyword_benchmark/CMakeFiles/keyword_benchmark.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/examples/keyword_benchmark/CMakeFiles/keyword_benchmark.dir/build.make lib/pico-tflmicro/examples/keyword_benchmark/CMakeFiles/keyword_benchmark.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/examples/keyword_benchmark/CMakeFiles/keyword_benchmark.dir/build.make lib/pico-tflmicro/examples/keyword_benchmark/CMakeFiles/keyword_benchmark.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=66 "Built target keyword_benchmark"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=67 "Built target keyword_benchmark"
 .PHONY : lib/pico-tflmicro/examples/keyword_benchmark/CMakeFiles/keyword_benchmark.dir/all
 
 # Build rule for subdir invocation for target.
@@ -3705,12 +3705,12 @@ lib/pico-tflmicro/examples/hello_world/CMakeFiles/hello_world_test.dir/all: lib/
 lib/pico-tflmicro/examples/hello_world/CMakeFiles/hello_world_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/examples/hello_world/CMakeFiles/hello_world_test.dir/build.make lib/pico-tflmicro/examples/hello_world/CMakeFiles/hello_world_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/examples/hello_world/CMakeFiles/hello_world_test.dir/build.make lib/pico-tflmicro/examples/hello_world/CMakeFiles/hello_world_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=17,18 "Built target hello_world_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=19 "Built target hello_world_test"
 .PHONY : lib/pico-tflmicro/examples/hello_world/CMakeFiles/hello_world_test.dir/all
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/examples/hello_world/CMakeFiles/hello_world_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/examples/hello_world/CMakeFiles/hello_world_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/examples/hello_world/CMakeFiles/hello_world_test.dir/rule
@@ -3733,7 +3733,7 @@ lib/pico-tflmicro/examples/hello_world/CMakeFiles/hello_world.dir/all: pico-sdk/
 lib/pico-tflmicro/examples/hello_world/CMakeFiles/hello_world.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/examples/hello_world/CMakeFiles/hello_world.dir/build.make lib/pico-tflmicro/examples/hello_world/CMakeFiles/hello_world.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/examples/hello_world/CMakeFiles/hello_world.dir/build.make lib/pico-tflmicro/examples/hello_world/CMakeFiles/hello_world.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=16 "Built target hello_world"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=18 "Built target hello_world"
 .PHONY : lib/pico-tflmicro/examples/hello_world/CMakeFiles/hello_world.dir/all
 
 # Build rule for subdir invocation for target.
@@ -3762,12 +3762,12 @@ lib/pico-tflmicro/examples/hello_world/CMakeFiles/output_handler_test.dir/all: l
 lib/pico-tflmicro/examples/hello_world/CMakeFiles/output_handler_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/examples/hello_world/CMakeFiles/output_handler_test.dir/build.make lib/pico-tflmicro/examples/hello_world/CMakeFiles/output_handler_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/examples/hello_world/CMakeFiles/output_handler_test.dir/build.make lib/pico-tflmicro/examples/hello_world/CMakeFiles/output_handler_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=86 "Built target output_handler_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=87 "Built target output_handler_test"
 .PHONY : lib/pico-tflmicro/examples/hello_world/CMakeFiles/output_handler_test.dir/all
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/examples/hello_world/CMakeFiles/output_handler_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/examples/hello_world/CMakeFiles/output_handler_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/examples/hello_world/CMakeFiles/output_handler_test.dir/rule
@@ -3790,7 +3790,7 @@ lib/pico-tflmicro/examples/person_detection/CMakeFiles/detection_responder_test_
 lib/pico-tflmicro/examples/person_detection/CMakeFiles/detection_responder_test_int8.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/examples/person_detection/CMakeFiles/detection_responder_test_int8.dir/build.make lib/pico-tflmicro/examples/person_detection/CMakeFiles/detection_responder_test_int8.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/examples/person_detection/CMakeFiles/detection_responder_test_int8.dir/build.make lib/pico-tflmicro/examples/person_detection/CMakeFiles/detection_responder_test_int8.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=7 "Built target detection_responder_test_int8"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=8 "Built target detection_responder_test_int8"
 .PHONY : lib/pico-tflmicro/examples/person_detection/CMakeFiles/detection_responder_test_int8.dir/all
 
 # Build rule for subdir invocation for target.
@@ -3818,7 +3818,7 @@ lib/pico-tflmicro/examples/person_detection/CMakeFiles/person_detection_benchmar
 lib/pico-tflmicro/examples/person_detection/CMakeFiles/person_detection_benchmark.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/examples/person_detection/CMakeFiles/person_detection_benchmark.dir/build.make lib/pico-tflmicro/examples/person_detection/CMakeFiles/person_detection_benchmark.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/examples/person_detection/CMakeFiles/person_detection_benchmark.dir/build.make lib/pico-tflmicro/examples/person_detection/CMakeFiles/person_detection_benchmark.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=87 "Built target person_detection_benchmark"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=88 "Built target person_detection_benchmark"
 .PHONY : lib/pico-tflmicro/examples/person_detection/CMakeFiles/person_detection_benchmark.dir/all
 
 # Build rule for subdir invocation for target.
@@ -3846,7 +3846,7 @@ lib/pico-tflmicro/examples/person_detection/CMakeFiles/person_detection_test_int
 lib/pico-tflmicro/examples/person_detection/CMakeFiles/person_detection_test_int8.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/examples/person_detection/CMakeFiles/person_detection_test_int8.dir/build.make lib/pico-tflmicro/examples/person_detection/CMakeFiles/person_detection_test_int8.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/examples/person_detection/CMakeFiles/person_detection_test_int8.dir/build.make lib/pico-tflmicro/examples/person_detection/CMakeFiles/person_detection_test_int8.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=89 "Built target person_detection_test_int8"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=91 "Built target person_detection_test_int8"
 .PHONY : lib/pico-tflmicro/examples/person_detection/CMakeFiles/person_detection_test_int8.dir/all
 
 # Build rule for subdir invocation for target.
@@ -3874,12 +3874,12 @@ lib/pico-tflmicro/examples/person_detection/CMakeFiles/person_detection_int8.dir
 lib/pico-tflmicro/examples/person_detection/CMakeFiles/person_detection_int8.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/examples/person_detection/CMakeFiles/person_detection_int8.dir/build.make lib/pico-tflmicro/examples/person_detection/CMakeFiles/person_detection_int8.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/examples/person_detection/CMakeFiles/person_detection_int8.dir/build.make lib/pico-tflmicro/examples/person_detection/CMakeFiles/person_detection_int8.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=88 "Built target person_detection_int8"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=89,90 "Built target person_detection_int8"
 .PHONY : lib/pico-tflmicro/examples/person_detection/CMakeFiles/person_detection_int8.dir/all
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/examples/person_detection/CMakeFiles/person_detection_int8.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/examples/person_detection/CMakeFiles/person_detection_int8.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/examples/person_detection/CMakeFiles/person_detection_int8.dir/rule
@@ -3902,7 +3902,7 @@ lib/pico-tflmicro/examples/person_detection/CMakeFiles/image_provider_test_int8.
 lib/pico-tflmicro/examples/person_detection/CMakeFiles/image_provider_test_int8.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/examples/person_detection/CMakeFiles/image_provider_test_int8.dir/build.make lib/pico-tflmicro/examples/person_detection/CMakeFiles/image_provider_test_int8.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/examples/person_detection/CMakeFiles/image_provider_test_int8.dir/build.make lib/pico-tflmicro/examples/person_detection/CMakeFiles/image_provider_test_int8.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=19 "Built target image_provider_test_int8"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=20 "Built target image_provider_test_int8"
 .PHONY : lib/pico-tflmicro/examples/person_detection/CMakeFiles/image_provider_test_int8.dir/all
 
 # Build rule for subdir invocation for target.
@@ -3931,7 +3931,7 @@ lib/pico-tflmicro/examples/magic_wand/CMakeFiles/gesture_predictor_test.dir/all:
 lib/pico-tflmicro/examples/magic_wand/CMakeFiles/gesture_predictor_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/examples/magic_wand/CMakeFiles/gesture_predictor_test.dir/build.make lib/pico-tflmicro/examples/magic_wand/CMakeFiles/gesture_predictor_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/examples/magic_wand/CMakeFiles/gesture_predictor_test.dir/build.make lib/pico-tflmicro/examples/magic_wand/CMakeFiles/gesture_predictor_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=13 "Built target gesture_predictor_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=14,15 "Built target gesture_predictor_test"
 .PHONY : lib/pico-tflmicro/examples/magic_wand/CMakeFiles/gesture_predictor_test.dir/all
 
 # Build rule for subdir invocation for target.
@@ -3960,12 +3960,12 @@ lib/pico-tflmicro/examples/magic_wand/CMakeFiles/gesture_output_handler_test.dir
 lib/pico-tflmicro/examples/magic_wand/CMakeFiles/gesture_output_handler_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/examples/magic_wand/CMakeFiles/gesture_output_handler_test.dir/build.make lib/pico-tflmicro/examples/magic_wand/CMakeFiles/gesture_output_handler_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/examples/magic_wand/CMakeFiles/gesture_output_handler_test.dir/build.make lib/pico-tflmicro/examples/magic_wand/CMakeFiles/gesture_output_handler_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=12 "Built target gesture_output_handler_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=13 "Built target gesture_output_handler_test"
 .PHONY : lib/pico-tflmicro/examples/magic_wand/CMakeFiles/gesture_output_handler_test.dir/all
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/examples/magic_wand/CMakeFiles/gesture_output_handler_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/examples/magic_wand/CMakeFiles/gesture_output_handler_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/examples/magic_wand/CMakeFiles/gesture_output_handler_test.dir/rule
@@ -3988,7 +3988,7 @@ lib/pico-tflmicro/examples/magic_wand/CMakeFiles/magic_wand.dir/all: pico-sdk/sr
 lib/pico-tflmicro/examples/magic_wand/CMakeFiles/magic_wand.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/examples/magic_wand/CMakeFiles/magic_wand.dir/build.make lib/pico-tflmicro/examples/magic_wand/CMakeFiles/magic_wand.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/examples/magic_wand/CMakeFiles/magic_wand.dir/build.make lib/pico-tflmicro/examples/magic_wand/CMakeFiles/magic_wand.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=68 "Built target magic_wand"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=69 "Built target magic_wand"
 .PHONY : lib/pico-tflmicro/examples/magic_wand/CMakeFiles/magic_wand.dir/all
 
 # Build rule for subdir invocation for target.
@@ -4017,7 +4017,7 @@ lib/pico-tflmicro/examples/magic_wand/CMakeFiles/magic_wand_test.dir/all: lib/pi
 lib/pico-tflmicro/examples/magic_wand/CMakeFiles/magic_wand_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/examples/magic_wand/CMakeFiles/magic_wand_test.dir/build.make lib/pico-tflmicro/examples/magic_wand/CMakeFiles/magic_wand_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/examples/magic_wand/CMakeFiles/magic_wand_test.dir/build.make lib/pico-tflmicro/examples/magic_wand/CMakeFiles/magic_wand_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=69 "Built target magic_wand_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=70,71 "Built target magic_wand_test"
 .PHONY : lib/pico-tflmicro/examples/magic_wand/CMakeFiles/magic_wand_test.dir/all
 
 # Build rule for subdir invocation for target.
@@ -4046,12 +4046,12 @@ lib/pico-tflmicro/examples/magic_wand/CMakeFiles/gesture_accelerometer_handler_t
 lib/pico-tflmicro/examples/magic_wand/CMakeFiles/gesture_accelerometer_handler_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/examples/magic_wand/CMakeFiles/gesture_accelerometer_handler_test.dir/build.make lib/pico-tflmicro/examples/magic_wand/CMakeFiles/gesture_accelerometer_handler_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/examples/magic_wand/CMakeFiles/gesture_accelerometer_handler_test.dir/build.make lib/pico-tflmicro/examples/magic_wand/CMakeFiles/gesture_accelerometer_handler_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=11 "Built target gesture_accelerometer_handler_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=12 "Built target gesture_accelerometer_handler_test"
 .PHONY : lib/pico-tflmicro/examples/magic_wand/CMakeFiles/gesture_accelerometer_handler_test.dir/all
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/examples/magic_wand/CMakeFiles/gesture_accelerometer_handler_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/examples/magic_wand/CMakeFiles/gesture_accelerometer_handler_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/examples/magic_wand/CMakeFiles/gesture_accelerometer_handler_test.dir/rule
@@ -4080,7 +4080,7 @@ lib/pico-tflmicro/examples/micro_speech/CMakeFiles/audio_provider_mock_test.dir/
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/examples/micro_speech/CMakeFiles/audio_provider_mock_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/examples/micro_speech/CMakeFiles/audio_provider_mock_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/examples/micro_speech/CMakeFiles/audio_provider_mock_test.dir/rule
@@ -4104,7 +4104,7 @@ lib/pico-tflmicro/examples/micro_speech/CMakeFiles/feature_provider_mock_test.di
 lib/pico-tflmicro/examples/micro_speech/CMakeFiles/feature_provider_mock_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/examples/micro_speech/CMakeFiles/feature_provider_mock_test.dir/build.make lib/pico-tflmicro/examples/micro_speech/CMakeFiles/feature_provider_mock_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/examples/micro_speech/CMakeFiles/feature_provider_mock_test.dir/build.make lib/pico-tflmicro/examples/micro_speech/CMakeFiles/feature_provider_mock_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=8 "Built target feature_provider_mock_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=9,10 "Built target feature_provider_mock_test"
 .PHONY : lib/pico-tflmicro/examples/micro_speech/CMakeFiles/feature_provider_mock_test.dir/all
 
 # Build rule for subdir invocation for target.
@@ -4132,12 +4132,12 @@ lib/pico-tflmicro/examples/micro_speech/CMakeFiles/micro_speech.dir/all: pico-sd
 lib/pico-tflmicro/examples/micro_speech/CMakeFiles/micro_speech.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/examples/micro_speech/CMakeFiles/micro_speech.dir/build.make lib/pico-tflmicro/examples/micro_speech/CMakeFiles/micro_speech.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/examples/micro_speech/CMakeFiles/micro_speech.dir/build.make lib/pico-tflmicro/examples/micro_speech/CMakeFiles/micro_speech.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=78,79 "Built target micro_speech"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=80 "Built target micro_speech"
 .PHONY : lib/pico-tflmicro/examples/micro_speech/CMakeFiles/micro_speech.dir/all
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/examples/micro_speech/CMakeFiles/micro_speech.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/examples/micro_speech/CMakeFiles/micro_speech.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/examples/micro_speech/CMakeFiles/micro_speech.dir/rule
@@ -4166,7 +4166,7 @@ lib/pico-tflmicro/examples/micro_speech/CMakeFiles/simple_features_generator_tes
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/examples/micro_speech/CMakeFiles/simple_features_generator_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/examples/micro_speech/CMakeFiles/simple_features_generator_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/examples/micro_speech/CMakeFiles/simple_features_generator_test.dir/rule
@@ -4195,7 +4195,7 @@ lib/pico-tflmicro/examples/micro_speech/CMakeFiles/command_responder_test.dir/al
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/examples/micro_speech/CMakeFiles/command_responder_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/examples/micro_speech/CMakeFiles/command_responder_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/examples/micro_speech/CMakeFiles/command_responder_test.dir/rule
@@ -4218,7 +4218,7 @@ lib/pico-tflmicro/examples/micro_speech/CMakeFiles/micro_speech_mock.dir/all: pi
 lib/pico-tflmicro/examples/micro_speech/CMakeFiles/micro_speech_mock.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/examples/micro_speech/CMakeFiles/micro_speech_mock.dir/build.make lib/pico-tflmicro/examples/micro_speech/CMakeFiles/micro_speech_mock.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/examples/micro_speech/CMakeFiles/micro_speech_mock.dir/build.make lib/pico-tflmicro/examples/micro_speech/CMakeFiles/micro_speech_mock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=80 "Built target micro_speech_mock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=81 "Built target micro_speech_mock"
 .PHONY : lib/pico-tflmicro/examples/micro_speech/CMakeFiles/micro_speech_mock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -4247,7 +4247,7 @@ lib/pico-tflmicro/examples/micro_speech/CMakeFiles/micro_features_generator_test
 lib/pico-tflmicro/examples/micro_speech/CMakeFiles/micro_features_generator_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/examples/micro_speech/CMakeFiles/micro_features_generator_test.dir/build.make lib/pico-tflmicro/examples/micro_speech/CMakeFiles/micro_features_generator_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/examples/micro_speech/CMakeFiles/micro_features_generator_test.dir/build.make lib/pico-tflmicro/examples/micro_speech/CMakeFiles/micro_features_generator_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=75 "Built target micro_features_generator_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=76,77 "Built target micro_features_generator_test"
 .PHONY : lib/pico-tflmicro/examples/micro_speech/CMakeFiles/micro_features_generator_test.dir/all
 
 # Build rule for subdir invocation for target.
@@ -4276,12 +4276,12 @@ lib/pico-tflmicro/examples/micro_speech/CMakeFiles/feature_provider_test.dir/all
 lib/pico-tflmicro/examples/micro_speech/CMakeFiles/feature_provider_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/examples/micro_speech/CMakeFiles/feature_provider_test.dir/build.make lib/pico-tflmicro/examples/micro_speech/CMakeFiles/feature_provider_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/examples/micro_speech/CMakeFiles/feature_provider_test.dir/build.make lib/pico-tflmicro/examples/micro_speech/CMakeFiles/feature_provider_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=9,10 "Built target feature_provider_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=11 "Built target feature_provider_test"
 .PHONY : lib/pico-tflmicro/examples/micro_speech/CMakeFiles/feature_provider_test.dir/all
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/examples/micro_speech/CMakeFiles/feature_provider_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/examples/micro_speech/CMakeFiles/feature_provider_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/examples/micro_speech/CMakeFiles/feature_provider_test.dir/rule
@@ -4305,7 +4305,7 @@ lib/pico-tflmicro/examples/micro_speech/CMakeFiles/micro_speech_test.dir/all: li
 lib/pico-tflmicro/examples/micro_speech/CMakeFiles/micro_speech_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/examples/micro_speech/CMakeFiles/micro_speech_test.dir/build.make lib/pico-tflmicro/examples/micro_speech/CMakeFiles/micro_speech_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/examples/micro_speech/CMakeFiles/micro_speech_test.dir/build.make lib/pico-tflmicro/examples/micro_speech/CMakeFiles/micro_speech_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=81 "Built target micro_speech_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=82,83 "Built target micro_speech_test"
 .PHONY : lib/pico-tflmicro/examples/micro_speech/CMakeFiles/micro_speech_test.dir/all
 
 # Build rule for subdir invocation for target.
@@ -4339,7 +4339,7 @@ lib/pico-tflmicro/examples/micro_speech/CMakeFiles/audio_provider_test.dir/all: 
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/examples/micro_speech/CMakeFiles/audio_provider_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/examples/micro_speech/CMakeFiles/audio_provider_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/examples/micro_speech/CMakeFiles/audio_provider_test.dir/rule
@@ -4368,7 +4368,7 @@ lib/pico-tflmicro/examples/micro_speech/CMakeFiles/recognize_commands_test.dir/a
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/examples/micro_speech/CMakeFiles/recognize_commands_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/examples/micro_speech/CMakeFiles/recognize_commands_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/examples/micro_speech/CMakeFiles/recognize_commands_test.dir/rule
@@ -4392,12 +4392,12 @@ lib/pico-tflmicro/tests/greedy_memory_planner_test/CMakeFiles/greedy_memory_plan
 lib/pico-tflmicro/tests/greedy_memory_planner_test/CMakeFiles/greedy_memory_planner_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/greedy_memory_planner_test/CMakeFiles/greedy_memory_planner_test.dir/build.make lib/pico-tflmicro/tests/greedy_memory_planner_test/CMakeFiles/greedy_memory_planner_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/greedy_memory_planner_test/CMakeFiles/greedy_memory_planner_test.dir/build.make lib/pico-tflmicro/tests/greedy_memory_planner_test/CMakeFiles/greedy_memory_planner_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=14 "Built target greedy_memory_planner_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=16 "Built target greedy_memory_planner_test"
 .PHONY : lib/pico-tflmicro/tests/greedy_memory_planner_test/CMakeFiles/greedy_memory_planner_test.dir/all
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/tests/greedy_memory_planner_test/CMakeFiles/greedy_memory_planner_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/tests/greedy_memory_planner_test/CMakeFiles/greedy_memory_planner_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/tests/greedy_memory_planner_test/CMakeFiles/greedy_memory_planner_test.dir/rule
@@ -4421,12 +4421,12 @@ lib/pico-tflmicro/tests/kernel_activations_test/CMakeFiles/kernel_activations_te
 lib/pico-tflmicro/tests/kernel_activations_test/CMakeFiles/kernel_activations_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_activations_test/CMakeFiles/kernel_activations_test.dir/build.make lib/pico-tflmicro/tests/kernel_activations_test/CMakeFiles/kernel_activations_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_activations_test/CMakeFiles/kernel_activations_test.dir/build.make lib/pico-tflmicro/tests/kernel_activations_test/CMakeFiles/kernel_activations_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=20 "Built target kernel_activations_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=21 "Built target kernel_activations_test"
 .PHONY : lib/pico-tflmicro/tests/kernel_activations_test/CMakeFiles/kernel_activations_test.dir/all
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/tests/kernel_activations_test/CMakeFiles/kernel_activations_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/tests/kernel_activations_test/CMakeFiles/kernel_activations_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/tests/kernel_activations_test/CMakeFiles/kernel_activations_test.dir/rule
@@ -4450,12 +4450,12 @@ lib/pico-tflmicro/tests/kernel_add_test/CMakeFiles/kernel_add_test.dir/all: lib/
 lib/pico-tflmicro/tests/kernel_add_test/CMakeFiles/kernel_add_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_add_test/CMakeFiles/kernel_add_test.dir/build.make lib/pico-tflmicro/tests/kernel_add_test/CMakeFiles/kernel_add_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_add_test/CMakeFiles/kernel_add_test.dir/build.make lib/pico-tflmicro/tests/kernel_add_test/CMakeFiles/kernel_add_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=21 "Built target kernel_add_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=22 "Built target kernel_add_test"
 .PHONY : lib/pico-tflmicro/tests/kernel_add_test/CMakeFiles/kernel_add_test.dir/all
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/tests/kernel_add_test/CMakeFiles/kernel_add_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/tests/kernel_add_test/CMakeFiles/kernel_add_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/tests/kernel_add_test/CMakeFiles/kernel_add_test.dir/rule
@@ -4479,12 +4479,12 @@ lib/pico-tflmicro/tests/kernel_arg_min_max_test/CMakeFiles/kernel_arg_min_max_te
 lib/pico-tflmicro/tests/kernel_arg_min_max_test/CMakeFiles/kernel_arg_min_max_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_arg_min_max_test/CMakeFiles/kernel_arg_min_max_test.dir/build.make lib/pico-tflmicro/tests/kernel_arg_min_max_test/CMakeFiles/kernel_arg_min_max_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_arg_min_max_test/CMakeFiles/kernel_arg_min_max_test.dir/build.make lib/pico-tflmicro/tests/kernel_arg_min_max_test/CMakeFiles/kernel_arg_min_max_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=22 "Built target kernel_arg_min_max_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=23 "Built target kernel_arg_min_max_test"
 .PHONY : lib/pico-tflmicro/tests/kernel_arg_min_max_test/CMakeFiles/kernel_arg_min_max_test.dir/all
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/tests/kernel_arg_min_max_test/CMakeFiles/kernel_arg_min_max_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/tests/kernel_arg_min_max_test/CMakeFiles/kernel_arg_min_max_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/tests/kernel_arg_min_max_test/CMakeFiles/kernel_arg_min_max_test.dir/rule
@@ -4508,7 +4508,7 @@ lib/pico-tflmicro/tests/kernel_ceil_test/CMakeFiles/kernel_ceil_test.dir/all: li
 lib/pico-tflmicro/tests/kernel_ceil_test/CMakeFiles/kernel_ceil_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_ceil_test/CMakeFiles/kernel_ceil_test.dir/build.make lib/pico-tflmicro/tests/kernel_ceil_test/CMakeFiles/kernel_ceil_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_ceil_test/CMakeFiles/kernel_ceil_test.dir/build.make lib/pico-tflmicro/tests/kernel_ceil_test/CMakeFiles/kernel_ceil_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=23 "Built target kernel_ceil_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=24,25 "Built target kernel_ceil_test"
 .PHONY : lib/pico-tflmicro/tests/kernel_ceil_test/CMakeFiles/kernel_ceil_test.dir/all
 
 # Build rule for subdir invocation for target.
@@ -4537,12 +4537,12 @@ lib/pico-tflmicro/tests/kernel_circular_buffer_test/CMakeFiles/kernel_circular_b
 lib/pico-tflmicro/tests/kernel_circular_buffer_test/CMakeFiles/kernel_circular_buffer_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_circular_buffer_test/CMakeFiles/kernel_circular_buffer_test.dir/build.make lib/pico-tflmicro/tests/kernel_circular_buffer_test/CMakeFiles/kernel_circular_buffer_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_circular_buffer_test/CMakeFiles/kernel_circular_buffer_test.dir/build.make lib/pico-tflmicro/tests/kernel_circular_buffer_test/CMakeFiles/kernel_circular_buffer_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=24 "Built target kernel_circular_buffer_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=26 "Built target kernel_circular_buffer_test"
 .PHONY : lib/pico-tflmicro/tests/kernel_circular_buffer_test/CMakeFiles/kernel_circular_buffer_test.dir/all
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/tests/kernel_circular_buffer_test/CMakeFiles/kernel_circular_buffer_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/tests/kernel_circular_buffer_test/CMakeFiles/kernel_circular_buffer_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/tests/kernel_circular_buffer_test/CMakeFiles/kernel_circular_buffer_test.dir/rule
@@ -4566,12 +4566,12 @@ lib/pico-tflmicro/tests/kernel_comparisons_test/CMakeFiles/kernel_comparisons_te
 lib/pico-tflmicro/tests/kernel_comparisons_test/CMakeFiles/kernel_comparisons_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_comparisons_test/CMakeFiles/kernel_comparisons_test.dir/build.make lib/pico-tflmicro/tests/kernel_comparisons_test/CMakeFiles/kernel_comparisons_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_comparisons_test/CMakeFiles/kernel_comparisons_test.dir/build.make lib/pico-tflmicro/tests/kernel_comparisons_test/CMakeFiles/kernel_comparisons_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=25,26 "Built target kernel_comparisons_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=27 "Built target kernel_comparisons_test"
 .PHONY : lib/pico-tflmicro/tests/kernel_comparisons_test/CMakeFiles/kernel_comparisons_test.dir/all
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/tests/kernel_comparisons_test/CMakeFiles/kernel_comparisons_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/tests/kernel_comparisons_test/CMakeFiles/kernel_comparisons_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/tests/kernel_comparisons_test/CMakeFiles/kernel_comparisons_test.dir/rule
@@ -4595,12 +4595,12 @@ lib/pico-tflmicro/tests/kernel_concatenation_test/CMakeFiles/kernel_concatenatio
 lib/pico-tflmicro/tests/kernel_concatenation_test/CMakeFiles/kernel_concatenation_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_concatenation_test/CMakeFiles/kernel_concatenation_test.dir/build.make lib/pico-tflmicro/tests/kernel_concatenation_test/CMakeFiles/kernel_concatenation_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_concatenation_test/CMakeFiles/kernel_concatenation_test.dir/build.make lib/pico-tflmicro/tests/kernel_concatenation_test/CMakeFiles/kernel_concatenation_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=27 "Built target kernel_concatenation_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=28 "Built target kernel_concatenation_test"
 .PHONY : lib/pico-tflmicro/tests/kernel_concatenation_test/CMakeFiles/kernel_concatenation_test.dir/all
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/tests/kernel_concatenation_test/CMakeFiles/kernel_concatenation_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/tests/kernel_concatenation_test/CMakeFiles/kernel_concatenation_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/tests/kernel_concatenation_test/CMakeFiles/kernel_concatenation_test.dir/rule
@@ -4624,12 +4624,12 @@ lib/pico-tflmicro/tests/kernel_conv_test/CMakeFiles/kernel_conv_test.dir/all: li
 lib/pico-tflmicro/tests/kernel_conv_test/CMakeFiles/kernel_conv_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_conv_test/CMakeFiles/kernel_conv_test.dir/build.make lib/pico-tflmicro/tests/kernel_conv_test/CMakeFiles/kernel_conv_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_conv_test/CMakeFiles/kernel_conv_test.dir/build.make lib/pico-tflmicro/tests/kernel_conv_test/CMakeFiles/kernel_conv_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=28 "Built target kernel_conv_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=29 "Built target kernel_conv_test"
 .PHONY : lib/pico-tflmicro/tests/kernel_conv_test/CMakeFiles/kernel_conv_test.dir/all
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/tests/kernel_conv_test/CMakeFiles/kernel_conv_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/tests/kernel_conv_test/CMakeFiles/kernel_conv_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/tests/kernel_conv_test/CMakeFiles/kernel_conv_test.dir/rule
@@ -4653,12 +4653,12 @@ lib/pico-tflmicro/tests/kernel_depthwise_conv_test/CMakeFiles/kernel_depthwise_c
 lib/pico-tflmicro/tests/kernel_depthwise_conv_test/CMakeFiles/kernel_depthwise_conv_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_depthwise_conv_test/CMakeFiles/kernel_depthwise_conv_test.dir/build.make lib/pico-tflmicro/tests/kernel_depthwise_conv_test/CMakeFiles/kernel_depthwise_conv_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_depthwise_conv_test/CMakeFiles/kernel_depthwise_conv_test.dir/build.make lib/pico-tflmicro/tests/kernel_depthwise_conv_test/CMakeFiles/kernel_depthwise_conv_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=29 "Built target kernel_depthwise_conv_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=30 "Built target kernel_depthwise_conv_test"
 .PHONY : lib/pico-tflmicro/tests/kernel_depthwise_conv_test/CMakeFiles/kernel_depthwise_conv_test.dir/all
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/tests/kernel_depthwise_conv_test/CMakeFiles/kernel_depthwise_conv_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/tests/kernel_depthwise_conv_test/CMakeFiles/kernel_depthwise_conv_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/tests/kernel_depthwise_conv_test/CMakeFiles/kernel_depthwise_conv_test.dir/rule
@@ -4682,7 +4682,7 @@ lib/pico-tflmicro/tests/kernel_dequantize_test/CMakeFiles/kernel_dequantize_test
 lib/pico-tflmicro/tests/kernel_dequantize_test/CMakeFiles/kernel_dequantize_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_dequantize_test/CMakeFiles/kernel_dequantize_test.dir/build.make lib/pico-tflmicro/tests/kernel_dequantize_test/CMakeFiles/kernel_dequantize_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_dequantize_test/CMakeFiles/kernel_dequantize_test.dir/build.make lib/pico-tflmicro/tests/kernel_dequantize_test/CMakeFiles/kernel_dequantize_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=30 "Built target kernel_dequantize_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=31,32 "Built target kernel_dequantize_test"
 .PHONY : lib/pico-tflmicro/tests/kernel_dequantize_test/CMakeFiles/kernel_dequantize_test.dir/all
 
 # Build rule for subdir invocation for target.
@@ -4711,12 +4711,12 @@ lib/pico-tflmicro/tests/kernel_detection_postprocess_test/CMakeFiles/kernel_dete
 lib/pico-tflmicro/tests/kernel_detection_postprocess_test/CMakeFiles/kernel_detection_postprocess_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_detection_postprocess_test/CMakeFiles/kernel_detection_postprocess_test.dir/build.make lib/pico-tflmicro/tests/kernel_detection_postprocess_test/CMakeFiles/kernel_detection_postprocess_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_detection_postprocess_test/CMakeFiles/kernel_detection_postprocess_test.dir/build.make lib/pico-tflmicro/tests/kernel_detection_postprocess_test/CMakeFiles/kernel_detection_postprocess_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=31 "Built target kernel_detection_postprocess_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=33 "Built target kernel_detection_postprocess_test"
 .PHONY : lib/pico-tflmicro/tests/kernel_detection_postprocess_test/CMakeFiles/kernel_detection_postprocess_test.dir/all
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/tests/kernel_detection_postprocess_test/CMakeFiles/kernel_detection_postprocess_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/tests/kernel_detection_postprocess_test/CMakeFiles/kernel_detection_postprocess_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/tests/kernel_detection_postprocess_test/CMakeFiles/kernel_detection_postprocess_test.dir/rule
@@ -4740,12 +4740,12 @@ lib/pico-tflmicro/tests/kernel_elementwise_test/CMakeFiles/kernel_elementwise_te
 lib/pico-tflmicro/tests/kernel_elementwise_test/CMakeFiles/kernel_elementwise_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_elementwise_test/CMakeFiles/kernel_elementwise_test.dir/build.make lib/pico-tflmicro/tests/kernel_elementwise_test/CMakeFiles/kernel_elementwise_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_elementwise_test/CMakeFiles/kernel_elementwise_test.dir/build.make lib/pico-tflmicro/tests/kernel_elementwise_test/CMakeFiles/kernel_elementwise_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=32 "Built target kernel_elementwise_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=34 "Built target kernel_elementwise_test"
 .PHONY : lib/pico-tflmicro/tests/kernel_elementwise_test/CMakeFiles/kernel_elementwise_test.dir/all
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/tests/kernel_elementwise_test/CMakeFiles/kernel_elementwise_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/tests/kernel_elementwise_test/CMakeFiles/kernel_elementwise_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/tests/kernel_elementwise_test/CMakeFiles/kernel_elementwise_test.dir/rule
@@ -4769,12 +4769,12 @@ lib/pico-tflmicro/tests/kernel_floor_test/CMakeFiles/kernel_floor_test.dir/all: 
 lib/pico-tflmicro/tests/kernel_floor_test/CMakeFiles/kernel_floor_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_floor_test/CMakeFiles/kernel_floor_test.dir/build.make lib/pico-tflmicro/tests/kernel_floor_test/CMakeFiles/kernel_floor_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_floor_test/CMakeFiles/kernel_floor_test.dir/build.make lib/pico-tflmicro/tests/kernel_floor_test/CMakeFiles/kernel_floor_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=33,34 "Built target kernel_floor_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=35 "Built target kernel_floor_test"
 .PHONY : lib/pico-tflmicro/tests/kernel_floor_test/CMakeFiles/kernel_floor_test.dir/all
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/tests/kernel_floor_test/CMakeFiles/kernel_floor_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/tests/kernel_floor_test/CMakeFiles/kernel_floor_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/tests/kernel_floor_test/CMakeFiles/kernel_floor_test.dir/rule
@@ -4798,12 +4798,12 @@ lib/pico-tflmicro/tests/kernel_fully_connected_test/CMakeFiles/kernel_fully_conn
 lib/pico-tflmicro/tests/kernel_fully_connected_test/CMakeFiles/kernel_fully_connected_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_fully_connected_test/CMakeFiles/kernel_fully_connected_test.dir/build.make lib/pico-tflmicro/tests/kernel_fully_connected_test/CMakeFiles/kernel_fully_connected_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_fully_connected_test/CMakeFiles/kernel_fully_connected_test.dir/build.make lib/pico-tflmicro/tests/kernel_fully_connected_test/CMakeFiles/kernel_fully_connected_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=35 "Built target kernel_fully_connected_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=36 "Built target kernel_fully_connected_test"
 .PHONY : lib/pico-tflmicro/tests/kernel_fully_connected_test/CMakeFiles/kernel_fully_connected_test.dir/all
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/tests/kernel_fully_connected_test/CMakeFiles/kernel_fully_connected_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/tests/kernel_fully_connected_test/CMakeFiles/kernel_fully_connected_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/tests/kernel_fully_connected_test/CMakeFiles/kernel_fully_connected_test.dir/rule
@@ -4827,12 +4827,12 @@ lib/pico-tflmicro/tests/kernel_hard_swish_test/CMakeFiles/kernel_hard_swish_test
 lib/pico-tflmicro/tests/kernel_hard_swish_test/CMakeFiles/kernel_hard_swish_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_hard_swish_test/CMakeFiles/kernel_hard_swish_test.dir/build.make lib/pico-tflmicro/tests/kernel_hard_swish_test/CMakeFiles/kernel_hard_swish_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_hard_swish_test/CMakeFiles/kernel_hard_swish_test.dir/build.make lib/pico-tflmicro/tests/kernel_hard_swish_test/CMakeFiles/kernel_hard_swish_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=36 "Built target kernel_hard_swish_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=37 "Built target kernel_hard_swish_test"
 .PHONY : lib/pico-tflmicro/tests/kernel_hard_swish_test/CMakeFiles/kernel_hard_swish_test.dir/all
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/tests/kernel_hard_swish_test/CMakeFiles/kernel_hard_swish_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/tests/kernel_hard_swish_test/CMakeFiles/kernel_hard_swish_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/tests/kernel_hard_swish_test/CMakeFiles/kernel_hard_swish_test.dir/rule
@@ -4856,12 +4856,12 @@ lib/pico-tflmicro/tests/kernel_l2norm_test/CMakeFiles/kernel_l2norm_test.dir/all
 lib/pico-tflmicro/tests/kernel_l2norm_test/CMakeFiles/kernel_l2norm_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_l2norm_test/CMakeFiles/kernel_l2norm_test.dir/build.make lib/pico-tflmicro/tests/kernel_l2norm_test/CMakeFiles/kernel_l2norm_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_l2norm_test/CMakeFiles/kernel_l2norm_test.dir/build.make lib/pico-tflmicro/tests/kernel_l2norm_test/CMakeFiles/kernel_l2norm_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=37 "Built target kernel_l2norm_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=38 "Built target kernel_l2norm_test"
 .PHONY : lib/pico-tflmicro/tests/kernel_l2norm_test/CMakeFiles/kernel_l2norm_test.dir/all
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/tests/kernel_l2norm_test/CMakeFiles/kernel_l2norm_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/tests/kernel_l2norm_test/CMakeFiles/kernel_l2norm_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/tests/kernel_l2norm_test/CMakeFiles/kernel_l2norm_test.dir/rule
@@ -4885,7 +4885,7 @@ lib/pico-tflmicro/tests/kernel_logical_test/CMakeFiles/kernel_logical_test.dir/a
 lib/pico-tflmicro/tests/kernel_logical_test/CMakeFiles/kernel_logical_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_logical_test/CMakeFiles/kernel_logical_test.dir/build.make lib/pico-tflmicro/tests/kernel_logical_test/CMakeFiles/kernel_logical_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_logical_test/CMakeFiles/kernel_logical_test.dir/build.make lib/pico-tflmicro/tests/kernel_logical_test/CMakeFiles/kernel_logical_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=38 "Built target kernel_logical_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=39,40 "Built target kernel_logical_test"
 .PHONY : lib/pico-tflmicro/tests/kernel_logical_test/CMakeFiles/kernel_logical_test.dir/all
 
 # Build rule for subdir invocation for target.
@@ -4914,12 +4914,12 @@ lib/pico-tflmicro/tests/kernel_logistic_test/CMakeFiles/kernel_logistic_test.dir
 lib/pico-tflmicro/tests/kernel_logistic_test/CMakeFiles/kernel_logistic_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_logistic_test/CMakeFiles/kernel_logistic_test.dir/build.make lib/pico-tflmicro/tests/kernel_logistic_test/CMakeFiles/kernel_logistic_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_logistic_test/CMakeFiles/kernel_logistic_test.dir/build.make lib/pico-tflmicro/tests/kernel_logistic_test/CMakeFiles/kernel_logistic_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=39 "Built target kernel_logistic_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=41 "Built target kernel_logistic_test"
 .PHONY : lib/pico-tflmicro/tests/kernel_logistic_test/CMakeFiles/kernel_logistic_test.dir/all
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/tests/kernel_logistic_test/CMakeFiles/kernel_logistic_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/tests/kernel_logistic_test/CMakeFiles/kernel_logistic_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/tests/kernel_logistic_test/CMakeFiles/kernel_logistic_test.dir/rule
@@ -4943,12 +4943,12 @@ lib/pico-tflmicro/tests/kernel_maximum_minimum_test/CMakeFiles/kernel_maximum_mi
 lib/pico-tflmicro/tests/kernel_maximum_minimum_test/CMakeFiles/kernel_maximum_minimum_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_maximum_minimum_test/CMakeFiles/kernel_maximum_minimum_test.dir/build.make lib/pico-tflmicro/tests/kernel_maximum_minimum_test/CMakeFiles/kernel_maximum_minimum_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_maximum_minimum_test/CMakeFiles/kernel_maximum_minimum_test.dir/build.make lib/pico-tflmicro/tests/kernel_maximum_minimum_test/CMakeFiles/kernel_maximum_minimum_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=40,41 "Built target kernel_maximum_minimum_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=42 "Built target kernel_maximum_minimum_test"
 .PHONY : lib/pico-tflmicro/tests/kernel_maximum_minimum_test/CMakeFiles/kernel_maximum_minimum_test.dir/all
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/tests/kernel_maximum_minimum_test/CMakeFiles/kernel_maximum_minimum_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/tests/kernel_maximum_minimum_test/CMakeFiles/kernel_maximum_minimum_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/tests/kernel_maximum_minimum_test/CMakeFiles/kernel_maximum_minimum_test.dir/rule
@@ -4972,12 +4972,12 @@ lib/pico-tflmicro/tests/kernel_mul_test/CMakeFiles/kernel_mul_test.dir/all: lib/
 lib/pico-tflmicro/tests/kernel_mul_test/CMakeFiles/kernel_mul_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_mul_test/CMakeFiles/kernel_mul_test.dir/build.make lib/pico-tflmicro/tests/kernel_mul_test/CMakeFiles/kernel_mul_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_mul_test/CMakeFiles/kernel_mul_test.dir/build.make lib/pico-tflmicro/tests/kernel_mul_test/CMakeFiles/kernel_mul_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=42 "Built target kernel_mul_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=43 "Built target kernel_mul_test"
 .PHONY : lib/pico-tflmicro/tests/kernel_mul_test/CMakeFiles/kernel_mul_test.dir/all
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/tests/kernel_mul_test/CMakeFiles/kernel_mul_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/tests/kernel_mul_test/CMakeFiles/kernel_mul_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/tests/kernel_mul_test/CMakeFiles/kernel_mul_test.dir/rule
@@ -5001,12 +5001,12 @@ lib/pico-tflmicro/tests/kernel_neg_test/CMakeFiles/kernel_neg_test.dir/all: lib/
 lib/pico-tflmicro/tests/kernel_neg_test/CMakeFiles/kernel_neg_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_neg_test/CMakeFiles/kernel_neg_test.dir/build.make lib/pico-tflmicro/tests/kernel_neg_test/CMakeFiles/kernel_neg_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_neg_test/CMakeFiles/kernel_neg_test.dir/build.make lib/pico-tflmicro/tests/kernel_neg_test/CMakeFiles/kernel_neg_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=43 "Built target kernel_neg_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=44 "Built target kernel_neg_test"
 .PHONY : lib/pico-tflmicro/tests/kernel_neg_test/CMakeFiles/kernel_neg_test.dir/all
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/tests/kernel_neg_test/CMakeFiles/kernel_neg_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/tests/kernel_neg_test/CMakeFiles/kernel_neg_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/tests/kernel_neg_test/CMakeFiles/kernel_neg_test.dir/rule
@@ -5030,12 +5030,12 @@ lib/pico-tflmicro/tests/kernel_pack_test/CMakeFiles/kernel_pack_test.dir/all: li
 lib/pico-tflmicro/tests/kernel_pack_test/CMakeFiles/kernel_pack_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_pack_test/CMakeFiles/kernel_pack_test.dir/build.make lib/pico-tflmicro/tests/kernel_pack_test/CMakeFiles/kernel_pack_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_pack_test/CMakeFiles/kernel_pack_test.dir/build.make lib/pico-tflmicro/tests/kernel_pack_test/CMakeFiles/kernel_pack_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=44 "Built target kernel_pack_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=45 "Built target kernel_pack_test"
 .PHONY : lib/pico-tflmicro/tests/kernel_pack_test/CMakeFiles/kernel_pack_test.dir/all
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/tests/kernel_pack_test/CMakeFiles/kernel_pack_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/tests/kernel_pack_test/CMakeFiles/kernel_pack_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/tests/kernel_pack_test/CMakeFiles/kernel_pack_test.dir/rule
@@ -5059,12 +5059,12 @@ lib/pico-tflmicro/tests/kernel_pad_test/CMakeFiles/kernel_pad_test.dir/all: lib/
 lib/pico-tflmicro/tests/kernel_pad_test/CMakeFiles/kernel_pad_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_pad_test/CMakeFiles/kernel_pad_test.dir/build.make lib/pico-tflmicro/tests/kernel_pad_test/CMakeFiles/kernel_pad_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_pad_test/CMakeFiles/kernel_pad_test.dir/build.make lib/pico-tflmicro/tests/kernel_pad_test/CMakeFiles/kernel_pad_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=45 "Built target kernel_pad_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=46 "Built target kernel_pad_test"
 .PHONY : lib/pico-tflmicro/tests/kernel_pad_test/CMakeFiles/kernel_pad_test.dir/all
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/tests/kernel_pad_test/CMakeFiles/kernel_pad_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/tests/kernel_pad_test/CMakeFiles/kernel_pad_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/tests/kernel_pad_test/CMakeFiles/kernel_pad_test.dir/rule
@@ -5088,7 +5088,7 @@ lib/pico-tflmicro/tests/kernel_pooling_test/CMakeFiles/kernel_pooling_test.dir/a
 lib/pico-tflmicro/tests/kernel_pooling_test/CMakeFiles/kernel_pooling_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_pooling_test/CMakeFiles/kernel_pooling_test.dir/build.make lib/pico-tflmicro/tests/kernel_pooling_test/CMakeFiles/kernel_pooling_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_pooling_test/CMakeFiles/kernel_pooling_test.dir/build.make lib/pico-tflmicro/tests/kernel_pooling_test/CMakeFiles/kernel_pooling_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=46 "Built target kernel_pooling_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=47,48 "Built target kernel_pooling_test"
 .PHONY : lib/pico-tflmicro/tests/kernel_pooling_test/CMakeFiles/kernel_pooling_test.dir/all
 
 # Build rule for subdir invocation for target.
@@ -5117,12 +5117,12 @@ lib/pico-tflmicro/tests/kernel_prelu_test/CMakeFiles/kernel_prelu_test.dir/all: 
 lib/pico-tflmicro/tests/kernel_prelu_test/CMakeFiles/kernel_prelu_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_prelu_test/CMakeFiles/kernel_prelu_test.dir/build.make lib/pico-tflmicro/tests/kernel_prelu_test/CMakeFiles/kernel_prelu_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_prelu_test/CMakeFiles/kernel_prelu_test.dir/build.make lib/pico-tflmicro/tests/kernel_prelu_test/CMakeFiles/kernel_prelu_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=47 "Built target kernel_prelu_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=49 "Built target kernel_prelu_test"
 .PHONY : lib/pico-tflmicro/tests/kernel_prelu_test/CMakeFiles/kernel_prelu_test.dir/all
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/tests/kernel_prelu_test/CMakeFiles/kernel_prelu_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/tests/kernel_prelu_test/CMakeFiles/kernel_prelu_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/tests/kernel_prelu_test/CMakeFiles/kernel_prelu_test.dir/rule
@@ -5146,12 +5146,12 @@ lib/pico-tflmicro/tests/kernel_quantization_util_test/CMakeFiles/kernel_quantiza
 lib/pico-tflmicro/tests/kernel_quantization_util_test/CMakeFiles/kernel_quantization_util_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_quantization_util_test/CMakeFiles/kernel_quantization_util_test.dir/build.make lib/pico-tflmicro/tests/kernel_quantization_util_test/CMakeFiles/kernel_quantization_util_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_quantization_util_test/CMakeFiles/kernel_quantization_util_test.dir/build.make lib/pico-tflmicro/tests/kernel_quantization_util_test/CMakeFiles/kernel_quantization_util_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=48,49 "Built target kernel_quantization_util_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=50 "Built target kernel_quantization_util_test"
 .PHONY : lib/pico-tflmicro/tests/kernel_quantization_util_test/CMakeFiles/kernel_quantization_util_test.dir/all
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/tests/kernel_quantization_util_test/CMakeFiles/kernel_quantization_util_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/tests/kernel_quantization_util_test/CMakeFiles/kernel_quantization_util_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/tests/kernel_quantization_util_test/CMakeFiles/kernel_quantization_util_test.dir/rule
@@ -5175,12 +5175,12 @@ lib/pico-tflmicro/tests/kernel_quantize_test/CMakeFiles/kernel_quantize_test.dir
 lib/pico-tflmicro/tests/kernel_quantize_test/CMakeFiles/kernel_quantize_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_quantize_test/CMakeFiles/kernel_quantize_test.dir/build.make lib/pico-tflmicro/tests/kernel_quantize_test/CMakeFiles/kernel_quantize_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_quantize_test/CMakeFiles/kernel_quantize_test.dir/build.make lib/pico-tflmicro/tests/kernel_quantize_test/CMakeFiles/kernel_quantize_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=50 "Built target kernel_quantize_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=51 "Built target kernel_quantize_test"
 .PHONY : lib/pico-tflmicro/tests/kernel_quantize_test/CMakeFiles/kernel_quantize_test.dir/all
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/tests/kernel_quantize_test/CMakeFiles/kernel_quantize_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/tests/kernel_quantize_test/CMakeFiles/kernel_quantize_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/tests/kernel_quantize_test/CMakeFiles/kernel_quantize_test.dir/rule
@@ -5204,12 +5204,12 @@ lib/pico-tflmicro/tests/kernel_reduce_test/CMakeFiles/kernel_reduce_test.dir/all
 lib/pico-tflmicro/tests/kernel_reduce_test/CMakeFiles/kernel_reduce_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_reduce_test/CMakeFiles/kernel_reduce_test.dir/build.make lib/pico-tflmicro/tests/kernel_reduce_test/CMakeFiles/kernel_reduce_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_reduce_test/CMakeFiles/kernel_reduce_test.dir/build.make lib/pico-tflmicro/tests/kernel_reduce_test/CMakeFiles/kernel_reduce_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=51 "Built target kernel_reduce_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=52 "Built target kernel_reduce_test"
 .PHONY : lib/pico-tflmicro/tests/kernel_reduce_test/CMakeFiles/kernel_reduce_test.dir/all
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/tests/kernel_reduce_test/CMakeFiles/kernel_reduce_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/tests/kernel_reduce_test/CMakeFiles/kernel_reduce_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/tests/kernel_reduce_test/CMakeFiles/kernel_reduce_test.dir/rule
@@ -5233,12 +5233,12 @@ lib/pico-tflmicro/tests/kernel_reshape_test/CMakeFiles/kernel_reshape_test.dir/a
 lib/pico-tflmicro/tests/kernel_reshape_test/CMakeFiles/kernel_reshape_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_reshape_test/CMakeFiles/kernel_reshape_test.dir/build.make lib/pico-tflmicro/tests/kernel_reshape_test/CMakeFiles/kernel_reshape_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_reshape_test/CMakeFiles/kernel_reshape_test.dir/build.make lib/pico-tflmicro/tests/kernel_reshape_test/CMakeFiles/kernel_reshape_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=52 "Built target kernel_reshape_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=53 "Built target kernel_reshape_test"
 .PHONY : lib/pico-tflmicro/tests/kernel_reshape_test/CMakeFiles/kernel_reshape_test.dir/all
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/tests/kernel_reshape_test/CMakeFiles/kernel_reshape_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/tests/kernel_reshape_test/CMakeFiles/kernel_reshape_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/tests/kernel_reshape_test/CMakeFiles/kernel_reshape_test.dir/rule
@@ -5262,12 +5262,12 @@ lib/pico-tflmicro/tests/kernel_resize_nearest_neighbor_test/CMakeFiles/kernel_re
 lib/pico-tflmicro/tests/kernel_resize_nearest_neighbor_test/CMakeFiles/kernel_resize_nearest_neighbor_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_resize_nearest_neighbor_test/CMakeFiles/kernel_resize_nearest_neighbor_test.dir/build.make lib/pico-tflmicro/tests/kernel_resize_nearest_neighbor_test/CMakeFiles/kernel_resize_nearest_neighbor_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_resize_nearest_neighbor_test/CMakeFiles/kernel_resize_nearest_neighbor_test.dir/build.make lib/pico-tflmicro/tests/kernel_resize_nearest_neighbor_test/CMakeFiles/kernel_resize_nearest_neighbor_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=53 "Built target kernel_resize_nearest_neighbor_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=54 "Built target kernel_resize_nearest_neighbor_test"
 .PHONY : lib/pico-tflmicro/tests/kernel_resize_nearest_neighbor_test/CMakeFiles/kernel_resize_nearest_neighbor_test.dir/all
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/tests/kernel_resize_nearest_neighbor_test/CMakeFiles/kernel_resize_nearest_neighbor_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/tests/kernel_resize_nearest_neighbor_test/CMakeFiles/kernel_resize_nearest_neighbor_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/tests/kernel_resize_nearest_neighbor_test/CMakeFiles/kernel_resize_nearest_neighbor_test.dir/rule
@@ -5291,7 +5291,7 @@ lib/pico-tflmicro/tests/kernel_round_test/CMakeFiles/kernel_round_test.dir/all: 
 lib/pico-tflmicro/tests/kernel_round_test/CMakeFiles/kernel_round_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_round_test/CMakeFiles/kernel_round_test.dir/build.make lib/pico-tflmicro/tests/kernel_round_test/CMakeFiles/kernel_round_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_round_test/CMakeFiles/kernel_round_test.dir/build.make lib/pico-tflmicro/tests/kernel_round_test/CMakeFiles/kernel_round_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=54 "Built target kernel_round_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=55,56 "Built target kernel_round_test"
 .PHONY : lib/pico-tflmicro/tests/kernel_round_test/CMakeFiles/kernel_round_test.dir/all
 
 # Build rule for subdir invocation for target.
@@ -5320,12 +5320,12 @@ lib/pico-tflmicro/tests/kernel_shape_test/CMakeFiles/kernel_shape_test.dir/all: 
 lib/pico-tflmicro/tests/kernel_shape_test/CMakeFiles/kernel_shape_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_shape_test/CMakeFiles/kernel_shape_test.dir/build.make lib/pico-tflmicro/tests/kernel_shape_test/CMakeFiles/kernel_shape_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_shape_test/CMakeFiles/kernel_shape_test.dir/build.make lib/pico-tflmicro/tests/kernel_shape_test/CMakeFiles/kernel_shape_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=55 "Built target kernel_shape_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=57 "Built target kernel_shape_test"
 .PHONY : lib/pico-tflmicro/tests/kernel_shape_test/CMakeFiles/kernel_shape_test.dir/all
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/tests/kernel_shape_test/CMakeFiles/kernel_shape_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/tests/kernel_shape_test/CMakeFiles/kernel_shape_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/tests/kernel_shape_test/CMakeFiles/kernel_shape_test.dir/rule
@@ -5349,12 +5349,12 @@ lib/pico-tflmicro/tests/kernel_softmax_test/CMakeFiles/kernel_softmax_test.dir/a
 lib/pico-tflmicro/tests/kernel_softmax_test/CMakeFiles/kernel_softmax_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_softmax_test/CMakeFiles/kernel_softmax_test.dir/build.make lib/pico-tflmicro/tests/kernel_softmax_test/CMakeFiles/kernel_softmax_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_softmax_test/CMakeFiles/kernel_softmax_test.dir/build.make lib/pico-tflmicro/tests/kernel_softmax_test/CMakeFiles/kernel_softmax_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=56,57 "Built target kernel_softmax_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=58 "Built target kernel_softmax_test"
 .PHONY : lib/pico-tflmicro/tests/kernel_softmax_test/CMakeFiles/kernel_softmax_test.dir/all
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/tests/kernel_softmax_test/CMakeFiles/kernel_softmax_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/tests/kernel_softmax_test/CMakeFiles/kernel_softmax_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/tests/kernel_softmax_test/CMakeFiles/kernel_softmax_test.dir/rule
@@ -5378,12 +5378,12 @@ lib/pico-tflmicro/tests/kernel_split_test/CMakeFiles/kernel_split_test.dir/all: 
 lib/pico-tflmicro/tests/kernel_split_test/CMakeFiles/kernel_split_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_split_test/CMakeFiles/kernel_split_test.dir/build.make lib/pico-tflmicro/tests/kernel_split_test/CMakeFiles/kernel_split_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_split_test/CMakeFiles/kernel_split_test.dir/build.make lib/pico-tflmicro/tests/kernel_split_test/CMakeFiles/kernel_split_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=58 "Built target kernel_split_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=59 "Built target kernel_split_test"
 .PHONY : lib/pico-tflmicro/tests/kernel_split_test/CMakeFiles/kernel_split_test.dir/all
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/tests/kernel_split_test/CMakeFiles/kernel_split_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/tests/kernel_split_test/CMakeFiles/kernel_split_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/tests/kernel_split_test/CMakeFiles/kernel_split_test.dir/rule
@@ -5407,12 +5407,12 @@ lib/pico-tflmicro/tests/kernel_split_v_test/CMakeFiles/kernel_split_v_test.dir/a
 lib/pico-tflmicro/tests/kernel_split_v_test/CMakeFiles/kernel_split_v_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_split_v_test/CMakeFiles/kernel_split_v_test.dir/build.make lib/pico-tflmicro/tests/kernel_split_v_test/CMakeFiles/kernel_split_v_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_split_v_test/CMakeFiles/kernel_split_v_test.dir/build.make lib/pico-tflmicro/tests/kernel_split_v_test/CMakeFiles/kernel_split_v_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=59 "Built target kernel_split_v_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=60 "Built target kernel_split_v_test"
 .PHONY : lib/pico-tflmicro/tests/kernel_split_v_test/CMakeFiles/kernel_split_v_test.dir/all
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/tests/kernel_split_v_test/CMakeFiles/kernel_split_v_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/tests/kernel_split_v_test/CMakeFiles/kernel_split_v_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/tests/kernel_split_v_test/CMakeFiles/kernel_split_v_test.dir/rule
@@ -5436,12 +5436,12 @@ lib/pico-tflmicro/tests/kernel_strided_slice_test/CMakeFiles/kernel_strided_slic
 lib/pico-tflmicro/tests/kernel_strided_slice_test/CMakeFiles/kernel_strided_slice_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_strided_slice_test/CMakeFiles/kernel_strided_slice_test.dir/build.make lib/pico-tflmicro/tests/kernel_strided_slice_test/CMakeFiles/kernel_strided_slice_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_strided_slice_test/CMakeFiles/kernel_strided_slice_test.dir/build.make lib/pico-tflmicro/tests/kernel_strided_slice_test/CMakeFiles/kernel_strided_slice_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=60 "Built target kernel_strided_slice_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=61 "Built target kernel_strided_slice_test"
 .PHONY : lib/pico-tflmicro/tests/kernel_strided_slice_test/CMakeFiles/kernel_strided_slice_test.dir/all
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/tests/kernel_strided_slice_test/CMakeFiles/kernel_strided_slice_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/tests/kernel_strided_slice_test/CMakeFiles/kernel_strided_slice_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/tests/kernel_strided_slice_test/CMakeFiles/kernel_strided_slice_test.dir/rule
@@ -5465,7 +5465,7 @@ lib/pico-tflmicro/tests/kernel_sub_test/CMakeFiles/kernel_sub_test.dir/all: lib/
 lib/pico-tflmicro/tests/kernel_sub_test/CMakeFiles/kernel_sub_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_sub_test/CMakeFiles/kernel_sub_test.dir/build.make lib/pico-tflmicro/tests/kernel_sub_test/CMakeFiles/kernel_sub_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_sub_test/CMakeFiles/kernel_sub_test.dir/build.make lib/pico-tflmicro/tests/kernel_sub_test/CMakeFiles/kernel_sub_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=61 "Built target kernel_sub_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=62,63 "Built target kernel_sub_test"
 .PHONY : lib/pico-tflmicro/tests/kernel_sub_test/CMakeFiles/kernel_sub_test.dir/all
 
 # Build rule for subdir invocation for target.
@@ -5494,12 +5494,12 @@ lib/pico-tflmicro/tests/kernel_svdf_test/CMakeFiles/kernel_svdf_test.dir/all: li
 lib/pico-tflmicro/tests/kernel_svdf_test/CMakeFiles/kernel_svdf_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_svdf_test/CMakeFiles/kernel_svdf_test.dir/build.make lib/pico-tflmicro/tests/kernel_svdf_test/CMakeFiles/kernel_svdf_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_svdf_test/CMakeFiles/kernel_svdf_test.dir/build.make lib/pico-tflmicro/tests/kernel_svdf_test/CMakeFiles/kernel_svdf_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=62 "Built target kernel_svdf_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=64 "Built target kernel_svdf_test"
 .PHONY : lib/pico-tflmicro/tests/kernel_svdf_test/CMakeFiles/kernel_svdf_test.dir/all
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/tests/kernel_svdf_test/CMakeFiles/kernel_svdf_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/tests/kernel_svdf_test/CMakeFiles/kernel_svdf_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/tests/kernel_svdf_test/CMakeFiles/kernel_svdf_test.dir/rule
@@ -5523,12 +5523,12 @@ lib/pico-tflmicro/tests/kernel_tanh_test/CMakeFiles/kernel_tanh_test.dir/all: li
 lib/pico-tflmicro/tests/kernel_tanh_test/CMakeFiles/kernel_tanh_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_tanh_test/CMakeFiles/kernel_tanh_test.dir/build.make lib/pico-tflmicro/tests/kernel_tanh_test/CMakeFiles/kernel_tanh_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_tanh_test/CMakeFiles/kernel_tanh_test.dir/build.make lib/pico-tflmicro/tests/kernel_tanh_test/CMakeFiles/kernel_tanh_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=63,64 "Built target kernel_tanh_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=65 "Built target kernel_tanh_test"
 .PHONY : lib/pico-tflmicro/tests/kernel_tanh_test/CMakeFiles/kernel_tanh_test.dir/all
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/tests/kernel_tanh_test/CMakeFiles/kernel_tanh_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/tests/kernel_tanh_test/CMakeFiles/kernel_tanh_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/tests/kernel_tanh_test/CMakeFiles/kernel_tanh_test.dir/rule
@@ -5552,12 +5552,12 @@ lib/pico-tflmicro/tests/kernel_unpack_test/CMakeFiles/kernel_unpack_test.dir/all
 lib/pico-tflmicro/tests/kernel_unpack_test/CMakeFiles/kernel_unpack_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_unpack_test/CMakeFiles/kernel_unpack_test.dir/build.make lib/pico-tflmicro/tests/kernel_unpack_test/CMakeFiles/kernel_unpack_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/kernel_unpack_test/CMakeFiles/kernel_unpack_test.dir/build.make lib/pico-tflmicro/tests/kernel_unpack_test/CMakeFiles/kernel_unpack_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=65 "Built target kernel_unpack_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=66 "Built target kernel_unpack_test"
 .PHONY : lib/pico-tflmicro/tests/kernel_unpack_test/CMakeFiles/kernel_unpack_test.dir/all
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/tests/kernel_unpack_test/CMakeFiles/kernel_unpack_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/tests/kernel_unpack_test/CMakeFiles/kernel_unpack_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/tests/kernel_unpack_test/CMakeFiles/kernel_unpack_test.dir/rule
@@ -5581,12 +5581,12 @@ lib/pico-tflmicro/tests/linear_memory_planner_test/CMakeFiles/linear_memory_plan
 lib/pico-tflmicro/tests/linear_memory_planner_test/CMakeFiles/linear_memory_planner_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/linear_memory_planner_test/CMakeFiles/linear_memory_planner_test.dir/build.make lib/pico-tflmicro/tests/linear_memory_planner_test/CMakeFiles/linear_memory_planner_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/linear_memory_planner_test/CMakeFiles/linear_memory_planner_test.dir/build.make lib/pico-tflmicro/tests/linear_memory_planner_test/CMakeFiles/linear_memory_planner_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=67 "Built target linear_memory_planner_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=68 "Built target linear_memory_planner_test"
 .PHONY : lib/pico-tflmicro/tests/linear_memory_planner_test/CMakeFiles/linear_memory_planner_test.dir/all
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/tests/linear_memory_planner_test/CMakeFiles/linear_memory_planner_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/tests/linear_memory_planner_test/CMakeFiles/linear_memory_planner_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/tests/linear_memory_planner_test/CMakeFiles/linear_memory_planner_test.dir/rule
@@ -5610,12 +5610,12 @@ lib/pico-tflmicro/tests/memory_arena_threshold_test/CMakeFiles/memory_arena_thre
 lib/pico-tflmicro/tests/memory_arena_threshold_test/CMakeFiles/memory_arena_threshold_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/memory_arena_threshold_test/CMakeFiles/memory_arena_threshold_test.dir/build.make lib/pico-tflmicro/tests/memory_arena_threshold_test/CMakeFiles/memory_arena_threshold_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/memory_arena_threshold_test/CMakeFiles/memory_arena_threshold_test.dir/build.make lib/pico-tflmicro/tests/memory_arena_threshold_test/CMakeFiles/memory_arena_threshold_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=70 "Built target memory_arena_threshold_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=72 "Built target memory_arena_threshold_test"
 .PHONY : lib/pico-tflmicro/tests/memory_arena_threshold_test/CMakeFiles/memory_arena_threshold_test.dir/all
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/tests/memory_arena_threshold_test/CMakeFiles/memory_arena_threshold_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/tests/memory_arena_threshold_test/CMakeFiles/memory_arena_threshold_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/tests/memory_arena_threshold_test/CMakeFiles/memory_arena_threshold_test.dir/rule
@@ -5639,12 +5639,12 @@ lib/pico-tflmicro/tests/memory_helpers_test/CMakeFiles/memory_helpers_test.dir/a
 lib/pico-tflmicro/tests/memory_helpers_test/CMakeFiles/memory_helpers_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/memory_helpers_test/CMakeFiles/memory_helpers_test.dir/build.make lib/pico-tflmicro/tests/memory_helpers_test/CMakeFiles/memory_helpers_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/memory_helpers_test/CMakeFiles/memory_helpers_test.dir/build.make lib/pico-tflmicro/tests/memory_helpers_test/CMakeFiles/memory_helpers_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=71,72 "Built target memory_helpers_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=73 "Built target memory_helpers_test"
 .PHONY : lib/pico-tflmicro/tests/memory_helpers_test/CMakeFiles/memory_helpers_test.dir/all
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/tests/memory_helpers_test/CMakeFiles/memory_helpers_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/tests/memory_helpers_test/CMakeFiles/memory_helpers_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/tests/memory_helpers_test/CMakeFiles/memory_helpers_test.dir/rule
@@ -5668,12 +5668,12 @@ lib/pico-tflmicro/tests/micro_allocator_test/CMakeFiles/micro_allocator_test.dir
 lib/pico-tflmicro/tests/micro_allocator_test/CMakeFiles/micro_allocator_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/micro_allocator_test/CMakeFiles/micro_allocator_test.dir/build.make lib/pico-tflmicro/tests/micro_allocator_test/CMakeFiles/micro_allocator_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/micro_allocator_test/CMakeFiles/micro_allocator_test.dir/build.make lib/pico-tflmicro/tests/micro_allocator_test/CMakeFiles/micro_allocator_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=73 "Built target micro_allocator_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=74 "Built target micro_allocator_test"
 .PHONY : lib/pico-tflmicro/tests/micro_allocator_test/CMakeFiles/micro_allocator_test.dir/all
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/tests/micro_allocator_test/CMakeFiles/micro_allocator_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/tests/micro_allocator_test/CMakeFiles/micro_allocator_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/tests/micro_allocator_test/CMakeFiles/micro_allocator_test.dir/rule
@@ -5697,12 +5697,12 @@ lib/pico-tflmicro/tests/micro_error_reporter_test/CMakeFiles/micro_error_reporte
 lib/pico-tflmicro/tests/micro_error_reporter_test/CMakeFiles/micro_error_reporter_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/micro_error_reporter_test/CMakeFiles/micro_error_reporter_test.dir/build.make lib/pico-tflmicro/tests/micro_error_reporter_test/CMakeFiles/micro_error_reporter_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/micro_error_reporter_test/CMakeFiles/micro_error_reporter_test.dir/build.make lib/pico-tflmicro/tests/micro_error_reporter_test/CMakeFiles/micro_error_reporter_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=74 "Built target micro_error_reporter_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=75 "Built target micro_error_reporter_test"
 .PHONY : lib/pico-tflmicro/tests/micro_error_reporter_test/CMakeFiles/micro_error_reporter_test.dir/all
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/tests/micro_error_reporter_test/CMakeFiles/micro_error_reporter_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/tests/micro_error_reporter_test/CMakeFiles/micro_error_reporter_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/tests/micro_error_reporter_test/CMakeFiles/micro_error_reporter_test.dir/rule
@@ -5726,12 +5726,12 @@ lib/pico-tflmicro/tests/micro_interpreter_test/CMakeFiles/micro_interpreter_test
 lib/pico-tflmicro/tests/micro_interpreter_test/CMakeFiles/micro_interpreter_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/micro_interpreter_test/CMakeFiles/micro_interpreter_test.dir/build.make lib/pico-tflmicro/tests/micro_interpreter_test/CMakeFiles/micro_interpreter_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/micro_interpreter_test/CMakeFiles/micro_interpreter_test.dir/build.make lib/pico-tflmicro/tests/micro_interpreter_test/CMakeFiles/micro_interpreter_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=76 "Built target micro_interpreter_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=78 "Built target micro_interpreter_test"
 .PHONY : lib/pico-tflmicro/tests/micro_interpreter_test/CMakeFiles/micro_interpreter_test.dir/all
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/tests/micro_interpreter_test/CMakeFiles/micro_interpreter_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/tests/micro_interpreter_test/CMakeFiles/micro_interpreter_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/tests/micro_interpreter_test/CMakeFiles/micro_interpreter_test.dir/rule
@@ -5755,12 +5755,12 @@ lib/pico-tflmicro/tests/micro_mutable_op_resolver_test/CMakeFiles/micro_mutable_
 lib/pico-tflmicro/tests/micro_mutable_op_resolver_test/CMakeFiles/micro_mutable_op_resolver_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/micro_mutable_op_resolver_test/CMakeFiles/micro_mutable_op_resolver_test.dir/build.make lib/pico-tflmicro/tests/micro_mutable_op_resolver_test/CMakeFiles/micro_mutable_op_resolver_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/micro_mutable_op_resolver_test/CMakeFiles/micro_mutable_op_resolver_test.dir/build.make lib/pico-tflmicro/tests/micro_mutable_op_resolver_test/CMakeFiles/micro_mutable_op_resolver_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=77 "Built target micro_mutable_op_resolver_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=79 "Built target micro_mutable_op_resolver_test"
 .PHONY : lib/pico-tflmicro/tests/micro_mutable_op_resolver_test/CMakeFiles/micro_mutable_op_resolver_test.dir/all
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/tests/micro_mutable_op_resolver_test/CMakeFiles/micro_mutable_op_resolver_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/tests/micro_mutable_op_resolver_test/CMakeFiles/micro_mutable_op_resolver_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/tests/micro_mutable_op_resolver_test/CMakeFiles/micro_mutable_op_resolver_test.dir/rule
@@ -5784,12 +5784,12 @@ lib/pico-tflmicro/tests/micro_string_test/CMakeFiles/micro_string_test.dir/all: 
 lib/pico-tflmicro/tests/micro_string_test/CMakeFiles/micro_string_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/micro_string_test/CMakeFiles/micro_string_test.dir/build.make lib/pico-tflmicro/tests/micro_string_test/CMakeFiles/micro_string_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/micro_string_test/CMakeFiles/micro_string_test.dir/build.make lib/pico-tflmicro/tests/micro_string_test/CMakeFiles/micro_string_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=82 "Built target micro_string_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=84 "Built target micro_string_test"
 .PHONY : lib/pico-tflmicro/tests/micro_string_test/CMakeFiles/micro_string_test.dir/all
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/tests/micro_string_test/CMakeFiles/micro_string_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/tests/micro_string_test/CMakeFiles/micro_string_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/tests/micro_string_test/CMakeFiles/micro_string_test.dir/rule
@@ -5813,12 +5813,12 @@ lib/pico-tflmicro/tests/micro_time_test/CMakeFiles/micro_time_test.dir/all: lib/
 lib/pico-tflmicro/tests/micro_time_test/CMakeFiles/micro_time_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/micro_time_test/CMakeFiles/micro_time_test.dir/build.make lib/pico-tflmicro/tests/micro_time_test/CMakeFiles/micro_time_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/micro_time_test/CMakeFiles/micro_time_test.dir/build.make lib/pico-tflmicro/tests/micro_time_test/CMakeFiles/micro_time_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=83,84 "Built target micro_time_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=85 "Built target micro_time_test"
 .PHONY : lib/pico-tflmicro/tests/micro_time_test/CMakeFiles/micro_time_test.dir/all
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/tests/micro_time_test/CMakeFiles/micro_time_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/tests/micro_time_test/CMakeFiles/micro_time_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/tests/micro_time_test/CMakeFiles/micro_time_test.dir/rule
@@ -5842,12 +5842,12 @@ lib/pico-tflmicro/tests/micro_utils_test/CMakeFiles/micro_utils_test.dir/all: li
 lib/pico-tflmicro/tests/micro_utils_test/CMakeFiles/micro_utils_test.dir/all: lib/pico-tflmicro/CMakeFiles/pico-tflmicro_test.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/micro_utils_test/CMakeFiles/micro_utils_test.dir/build.make lib/pico-tflmicro/tests/micro_utils_test/CMakeFiles/micro_utils_test.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/pico-tflmicro/tests/micro_utils_test/CMakeFiles/micro_utils_test.dir/build.make lib/pico-tflmicro/tests/micro_utils_test/CMakeFiles/micro_utils_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=85 "Built target micro_utils_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles --progress-num=86 "Built target micro_utils_test"
 .PHONY : lib/pico-tflmicro/tests/micro_utils_test/CMakeFiles/micro_utils_test.dir/all
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/tests/micro_utils_test/CMakeFiles/micro_utils_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/tests/micro_utils_test/CMakeFiles/micro_utils_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/tests/micro_utils_test/CMakeFiles/micro_utils_test.dir/rule
@@ -5876,7 +5876,7 @@ lib/pico-tflmicro/tests/recording_micro_allocator_test/CMakeFiles/recording_micr
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/tests/recording_micro_allocator_test/CMakeFiles/recording_micro_allocator_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/tests/recording_micro_allocator_test/CMakeFiles/recording_micro_allocator_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/tests/recording_micro_allocator_test/CMakeFiles/recording_micro_allocator_test.dir/rule
@@ -5905,7 +5905,7 @@ lib/pico-tflmicro/tests/recording_simple_memory_allocator_test/CMakeFiles/record
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/tests/recording_simple_memory_allocator_test/CMakeFiles/recording_simple_memory_allocator_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/tests/recording_simple_memory_allocator_test/CMakeFiles/recording_simple_memory_allocator_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/tests/recording_simple_memory_allocator_test/CMakeFiles/recording_simple_memory_allocator_test.dir/rule
@@ -5934,7 +5934,7 @@ lib/pico-tflmicro/tests/simple_memory_allocator_test/CMakeFiles/simple_memory_al
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/tests/simple_memory_allocator_test/CMakeFiles/simple_memory_allocator_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/tests/simple_memory_allocator_test/CMakeFiles/simple_memory_allocator_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/tests/simple_memory_allocator_test/CMakeFiles/simple_memory_allocator_test.dir/rule
@@ -5963,7 +5963,7 @@ lib/pico-tflmicro/tests/testing_helpers_test/CMakeFiles/testing_helpers_test.dir
 
 # Build rule for subdir invocation for target.
 lib/pico-tflmicro/tests/testing_helpers_test/CMakeFiles/testing_helpers_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/pico-tflmicro/tests/testing_helpers_test/CMakeFiles/testing_helpers_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/inteldev/raspberry-pi-pico/pico_workspace/build/CMakeFiles 0
 .PHONY : lib/pico-tflmicro/tests/testing_helpers_test/CMakeFiles/testing_helpers_test.dir/rule
