@@ -67,6 +67,7 @@ CMakeFiles/pico_inference_app.dir/src/main.cpp.obj: \
  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pio.h \
  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pio.h \
  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio_instructions.h \
+ /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/src/drv2605.h \
  /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/src/tflite_model.h \
  /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/src/dsp_pipeline.h \
  /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/DSP/Include/arm_math.h \

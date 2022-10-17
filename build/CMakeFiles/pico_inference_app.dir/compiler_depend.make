@@ -1530,6 +1530,50 @@ CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/
   /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h \
   /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h
 
+CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj: /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_i2c/include/hardware/i2c.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_base/include/pico.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_base/include/pico/assert.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h \
+  /usr/include/newlib/assert.h \
+  /usr/include/newlib/_ansi.h \
+  /usr/include/newlib/newlib.h \
+  /usr/include/newlib/_newlib_version.h \
+  /usr/include/newlib/sys/config.h \
+  /usr/include/newlib/machine/ieeefp.h \
+  /usr/include/newlib/sys/features.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
+  generated/pico_base/pico/version.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_base/include/pico/config.h \
+  generated/pico_base/pico/config_autogen.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/boards/include/boards/pico.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
+  /usr/include/newlib/sys/cdefs.h \
+  /usr/include/newlib/machine/_default_types.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_base/include/pico/error.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_time/include/pico/time.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/i2c.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/i2c.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_resets/include/hardware/resets.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/resets.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/resets.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_clocks/include/hardware/clocks.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/clocks.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/clocks.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_time/include/pico/timeout_helper.h
+
 CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj: /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c \
   /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h \
   /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_base/include/pico.h \
@@ -15007,6 +15051,80 @@ CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/
   /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Include/arm_nn_tables.h \
   /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Include/arm_nn_types.h
 
+CMakeFiles/pico_inference_app.dir/src/drv2605.c.obj: /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/src/drv2605.c \
+  /usr/include/newlib/stdio.h \
+  /usr/include/newlib/_ansi.h \
+  /usr/include/newlib/newlib.h \
+  /usr/include/newlib/_newlib_version.h \
+  /usr/include/newlib/sys/config.h \
+  /usr/include/newlib/machine/ieeefp.h \
+  /usr/include/newlib/sys/features.h \
+  /usr/include/newlib/sys/cdefs.h \
+  /usr/include/newlib/machine/_default_types.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
+  /usr/include/newlib/sys/reent.h \
+  /usr/include/newlib/_ansi.h \
+  /usr/include/newlib/sys/_types.h \
+  /usr/include/newlib/machine/_types.h \
+  /usr/include/newlib/sys/lock.h \
+  /usr/include/newlib/sys/types.h \
+  /usr/include/newlib/sys/_stdint.h \
+  /usr/include/newlib/machine/endian.h \
+  /usr/include/newlib/machine/_endian.h \
+  /usr/include/newlib/sys/select.h \
+  /usr/include/newlib/sys/_sigset.h \
+  /usr/include/newlib/sys/_timeval.h \
+  /usr/include/newlib/sys/timespec.h \
+  /usr/include/newlib/sys/_timespec.h \
+  /usr/include/newlib/sys/_pthreadtypes.h \
+  /usr/include/newlib/sys/sched.h \
+  /usr/include/newlib/machine/types.h \
+  /usr/include/newlib/sys/stdio.h \
+  /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/src/drv2605.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_stdlib/include/pico/stdlib.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_base/include/pico.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_base/include/pico/assert.h \
+  /usr/include/newlib/assert.h \
+  generated/pico_base/pico/version.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_base/include/pico/config.h \
+  generated/pico_base/pico/config_autogen.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/boards/include/boards/pico.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_base/include/pico/error.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_time/include/pico/time.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/padsbank0.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/iobank0.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/io_bank0.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_i2c/include/hardware/i2c.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/i2c.h \
+  /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/i2c.h
+
 CMakeFiles/pico_inference_app.dir/src/dsp_pipeline.cpp.obj: /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/src/dsp_pipeline.cpp \
   /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/src/dsp_pipeline.h \
   /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/DSP/Include/arm_math.h \
@@ -15155,6 +15273,7 @@ CMakeFiles/pico_inference_app.dir/src/main.cpp.obj: /home/inteldev/raspberry-pi-
   /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pio.h \
   /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pio.h \
   /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio_instructions.h \
+  /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/src/drv2605.h \
   /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/src/tflite_model.h \
   /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/src/dsp_pipeline.h \
   /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/DSP/Include/arm_math.h \
@@ -15594,6 +15713,8 @@ CMakeFiles/pico_inference_app.dir/src/ml_model.cpp.obj: /home/inteldev/raspberry
 
 /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/src/dsp_pipeline.cpp:
 
+/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/src/drv2605.c:
+
 /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_with_batch_q7.c:
 
 /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_u8.c:
@@ -15732,7 +15853,13 @@ CMakeFiles/pico_inference_app.dir/src/ml_model.cpp.obj: /home/inteldev/raspberry
 
 /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/split.cpp:
 
-/usr/include/newlib/c++/10.3.1/cstdint:
+/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/shape.cpp:
+
+/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/tensorflow/lite/kernels/internal/reference/round.h:
+
+/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/round.cpp:
+
+/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/tensorflow/lite/kernels/internal/reference/resize_nearest_neighbor.h:
 
 /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/tensorflow/lite/schema/schema_generated.h:
 
@@ -15744,8 +15871,6 @@ CMakeFiles/pico_inference_app.dir/src/ml_model.cpp.obj: /home/inteldev/raspberry
 
 /usr/include/newlib/c++/10.3.1/type_traits:
 
-/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/tensorflow/lite/kernels/internal/reference/resize_nearest_neighbor.h:
-
 /usr/include/newlib/c++/10.3.1/exception:
 
 /usr/include/newlib/machine/types.h:
@@ -15753,8 +15878,6 @@ CMakeFiles/pico_inference_app.dir/src/ml_model.cpp.obj: /home/inteldev/raspberry
 /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/third_party/gemmlowp/internal/detect_platform.h:
 
 /usr/include/newlib/c++/10.3.1/new:
-
-/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/DSP/Include/dsp/distance_functions.h:
 
 /usr/include/newlib/c++/10.3.1/cstddef:
 
@@ -15868,8 +15991,6 @@ CMakeFiles/pico_inference_app.dir/src/ml_model.cpp.obj: /home/inteldev/raspberry
 
 /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c:
 
-/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/include/pico/double.h:
-
 /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c:
 
 /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_malloc/include/pico/malloc.h:
@@ -15877,14 +15998,6 @@ CMakeFiles/pico_inference_app.dir/src/ml_model.cpp.obj: /home/inteldev/raspberry
 /usr/include/newlib/sys/features.h:
 
 /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c:
-
-/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/third_party/flatbuffers/include/flatbuffers/base.h:
-
-/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/src/tflite_model.h:
-
-/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/tensorflow/lite/portable_type_to_tflitetype.h:
-
-/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h:
 
 /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_vreg/include/hardware/vreg.h:
 
@@ -15902,6 +16015,12 @@ CMakeFiles/pico_inference_app.dir/src/ml_model.cpp.obj: /home/inteldev/raspberry
 
 /usr/include/newlib/c++/10.3.1/sstream:
 
+/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/i2c.h:
+
+/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_double/include/pico/double.h:
+
+/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_i2c/include/hardware/i2c.h:
+
 /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/tbman.h:
 
 /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/vreg_and_chip_reset.h:
@@ -15917,10 +16036,6 @@ CMakeFiles/pico_inference_app.dir/src/ml_model.cpp.obj: /home/inteldev/raspberry
 /usr/include/newlib/c++/10.3.1/bits/locale_classes.h:
 
 /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/ssi.h:
-
-/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/watchdog.h:
-
-/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/resets.h:
 
 /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/tensorflow/lite/kernels/internal/reference/floor.h:
 
@@ -15970,10 +16085,6 @@ lib/microphone-library-for-pico/pdm_microphone.pio.h:
 
 /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c:
 
-/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c:
-
-/usr/include/newlib/string.h:
-
 /usr/include/newlib/sys/sched.h:
 
 /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/tensorflow/lite/micro/simple_memory_allocator.h:
@@ -16008,6 +16119,18 @@ lib/microphone-library-for-pico/pdm_microphone.pio.h:
 
 /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c:
 
+/usr/include/newlib/string.h:
+
+/home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c:
+
+/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/src/tflite_model.h:
+
+/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/tensorflow/lite/portable_type_to_tflitetype.h:
+
+/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h:
+
+/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/third_party/flatbuffers/include/flatbuffers/base.h:
+
 /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/tensorflow/lite/core/api/tensor_utils.cpp:
 
 /usr/include/newlib/ctype.h:
@@ -16038,11 +16161,19 @@ lib/microphone-library-for-pico/pdm_microphone.pio.h:
 
 /usr/include/newlib/sys/types.h:
 
+/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/watchdog.h:
+
+/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/resets.h:
+
+/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/i2c.h:
+
 /usr/include/newlib/sys/config.h:
 
 /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/PoolingFunctions/arm_pool_q7_HWC.c:
 
 /home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/osal/osal.h:
+
+/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/src/drv2605.h:
 
 /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h:
 
@@ -16053,8 +16184,6 @@ lib/microphone-library-for-pico/pdm_microphone.pio.h:
 /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h:
 
 /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/sem.c:
-
-/usr/include/newlib/c++/10.3.1/cstring:
 
 /home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/common/tusb_verify.h:
 
@@ -16191,10 +16320,6 @@ generated/pico_base/pico/version.h:
 /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h:
 
 /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/pico_stdio_usb/include/tusb_config.h:
-
-/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/third_party/flatbuffers/include/flatbuffers/flatbuffers.h:
-
-/usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h:
 
 /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/common/pico_sync/lock_core.c:
 
@@ -16348,6 +16473,8 @@ generated/pico_base/pico/version.h:
 
 /home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.h:
 
+/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c:
+
 /home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/device/dcd.h:
 
 /home/inteldev/raspberry-pi-pico/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c:
@@ -16415,6 +16542,16 @@ generated/pico_base/pico/version.h:
 /home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h:
 
 /usr/include/newlib/c++/10.3.1/bits/stl_bvector.h:
+
+/usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h:
+
+/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/third_party/flatbuffers/include/flatbuffers/flatbuffers.h:
+
+/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/DSP/Include/dsp/distance_functions.h:
+
+/usr/include/newlib/c++/10.3.1/cstdint:
+
+/usr/include/newlib/c++/10.3.1/cstring:
 
 /usr/include/newlib/c++/10.3.1/bits/stl_relops.h:
 
@@ -16905,9 +17042,3 @@ generated/pico_base/pico/version.h:
 /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/tensorflow/lite/kernels/internal/reference/reduce.h:
 
 /home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/reshape.cpp:
-
-/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/round.cpp:
-
-/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/tensorflow/lite/kernels/internal/reference/round.h:
-
-/home/inteldev/raspberry-pi-pico/pico_workspace/DeafHelper/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/shape.cpp:

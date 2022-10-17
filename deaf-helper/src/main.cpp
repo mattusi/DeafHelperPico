@@ -5,6 +5,7 @@
 
 extern "C" {
     #include "pico/pdm_microphone.h"
+    #include "drv2605.h"
 }
 
 #include "tflite_model.h"
@@ -83,6 +84,16 @@ int main(void) {
         while (1) { tight_loop_contents(); }
     }
 
+    //Check Haptics Status
+    
+
+    drv2605_init();
+    use_LRA();
+    select_library(10);
+    go();
+    sleep_ms(500);
+    stop();
+
     //Prepare spectrum variables
     scaled_spectrum = (int8_t*)ml_model.input_data();
     spectogram_divider = 64 * ml_model.input_scale();
@@ -131,8 +142,12 @@ int main(void) {
 
         float prediction = ml_model.predict();
 
-        if (prediction >= 0.5) {
+        if (prediction >= 0.1) {
           printf("\t🔥 🔔\tdetected!\t(prediction = %f)\n\n", prediction);
+          select_library(10);
+          go();
+          sleep_ms(1500);
+          stop();
         } else {
           printf("\t🔕\tNOT detected\t(prediction = %f)\n\n", prediction);
         }

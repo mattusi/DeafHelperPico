@@ -33,6 +33,7 @@ add_executable(pico_inference_app
     ${CMAKE_CURRENT_LIST_DIR}/src/main.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/dsp_pipeline.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/ml_model.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/src/drv2605.c
 )
 
 target_link_libraries(deaf_helper_pico
@@ -40,6 +41,7 @@ target_link_libraries(deaf_helper_pico
     hardware_pwm
     pico-tflmicro
     pico_pdm_microphone
+    hardware_i2c
     CMSISDSPTransform CMSISDSPSupport CMSISDSPCommon CMSISDSPComplexMath CMSISDSPFastMath CMSISDSPBasicMath
 )
 

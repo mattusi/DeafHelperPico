@@ -2309,6 +2309,30 @@ home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 
+home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+.PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.obj
+
+# target to build an object file
+home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+.PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+
+home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.i: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
+.PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.i
+
+# target to preprocess a source file
+home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
+.PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
+
+home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.s: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
+.PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.s
+
+# target to generate assembly for a file
+home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
+.PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
+
 home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq.obj: home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 .PHONY : home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq.obj
 
@@ -6373,6 +6397,30 @@ lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_sof
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_with_batch_q7.c.s
 .PHONY : lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_with_batch_q7.c.s
 
+src/drv2605.obj: src/drv2605.c.obj
+.PHONY : src/drv2605.obj
+
+# target to build an object file
+src/drv2605.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/src/drv2605.c.obj
+.PHONY : src/drv2605.c.obj
+
+src/drv2605.i: src/drv2605.c.i
+.PHONY : src/drv2605.i
+
+# target to preprocess a source file
+src/drv2605.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/src/drv2605.c.i
+.PHONY : src/drv2605.c.i
+
+src/drv2605.s: src/drv2605.c.s
+.PHONY : src/drv2605.s
+
+# target to generate assembly for a file
+src/drv2605.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pico_inference_app.dir/build.make CMakeFiles/pico_inference_app.dir/src/drv2605.c.s
+.PHONY : src/drv2605.c.s
+
 src/dsp_pipeline.obj: src/dsp_pipeline.cpp.obj
 .PHONY : src/dsp_pipeline.obj
 
@@ -6659,6 +6707,9 @@ help:
 	@echo "... home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj"
 	@echo "... home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i"
 	@echo "... home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.s"
+	@echo "... home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.obj"
+	@echo "... home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.i"
+	@echo "... home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.s"
 	@echo "... home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq.obj"
 	@echo "... home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq.i"
 	@echo "... home/inteldev/raspberry-pi-pico/pico/pico-sdk/src/rp2_common/hardware_irq/irq.s"
@@ -7167,6 +7218,9 @@ help:
 	@echo "... lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_with_batch_q7.obj"
 	@echo "... lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_with_batch_q7.i"
 	@echo "... lib/pico-tflmicro/src/third_party/cmsis/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_with_batch_q7.s"
+	@echo "... src/drv2605.obj"
+	@echo "... src/drv2605.i"
+	@echo "... src/drv2605.s"
 	@echo "... src/dsp_pipeline.obj"
 	@echo "... src/dsp_pipeline.i"
 	@echo "... src/dsp_pipeline.s"
