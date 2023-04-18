@@ -34,6 +34,7 @@ add_executable(deaf_helper_pico
     ${CMAKE_CURRENT_LIST_DIR}/src/dsp_pipeline.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/ml_model.cpp
     ${CMAKE_CURRENT_LIST_DIR}/src/drv2605.c
+    ${CMAKE_CURRENT_LIST_DIR}/src/hc08.c
 )
 
 target_link_libraries(deaf_helper_pico
@@ -42,6 +43,7 @@ target_link_libraries(deaf_helper_pico
     pico-tflmicro
     pico_pdm_microphone
     hardware_i2c
+    hardware_uart
     CMSISDSPTransform CMSISDSPSupport CMSISDSPCommon CMSISDSPComplexMath CMSISDSPFastMath CMSISDSPBasicMath
 )
 

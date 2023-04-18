@@ -1,4 +1,4 @@
-# Install script for directory: /home/inteldev/raspberry-pi-pico/pico/pico-sdk
+# Install script for directory: /Users/mattusi/pico/pico-sdk
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,14 +34,14 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/bin/arm-none-eabi-objdump")
+  set(CMAKE_OBJDUMP "/opt/homebrew/bin/arm-none-eabi-objdump")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/inteldev/raspberry-pi-pico/pico_workspace/build/pico-sdk/tools/cmake_install.cmake")
-  include("/home/inteldev/raspberry-pi-pico/pico_workspace/build/pico-sdk/src/cmake_install.cmake")
-  include("/home/inteldev/raspberry-pi-pico/pico_workspace/build/pico-sdk/docs/cmake_install.cmake")
+  include("/Users/mattusi/Developer/DeafHelperPico/build/pico-sdk/tools/cmake_install.cmake")
+  include("/Users/mattusi/Developer/DeafHelperPico/build/pico-sdk/src/cmake_install.cmake")
+  include("/Users/mattusi/Developer/DeafHelperPico/build/pico-sdk/docs/cmake_install.cmake")
 
 endif()
 

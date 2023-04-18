@@ -1,3 +1,7 @@
 {
-    "cmake.sourceDirectory": "${workspaceFolder}/deaf-helper"
+    "cmake.sourceDirectory": "${workspaceFolder}/deaf-helper",
+    "cmake.configureOnOpen": true,
+    "cmake.environment": {
+        "PICO_SDK_PATH": "/Users/mattusi/pico/pico-sdk"
+    }
 }

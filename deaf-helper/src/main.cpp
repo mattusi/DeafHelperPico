@@ -6,6 +6,7 @@
 extern "C" {
     #include "pico/pdm_microphone.h"
     #include "drv2605.h"
+    #include "hc08.h"
 }
 
 #include "tflite_model.h"
@@ -61,6 +62,9 @@ int main(void) {
 
     printf("Hello DeafHelper main App \n");
 
+    //Setup UART
+    setup_hc08();
+    
     //Setup detection status led
     gpio_set_function(PICO_DEFAULT_LED_PIN, GPIO_FUNC_PWM);
 
@@ -149,7 +153,14 @@ int main(void) {
           sleep_ms(1500);
           stop();
         } else {
-          printf("\t🔕\tNOT detected\t(prediction = %f)\n\n", prediction);
+          //printf("\t🔕\tNOT detected\t(prediction = %f)\n\n", prediction);
+          int event = get_currentEffect();
+          printf("current effect: %i\n", event);
+          select_library(event);
+          go();
+          sleep_ms(1500);
+          stop();
+
         }
 
         pwm_set_chan_level(pwm_slice_num, pwm_chan_num, prediction * 255);

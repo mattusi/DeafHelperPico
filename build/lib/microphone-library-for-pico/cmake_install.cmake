@@ -1,4 +1,4 @@
-# Install script for directory: /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/microphone-library-for-pico
+# Install script for directory: /Users/mattusi/Developer/DeafHelperPico/deaf-helper/lib/microphone-library-for-pico
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,15 +34,15 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/bin/arm-none-eabi-objdump")
+  set(CMAKE_OBJDUMP "/opt/homebrew/bin/arm-none-eabi-objdump")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/microphone-library-for-pico/pico-sdk/cmake_install.cmake")
-  include("/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/microphone-library-for-pico/examples/hello_analog_microphone/cmake_install.cmake")
-  include("/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/microphone-library-for-pico/examples/hello_pdm_microphone/cmake_install.cmake")
-  include("/home/inteldev/raspberry-pi-pico/pico_workspace/build/lib/microphone-library-for-pico/examples/usb_microphone/cmake_install.cmake")
+  include("/Users/mattusi/Developer/DeafHelperPico/build/lib/microphone-library-for-pico/pico-sdk/cmake_install.cmake")
+  include("/Users/mattusi/Developer/DeafHelperPico/build/lib/microphone-library-for-pico/examples/hello_analog_microphone/cmake_install.cmake")
+  include("/Users/mattusi/Developer/DeafHelperPico/build/lib/microphone-library-for-pico/examples/hello_pdm_microphone/cmake_install.cmake")
+  include("/Users/mattusi/Developer/DeafHelperPico/build/lib/microphone-library-for-pico/examples/usb_microphone/cmake_install.cmake")
 
 endif()
 

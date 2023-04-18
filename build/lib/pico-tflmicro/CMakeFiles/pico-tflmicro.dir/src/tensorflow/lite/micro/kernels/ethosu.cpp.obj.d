@@ -1,6 +1,12 @@
 lib/pico-tflmicro/CMakeFiles/pico-tflmicro.dir/src/tensorflow/lite/micro/kernels/ethosu.cpp.obj: \
- /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/ethosu.cpp \
- /home/inteldev/raspberry-pi-pico/pico_workspace/deaf-helper/lib/pico-tflmicro/src/tensorflow/lite/c/common.h \
- /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h \
- /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
- /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
+ /Users/mattusi/Developer/DeafHelperPico/deaf-helper/lib/pico-tflmicro/src/tensorflow/lite/micro/kernels/ethosu.cpp \
+ /Users/mattusi/Developer/DeafHelperPico/deaf-helper/lib/pico-tflmicro/src/tensorflow/lite/c/common.h \
+ /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h \
+ /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
+ /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
+ /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/stdint.h \
+ /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/machine/_default_types.h \
+ /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/sys/features.h \
+ /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/_newlib_version.h \
+ /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/sys/_intsup.h \
+ /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/sys/_stdint.h
